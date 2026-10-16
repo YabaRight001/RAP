@@ -18,12 +18,14 @@ export function AffiliateTab({ data, onCreditCommission, onReachMilestone, setAc
 
   const loadData = () => {
     fetch('/api/loans/user-applications')
-      .then(res => res.json())
-      .then(l => setAppliedLoans(l || []));
+      .then(res => res.ok ? res.json() : null)
+      .then(l => { if (Array.isArray(l)) setAppliedLoans(l); })
+      .catch(() => {});
 
     fetch('/api/incubator/status')
-      .then(res => res.json())
-      .then(i => setIncubatorData(i?.application || null));
+      .then(res => res.ok ? res.json() : null)
+      .then(i => { if (i?.application) setIncubatorData(i.application); })
+      .catch(() => {});
   };
 
   useEffect(() => {

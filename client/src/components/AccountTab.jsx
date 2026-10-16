@@ -2,21 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { Icon } from '../icons.jsx';
 
 export function AccountTab({ data, onOpenMondayTransfer, onOpenSendTransfer, onOpenStatement }) {
-  const [savingsList, setSavingsList] = useState([]);
-  const [transfersList, setTransfersList] = useState([]);
+  const [savingsList, setSavingsList] = useState(() => data?.savingsDetails?.allocations || []);
+  const [transfersList, setTransfersList] = useState(() => data?.recentTransactions || []);
   const [tryWithdrawModal, setTryWithdrawModal] = useState(false);
   const [kycModal, setKycModal] = useState(false);
   const [copiedAcc, setCopiedAcc] = useState(false);
 
   useEffect(() => {
     fetch('/api/savings/allocations')
-      .then(res => res.json())
-      .then(d => setSavingsList(d.allocations || []));
+      .then(res => res.ok ? res.json() : null)
+      .then(d => { if (d?.allocations) setSavingsList(d.allocations); })
+      .catch(() => {});
 
     fetch('/api/banking/transactions')
-      .then(res => res.json())
-      .then(d => setTransfersList(d || []));
-  }, []);
+      .then(res => res.ok ? res.json() : null)
+      .then(d => { if (Array.isArray(d)) setTransfersList(d); })
+      .catch(() => {});
+  }, [data]);
 
   if (!data) return null;
   const { user, partnerBank, balances } = data;

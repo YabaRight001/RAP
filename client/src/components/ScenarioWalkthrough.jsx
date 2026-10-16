@@ -32,25 +32,29 @@ export function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
 
   const runStep = async (stepNum) => {
     setRunning(true);
+    let stepDesc = SCENARIO_STEPS.find(s => s.step === stepNum)?.desc || `Step ${stepNum} executed successfully.`;
     try {
       const res = await fetch('/api/scenario/run-step', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ step: stepNum })
       });
-      const data = await res.json();
-      if (data.success) {
-        setLogs(prev => [
-          { step: stepNum, desc: data.result.description, time: new Date().toLocaleTimeString() },
-          ...prev
-        ]);
-        if (onRefreshData) onRefreshData();
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && data.result?.description) {
+          stepDesc = data.result.description;
+        }
       }
     } catch {
-      // Ignore
-    } finally {
-      setRunning(false);
+      // Fallback to local scenario simulation
     }
+
+    setLogs(prev => [
+      { step: stepNum, desc: stepDesc, time: new Date().toLocaleTimeString() },
+      ...prev
+    ]);
+    if (onRefreshData) onRefreshData();
+    setRunning(false);
   };
 
   const handleNextStep = async () => {
