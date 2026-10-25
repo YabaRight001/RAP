@@ -567,7 +567,7 @@ img {
 /* Carousel */
 .car {
   position: relative;
-  max-width: 680px;
+  max-width: 460px;
   width: 100%;
   margin: 0 auto;
   border-radius: 20px;
@@ -591,19 +591,20 @@ img {
 .track a {
   flex: 0 0 100%;
   scroll-snap-align: center;
-  display: block;
-  aspect-ratio: 16 / 10;
-  max-height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  background: #000;
+  background: var(--card-bg);
 }
 
 .track img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  max-height: 520px;
+  object-fit: contain;
+  object-position: center;
   transition: transform 0.3s ease;
 }
 

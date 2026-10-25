@@ -7698,7 +7698,7 @@ function HomeTab({
       icon: "sparkles"
     }
   ];
-  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap", style: { paddingTop: "16px" } }, /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "20px" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "car", style: { maxWidth: "100%", borderRadius: "20px", position: "relative" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "track", ref: trackRef }, flyers.map((f, idx) => /* @__PURE__ */ import_react4.default.createElement(
+  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap", style: { paddingTop: "16px" } }, /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "20px" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "car" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "track", ref: trackRef }, flyers.map((f, idx) => /* @__PURE__ */ import_react4.default.createElement(
     "a",
     {
       key: idx,
@@ -7718,9 +7718,10 @@ function HomeTab({
         alt: f.alt,
         style: {
           width: "100%",
-          maxHeight: "380px",
-          objectFit: "cover",
-          objectPosition: "top",
+          height: "auto",
+          maxHeight: "520px",
+          objectFit: "contain",
+          objectPosition: "center",
           display: "block"
         }
       }

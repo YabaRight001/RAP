@@ -123,7 +123,7 @@ export function HomeTab({
     <div className="wrap" style={{ paddingTop: '16px' }}>
       {/* 1. SWITCHING BANNERS FIRST (User Requirement: The first thing they see!) */}
       <section style={{ marginBottom: '20px' }}>
-        <div className="car" style={{ maxWidth: '100%', borderRadius: '20px', position: 'relative' }}>
+        <div className="car">
           <div className="track" ref={trackRef}>
             {flyers.map((f, idx) => (
               <a
@@ -142,9 +142,10 @@ export function HomeTab({
                   alt={f.alt}
                   style={{
                     width: '100%',
-                    maxHeight: '380px',
-                    objectFit: 'cover',
-                    objectPosition: 'top',
+                    height: 'auto',
+                    maxHeight: '520px',
+                    objectFit: 'contain',
+                    objectPosition: 'center',
                     display: 'block'
                   }}
                 />
