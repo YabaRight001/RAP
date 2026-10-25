@@ -7242,11 +7242,11 @@ var require_client = __commonJS({
 });
 
 // client/src/index.jsx
-var import_react16 = __toESM(require_react(), 1);
+var import_react17 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // client/src/App.jsx
-var import_react15 = __toESM(require_react(), 1);
+var import_react16 = __toESM(require_react(), 1);
 
 // client/src/components/Header.jsx
 var import_react2 = __toESM(require_react(), 1);
@@ -7303,6 +7303,11 @@ function Icon({ name, className = "w-5 h-5", ...props }) {
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" }));
     case "download":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" }));
+    case "dots-vertical":
+    case "more":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" }));
+    case "menu":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M4 6h16M4 12h16M4 18h16" }));
     case "bell":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" }));
     case "copy":
@@ -7334,6 +7339,8 @@ function Header({
   isLoggedIn,
   setIsLoggedIn,
   onOpenWalkthrough,
+  onOpenNotifications,
+  onOpenSendTransfer,
   isAdmin,
   setIsAdmin,
   theme,
@@ -7341,17 +7348,44 @@ function Header({
   viewMode,
   setViewMode
 }) {
+  const [menuOpen, setMenuOpen] = (0, import_react2.useState)(false);
+  const menuRef = (0, import_react2.useRef)(null);
   const toggleTheme = () => {
     const nextTheme = theme === "dark" ? "light" : "dark";
     setTheme(nextTheme);
   };
   const toggleViewMode = () => {
     setViewMode(viewMode === "phone" ? "desktop" : "phone");
+    setMenuOpen(false);
   };
-  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker", "aria-hidden": "true" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker-inner" }, /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"))), /* @__PURE__ */ import_react2.default.createElement("header", { className: "top" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "12px", alignItems: "center" } }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "#home", onClick: (e) => {
-    e.preventDefault();
-    setActiveTab("home");
-  }, "aria-label": "RAP Bank Home", style: { display: "flex", alignItems: "center" } }, /* @__PURE__ */ import_react2.default.createElement("img", { src: "/img/logo.png", alt: "RAP Bank", className: "logo-img" }))), /* @__PURE__ */ import_react2.default.createElement("nav", { className: "dnav" }, /* @__PURE__ */ import_react2.default.createElement(
+  (0, import_react2.useEffect)(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("touchstart", handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("touchstart", handleClickOutside);
+    };
+  }, [menuOpen]);
+  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker", "aria-hidden": "true" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker-inner" }, /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"))), /* @__PURE__ */ import_react2.default.createElement("header", { className: "top" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "12px", alignItems: "center" } }, /* @__PURE__ */ import_react2.default.createElement(
+    "a",
+    {
+      href: "#home",
+      onClick: (e) => {
+        e.preventDefault();
+        setActiveTab("home");
+      },
+      "aria-label": "RAP Bank Home",
+      style: { display: "flex", alignItems: "center" }
+    },
+    /* @__PURE__ */ import_react2.default.createElement("img", { src: "/img/logo.png", alt: "RAP Bank", className: "logo-img" })
+  )), /* @__PURE__ */ import_react2.default.createElement("nav", { className: "dnav" }, /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("home"),
@@ -7365,6 +7399,16 @@ function Header({
       className: activeTab === "skills" ? "on" : ""
     },
     "Skills"
+  ), /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: () => {
+        if (onOpenSendTransfer) onOpenSendTransfer();
+      },
+      className: "",
+      style: { color: "var(--blue)", fontWeight: "700" }
+    },
+    "Transfer"
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
@@ -7386,92 +7430,136 @@ function Header({
       className: activeTab === "login" ? "on" : ""
     },
     "Profile"
-  )), /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react2.default.createElement(
+  )), /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "8px", alignItems: "center", position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: onOpenNotifications,
+      className: "icon-round-btn",
+      title: "View Notifications & Alerts",
+      "aria-label": "Notifications"
+    },
+    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "bell", style: { width: "18px", height: "18px" } }),
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "notification-dot" })
+  ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
       onClick: toggleTheme,
-      className: "btn line sm theme-toggle-btn",
-      style: { fontSize: "13px", display: "inline-flex", alignItems: "center", gap: "6px" },
+      className: "icon-round-btn",
       title: `Switch to ${theme === "dark" ? "light" : "dark"} mode`,
       "aria-label": "Toggle light and dark mode"
     },
-    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: theme === "dark" ? "sun" : "moon", style: { width: "15px", height: "15px" } }),
-    /* @__PURE__ */ import_react2.default.createElement("span", { className: "theme-toggle-label" }, theme === "dark" ? "Light" : "Dark")
+    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: theme === "dark" ? "sun" : "moon", style: { width: "17px", height: "17px" } })
+  ), /* @__PURE__ */ import_react2.default.createElement("div", { ref: menuRef, style: { position: "relative" } }, /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: () => setMenuOpen(!menuOpen),
+      className: `icon-round-btn ${menuOpen ? "active" : ""}`,
+      style: { borderColor: isAdmin ? "#d92d20" : void 0 },
+      title: "Account Settings & Tools",
+      "aria-label": "Open settings menu"
+    },
+    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "more", style: { width: "18px", height: "18px", fill: "currentColor" } })
+  ), menuOpen && /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-dropdown" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-dropdown-header" }, /* @__PURE__ */ import_react2.default.createElement("div", { style: { fontWeight: "800", fontSize: "13.5px", color: "var(--ink)" } }, isLoggedIn ? user?.fullName || "Chukwuemeka Adebayo" : "RAP Bank Guest"), /* @__PURE__ */ import_react2.default.createElement("div", { style: { fontSize: "11px", color: "var(--mute)", marginTop: "2px" } }, isLoggedIn ? `${user?.membershipTier || "RAP Affiliate"} \u2022 Level 2 KYC` : "Not Signed In")), /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-dropdown-body" }, /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: () => {
+        onOpenWalkthrough();
+        setMenuOpen(false);
+      },
+      className: "menu-item"
+    },
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "menu-item-icon", style: { background: "rgba(31, 166, 64, 0.12)", color: "var(--green)" } }, /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "sparkles", style: { width: "16px", height: "16px" } })),
+    /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-item-text" }, /* @__PURE__ */ import_react2.default.createElement("b", null, "19 Steps Walkthrough"), /* @__PURE__ */ import_react2.default.createElement("span", null, "Test all end-to-end features"))
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
       onClick: toggleViewMode,
-      className: "btn line sm view-mode-btn",
-      style: { fontSize: "13px", display: "inline-flex", alignItems: "center", gap: "6px" },
-      title: viewMode === "phone" ? "Switch to Full Desktop View" : "Switch to Phone App View Simulator"
+      className: "menu-item"
     },
-    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: viewMode === "phone" ? "device-desktop" : "device-mobile", style: { width: "15px", height: "15px" } }),
-    /* @__PURE__ */ import_react2.default.createElement("span", { className: "view-mode-label" }, viewMode === "phone" ? "Desktop" : "App Mode")
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "menu-item-icon", style: { background: "rgba(29, 123, 232, 0.12)", color: "var(--blue)" } }, /* @__PURE__ */ import_react2.default.createElement(Icon, { name: viewMode === "phone" ? "device-desktop" : "device-mobile", style: { width: "16px", height: "16px" } })),
+    /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-item-text" }, /* @__PURE__ */ import_react2.default.createElement("b", null, viewMode === "phone" ? "Desktop View" : "App Mode Simulator"), /* @__PURE__ */ import_react2.default.createElement("span", null, "Switch screen simulation"))
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
-      onClick: onOpenWalkthrough,
-      className: "btn pri sm",
-      style: { fontSize: "13px" },
-      title: "Test all 19 steps end-to-end"
+      onClick: () => {
+        setIsAdmin(!isAdmin);
+        setMenuOpen(false);
+      },
+      className: "menu-item"
     },
-    /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "sparkles", style: { width: "15px", height: "15px" } }),
-    /* @__PURE__ */ import_react2.default.createElement("span", null, "19 Steps")
-  ), isLoggedIn ? /* @__PURE__ */ import_react2.default.createElement(
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "menu-item-icon", style: { background: isAdmin ? "rgba(217, 45, 32, 0.12)" : "rgba(100, 116, 139, 0.12)", color: isAdmin ? "#d92d20" : "var(--mute)" } }, /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "shield", style: { width: "16px", height: "16px" } })),
+    /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-item-text" }, /* @__PURE__ */ import_react2.default.createElement("b", null, isAdmin ? "Exit Admin Mode" : "Admin Governance"), /* @__PURE__ */ import_react2.default.createElement("span", null, "System governance & logs"))
+  ), /* @__PURE__ */ import_react2.default.createElement("div", { style: { height: "1px", background: "var(--line)", margin: "4px 0" } }), isLoggedIn ? /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
-      onClick: () => setIsLoggedIn(false),
-      className: "btn line sm",
-      style: { fontSize: "13px" },
-      title: "Sign out of your account"
+      onClick: () => {
+        setIsLoggedIn(false);
+        setMenuOpen(false);
+      },
+      className: "menu-item",
+      style: { color: "#d92d20" }
     },
-    "Sign Out"
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "menu-item-icon", style: { background: "rgba(217, 45, 32, 0.1)", color: "#d92d20" } }, /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "login", style: { width: "16px", height: "16px" } })),
+    /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-item-text" }, /* @__PURE__ */ import_react2.default.createElement("b", { style: { color: "#d92d20" } }, "Sign Out"), /* @__PURE__ */ import_react2.default.createElement("span", null, "End current session"))
   ) : /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
-      onClick: () => setActiveTab("login"),
-      className: "btn pri sm",
-      style: { fontSize: "13px" },
-      title: "Sign into your RAP Bank account"
+      onClick: () => {
+        setActiveTab("login");
+        setMenuOpen(false);
+      },
+      className: "menu-item",
+      style: { color: "var(--green)" }
     },
-    "Sign In"
-  ), /* @__PURE__ */ import_react2.default.createElement(
-    "button",
-    {
-      onClick: () => setIsAdmin(!isAdmin),
-      className: "btn line sm",
-      style: { fontSize: "13px", borderColor: isAdmin ? "#d92d20" : void 0, color: isAdmin ? "#d92d20" : void 0 }
-    },
-    isAdmin ? "Exit Admin" : "Admin"
-  )))));
+    /* @__PURE__ */ import_react2.default.createElement("span", { className: "menu-item-icon", style: { background: "var(--green-soft)", color: "var(--green)" } }, /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "login", style: { width: "16px", height: "16px" } })),
+    /* @__PURE__ */ import_react2.default.createElement("div", { className: "menu-item-text" }, /* @__PURE__ */ import_react2.default.createElement("b", { style: { color: "var(--green)" } }, "Sign In / Register"), /* @__PURE__ */ import_react2.default.createElement("span", null, "Access personal bank account"))
+  ))))))));
 }
 
 // client/src/components/BottomNav.jsx
 var import_react3 = __toESM(require_react(), 1);
-function BottomNav({ activeTab, setActiveTab, inPhone }) {
+function BottomNav({ activeTab, setActiveTab, onOpenSendTransfer, inPhone }) {
   const tabs = [
     { id: "home", label: "Home", icon: "home" },
     { id: "skills", label: "Skills", icon: "skills" },
+    { id: "transfer", label: "Transfer", icon: "send", isAction: true },
     { id: "affiliate", label: "Affiliate", icon: "affiliate" },
-    { id: "login", label: "Profile", icon: "login" },
-    { id: "refer", label: "Refer", icon: "refer" }
+    { id: "login", label: "Profile", icon: "login" }
   ];
   return /* @__PURE__ */ import_react3.default.createElement(
     "nav",
     {
       className: "tabbar",
-      "aria-label": "Main Navigation",
-      style: inPhone ? {
-        position: "sticky",
-        bottom: 0,
-        left: 0,
-        right: 0,
-        display: "flex",
-        zIndex: 50
-      } : void 0
+      "aria-label": "Main Banking Navigation"
     },
     tabs.map((tab) => {
       const isActive = activeTab === tab.id;
+      if (tab.isAction) {
+        return /* @__PURE__ */ import_react3.default.createElement(
+          "button",
+          {
+            key: tab.id,
+            onClick: () => {
+              if (onOpenSendTransfer) onOpenSendTransfer();
+            },
+            className: "tab-action-btn",
+            title: "Quick Send Money / Transfer",
+            "aria-label": "Send Transfer"
+          },
+          /* @__PURE__ */ import_react3.default.createElement("div", { className: "tab-action-circle" }, /* @__PURE__ */ import_react3.default.createElement(
+            Icon,
+            {
+              name: tab.icon,
+              style: {
+                width: "20px",
+                height: "20px",
+                stroke: "#ffffff"
+              }
+            }
+          )),
+          /* @__PURE__ */ import_react3.default.createElement("span", { className: "tab-label" }, tab.label)
+        );
+      }
       return /* @__PURE__ */ import_react3.default.createElement(
         "button",
         {
@@ -7480,20 +7568,21 @@ function BottomNav({ activeTab, setActiveTab, inPhone }) {
             setActiveTab(tab.id);
             if (!inPhone) window.scrollTo({ top: 0, behavior: "smooth" });
           },
-          className: isActive ? "on" : ""
+          className: `tab-btn ${isActive ? "on" : ""}`,
+          "aria-label": tab.label
         },
-        /* @__PURE__ */ import_react3.default.createElement(
+        /* @__PURE__ */ import_react3.default.createElement("div", { className: "tab-icon-wrap" }, /* @__PURE__ */ import_react3.default.createElement(
           Icon,
           {
             name: tab.icon,
             style: {
-              width: "22px",
-              height: "22px",
+              width: "21px",
+              height: "21px",
               stroke: isActive ? "var(--green)" : "var(--mute)"
             }
           }
-        ),
-        /* @__PURE__ */ import_react3.default.createElement("span", null, tab.label)
+        )),
+        /* @__PURE__ */ import_react3.default.createElement("span", { className: "tab-label" }, tab.label)
       );
     })
   );
@@ -8926,8 +9015,56 @@ function StatementModal({ isOpen, onClose, data }) {
   ))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "grid4", style: { marginTop: "16px", fontSize: "13px" } }, /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Account name:"), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("b", null, partnerBank.accountName))), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Account number:"), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("b", null, partnerBank.accountNumber))), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Period:"), /* @__PURE__ */ import_react13.default.createElement("div", null, "Last 30 Days")), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Closing balance:"), /* @__PURE__ */ import_react13.default.createElement("div", { style: { color: "var(--green)", fontWeight: "800" } }, "\u20A6", balances.actualBankBalance.toLocaleString()))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "scroll", style: { marginTop: "18px" } }, /* @__PURE__ */ import_react13.default.createElement("table", null, /* @__PURE__ */ import_react13.default.createElement("thead", null, /* @__PURE__ */ import_react13.default.createElement("tr", null, /* @__PURE__ */ import_react13.default.createElement("th", null, "Date"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Narration"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Balance After"))), /* @__PURE__ */ import_react13.default.createElement("tbody", null, transactions.map((tx) => /* @__PURE__ */ import_react13.default.createElement("tr", { key: tx.id }, /* @__PURE__ */ import_react13.default.createElement("td", null, new Date(tx.created_at).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react13.default.createElement("td", null, /* @__PURE__ */ import_react13.default.createElement("b", null, tx.narration || tx.type)), /* @__PURE__ */ import_react13.default.createElement("td", { style: { fontWeight: "700", color: tx.type === "deposit" || tx.type === "transfer_in" ? "var(--green)" : "var(--ink)" } }, tx.type === "deposit" || tx.type === "transfer_in" ? "+" : "-", "\u20A6", tx.amount.toLocaleString()), /* @__PURE__ */ import_react13.default.createElement("td", null, "\u20A6", tx.balance_after?.toLocaleString())))))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { marginTop: "18px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react13.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
 }
 
-// client/src/components/ScenarioWalkthrough.jsx
+// client/src/components/NotificationsModal.jsx
 var import_react14 = __toESM(require_react(), 1);
+function NotificationsModal({ isOpen, onClose }) {
+  if (!isOpen) return null;
+  const notifications = [
+    {
+      id: 1,
+      title: "Monday Payout Ready",
+      desc: "\u20A6101,500.00 is available for transfer under your 70% accessible affiliate balance.",
+      time: "Today, 08:00 AM",
+      type: "financial",
+      unread: true
+    },
+    {
+      id: 2,
+      title: "New Qualifying Affiliate Joined",
+      desc: "Oluwaseun Bakare registered with your link and completed BVN/NIN verification.",
+      time: "Yesterday, 14:22",
+      type: "affiliate",
+      unread: false
+    },
+    {
+      id: 3,
+      title: "30% Locked Savings Credited",
+      desc: "\u20A630,000 was safely locked for 1 calendar year (Matures in 365 days).",
+      time: "3 days ago",
+      type: "savings",
+      unread: false
+    },
+    {
+      id: 4,
+      title: "Security Notice: New Session",
+      desc: "Your account was accessed from Chrome on Linux (Lagos Gateway).",
+      time: "4 days ago",
+      type: "security",
+      unread: false
+    }
+  ];
+  return /* @__PURE__ */ import_react14.default.createElement("div", { className: "fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "bg-slate-900 border border-slate-800 rounded-3xl max-w-md w-full p-6 shadow-2xl relative" }, /* @__PURE__ */ import_react14.default.createElement(
+    "button",
+    {
+      onClick: onClose,
+      className: "absolute top-4 right-4 p-2 rounded-full bg-slate-800 text-slate-400 hover:text-white"
+    },
+    "\u2715"
+  ), /* @__PURE__ */ import_react14.default.createElement("h2", { className: "text-lg font-bold text-white font-display mb-3" }, "Notifications & Alerts"), /* @__PURE__ */ import_react14.default.createElement("div", { className: "divide-y divide-slate-800 text-xs" }, notifications.map((n) => /* @__PURE__ */ import_react14.default.createElement("div", { key: n.id, className: "py-3 space-y-1" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "flex items-center justify-between" }, /* @__PURE__ */ import_react14.default.createElement("span", { className: "font-bold text-white flex items-center gap-1.5" }, n.unread && /* @__PURE__ */ import_react14.default.createElement("span", { className: "w-1.5 h-1.5 rounded-full bg-amber-400" }), n.title), /* @__PURE__ */ import_react14.default.createElement("span", { className: "text-[10px] text-slate-400" }, n.time)), /* @__PURE__ */ import_react14.default.createElement("p", { className: "text-slate-300 text-[11px] leading-relaxed" }, n.desc))))));
+}
+
+// client/src/components/ScenarioWalkthrough.jsx
+var import_react15 = __toESM(require_react(), 1);
 var SCENARIO_STEPS = [
   { step: 1, title: "Step 1: Registration", desc: "Young Nigerian registers on RAP with basic personal details." },
   { step: 2, title: "Step 2: Email & Phone OTP", desc: "User verifies email address and phone number with 6-digit OTP." },
@@ -8950,9 +9087,9 @@ var SCENARIO_STEPS = [
   { step: 19, title: "Step 19: Full Audit Trail Inspection", desc: "Administrator reviews immutable audit logs of entire financial journey." }
 ];
 function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
-  const [currentStep, setCurrentStep] = (0, import_react14.useState)(1);
-  const [logs, setLogs] = (0, import_react14.useState)([]);
-  const [running, setRunning] = (0, import_react14.useState)(false);
+  const [currentStep, setCurrentStep] = (0, import_react15.useState)(1);
+  const [logs, setLogs] = (0, import_react15.useState)([]);
+  const [running, setRunning] = (0, import_react15.useState)(false);
   if (!isOpen) return null;
   const runStep = async (stepNum) => {
     setRunning(true);
@@ -8996,14 +9133,14 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
     }
     setRunning(false);
   };
-  return /* @__PURE__ */ import_react14.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "modal-box", style: { maxWidth: "780px" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "12px" } }, /* @__PURE__ */ import_react14.default.createElement("div", null, /* @__PURE__ */ import_react14.default.createElement("div", { className: "eyebrow" }, "End-to-End Test Engine"), /* @__PURE__ */ import_react14.default.createElement("h3", { style: { fontSize: "18px" } }, "19-Step Specification Walkthrough")), /* @__PURE__ */ import_react14.default.createElement(
+  return /* @__PURE__ */ import_react15.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "modal-box", style: { maxWidth: "780px" } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "12px" } }, /* @__PURE__ */ import_react15.default.createElement("div", null, /* @__PURE__ */ import_react15.default.createElement("div", { className: "eyebrow" }, "End-to-End Test Engine"), /* @__PURE__ */ import_react15.default.createElement("h3", { style: { fontSize: "18px" } }, "19-Step Specification Walkthrough")), /* @__PURE__ */ import_react15.default.createElement(
     "button",
     {
       onClick: onClose,
       style: { background: "transparent", border: 0, fontSize: "20px", cursor: "pointer", color: "var(--mute)" }
     },
     "\u2715"
-  )), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", padding: "12px 0", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "note", style: { fontSize: "13.5px" } }, "Current: ", /* @__PURE__ */ import_react14.default.createElement("b", null, SCENARIO_STEPS[currentStep - 1]?.title)), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react14.default.createElement(
+  )), /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { justifyContent: "space-between", padding: "12px 0", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "note", style: { fontSize: "13.5px" } }, "Current: ", /* @__PURE__ */ import_react15.default.createElement("b", null, SCENARIO_STEPS[currentStep - 1]?.title)), /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react15.default.createElement(
     "button",
     {
       onClick: handleNextStep,
@@ -9012,7 +9149,7 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
     },
     "Run Step ",
     currentStep
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react15.default.createElement(
     "button",
     {
       onClick: handleRunAll,
@@ -9021,10 +9158,10 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
       style: { fontWeight: "800", borderColor: "var(--blue)", color: "var(--blue)" }
     },
     "Run All 19 Steps"
-  ))), /* @__PURE__ */ import_react14.default.createElement("div", { className: "grid4", style: { gridTemplateColumns: "1.2fr 1fr", gap: "14px", marginTop: "14px", maxHeight: "450px", overflowY: "auto" } }, /* @__PURE__ */ import_react14.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "8px" } }, SCENARIO_STEPS.map((s) => {
+  ))), /* @__PURE__ */ import_react15.default.createElement("div", { className: "grid4", style: { gridTemplateColumns: "1.2fr 1fr", gap: "14px", marginTop: "14px", maxHeight: "450px", overflowY: "auto" } }, /* @__PURE__ */ import_react15.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "8px" } }, SCENARIO_STEPS.map((s) => {
     const isPast = s.step < currentStep;
     const isCurrent = s.step === currentStep;
-    return /* @__PURE__ */ import_react14.default.createElement(
+    return /* @__PURE__ */ import_react15.default.createElement(
       "div",
       {
         key: s.step,
@@ -9041,10 +9178,10 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
           background: isCurrent ? "#f0f7ff" : isPast ? "#f3fbf5" : "#fff"
         }
       },
-      /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react14.default.createElement("b", { style: { fontSize: "13px", color: isCurrent ? "var(--blue)" : isPast ? "var(--green)" : "var(--ink)" } }, s.title), isPast && /* @__PURE__ */ import_react14.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)", padding: "1px 6px", fontSize: "10px" } }, "\u2713 Done")),
-      /* @__PURE__ */ import_react14.default.createElement("div", { className: "note", style: { fontSize: "12px", marginTop: "2px" } }, s.desc)
+      /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react15.default.createElement("b", { style: { fontSize: "13px", color: isCurrent ? "var(--blue)" : isPast ? "var(--green)" : "var(--ink)" } }, s.title), isPast && /* @__PURE__ */ import_react15.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)", padding: "1px 6px", fontSize: "10px" } }, "\u2713 Done")),
+      /* @__PURE__ */ import_react15.default.createElement("div", { className: "note", style: { fontSize: "12px", marginTop: "2px" } }, s.desc)
     );
-  })), /* @__PURE__ */ import_react14.default.createElement("div", { className: "card", style: { background: "#fafcff", margin: 0, overflowY: "auto" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "k", style: { fontWeight: "700", marginBottom: "8px" } }, "Live Execution Logs"), logs.length === 0 ? /* @__PURE__ */ import_react14.default.createElement("p", { className: "note" }, 'Click "Run Step" or "Run All 19 Steps" to trigger live ledger actions...') : /* @__PURE__ */ import_react14.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "6px" } }, logs.map((l, idx) => /* @__PURE__ */ import_react14.default.createElement("div", { key: idx, style: { padding: "8px 10px", background: "#fff", borderRadius: "10px", border: "1px solid var(--line)", fontSize: "12px" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", color: "var(--mute)", fontSize: "11px" } }, /* @__PURE__ */ import_react14.default.createElement("b", { style: { color: "var(--green)" } }, "Step ", l.step), /* @__PURE__ */ import_react14.default.createElement("span", null, l.time)), /* @__PURE__ */ import_react14.default.createElement("div", { style: { marginTop: "2px", color: "var(--ink)" } }, l.desc)))))), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { marginTop: "16px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react14.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
+  })), /* @__PURE__ */ import_react15.default.createElement("div", { className: "card", style: { background: "#fafcff", margin: 0, overflowY: "auto" } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "k", style: { fontWeight: "700", marginBottom: "8px" } }, "Live Execution Logs"), logs.length === 0 ? /* @__PURE__ */ import_react15.default.createElement("p", { className: "note" }, 'Click "Run Step" or "Run All 19 Steps" to trigger live ledger actions...') : /* @__PURE__ */ import_react15.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "6px" } }, logs.map((l, idx) => /* @__PURE__ */ import_react15.default.createElement("div", { key: idx, style: { padding: "8px 10px", background: "#fff", borderRadius: "10px", border: "1px solid var(--line)", fontSize: "12px" } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { justifyContent: "space-between", color: "var(--mute)", fontSize: "11px" } }, /* @__PURE__ */ import_react15.default.createElement("b", { style: { color: "var(--green)" } }, "Step ", l.step), /* @__PURE__ */ import_react15.default.createElement("span", null, l.time)), /* @__PURE__ */ import_react15.default.createElement("div", { style: { marginTop: "2px", color: "var(--ink)" } }, l.desc)))))), /* @__PURE__ */ import_react15.default.createElement("div", { className: "row", style: { marginTop: "16px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react15.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
 }
 
 // client/src/mockData.js
@@ -9193,49 +9330,50 @@ function saveStoredData(data) {
 
 // client/src/App.jsx
 function App() {
-  const [data, setData] = (0, import_react15.useState)(() => getStoredData());
-  const [activeTab, setActiveTab] = (0, import_react15.useState)("home");
-  const [isAdmin, setIsAdmin] = (0, import_react15.useState)(false);
-  const [toastMsg, setToastMsg] = (0, import_react15.useState)(null);
-  const [isLoggedIn, setIsLoggedIn] = (0, import_react15.useState)(() => {
+  const [data, setData] = (0, import_react16.useState)(() => getStoredData());
+  const [activeTab, setActiveTab] = (0, import_react16.useState)("home");
+  const [isAdmin, setIsAdmin] = (0, import_react16.useState)(false);
+  const [toastMsg, setToastMsg] = (0, import_react16.useState)(null);
+  const [isLoggedIn, setIsLoggedIn] = (0, import_react16.useState)(() => {
     try {
       return localStorage.getItem("rap-logged-in") === "true";
     } catch {
       return false;
     }
   });
-  (0, import_react15.useEffect)(() => {
+  (0, import_react16.useEffect)(() => {
     try {
       localStorage.setItem("rap-logged-in", isLoggedIn ? "true" : "false");
     } catch {
     }
   }, [isLoggedIn]);
-  const [theme, setTheme] = (0, import_react15.useState)(() => {
+  const [theme, setTheme] = (0, import_react16.useState)(() => {
     try {
       return localStorage.getItem("rap-theme") || "light";
     } catch {
       return "light";
     }
   });
-  const [viewMode, setViewMode] = (0, import_react15.useState)(() => {
+  const [viewMode, setViewMode] = (0, import_react16.useState)(() => {
     try {
       return localStorage.getItem("rap-viewmode") || "desktop";
     } catch {
       return "desktop";
     }
   });
-  const [mondayModalOpen, setMondayModalOpen] = (0, import_react15.useState)(false);
-  const [sendTransferModalOpen, setSendTransferModalOpen] = (0, import_react15.useState)(false);
-  const [statementModalOpen, setStatementModalOpen] = (0, import_react15.useState)(false);
-  const [walkthroughOpen, setWalkthroughOpen] = (0, import_react15.useState)(false);
-  (0, import_react15.useEffect)(() => {
+  const [mondayModalOpen, setMondayModalOpen] = (0, import_react16.useState)(false);
+  const [sendTransferModalOpen, setSendTransferModalOpen] = (0, import_react16.useState)(false);
+  const [statementModalOpen, setStatementModalOpen] = (0, import_react16.useState)(false);
+  const [notificationsModalOpen, setNotificationsModalOpen] = (0, import_react16.useState)(false);
+  const [walkthroughOpen, setWalkthroughOpen] = (0, import_react16.useState)(false);
+  (0, import_react16.useEffect)(() => {
     document.documentElement.setAttribute("data-theme", theme);
     try {
       localStorage.setItem("rap-theme", theme);
     } catch {
     }
   }, [theme]);
-  (0, import_react15.useEffect)(() => {
+  (0, import_react16.useEffect)(() => {
     try {
       localStorage.setItem("rap-viewmode", viewMode);
     } catch {
@@ -9259,7 +9397,7 @@ function App() {
     } catch {
     }
   };
-  (0, import_react15.useEffect)(() => {
+  (0, import_react16.useEffect)(() => {
     fetchUserData();
   }, []);
   const showToast = (text) => {
@@ -9363,7 +9501,7 @@ function App() {
     if (window.confetti) window.confetti({ particleCount: 150, spread: 80, origin: { y: 0.5 } });
     showToast("\u{1F389} 25 Affiliates Milestone Reached! Upgraded to RAP Growth Partner (20%)");
   };
-  const appContent = /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("main", { style: { flex: 1, overflowY: "auto", overflowX: "hidden" } }, isAdmin ? /* @__PURE__ */ import_react15.default.createElement(AdminPanel, { onClose: () => setIsAdmin(false) }) : /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, activeTab === "home" && /* @__PURE__ */ import_react15.default.createElement(
+  const appContent = /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, /* @__PURE__ */ import_react16.default.createElement("main", { style: { flex: 1, overflowY: "auto", overflowX: "hidden" } }, isAdmin ? /* @__PURE__ */ import_react16.default.createElement(AdminPanel, { onClose: () => setIsAdmin(false) }) : /* @__PURE__ */ import_react16.default.createElement(import_react16.default.Fragment, null, activeTab === "home" && /* @__PURE__ */ import_react16.default.createElement(
     HomeTab,
     {
       data,
@@ -9374,14 +9512,14 @@ function App() {
       onReachMilestone: handleReachMilestone,
       setActiveTab
     }
-  ), (activeTab === "skills" || activeTab === "account") && /* @__PURE__ */ import_react15.default.createElement(
+  ), (activeTab === "skills" || activeTab === "account") && /* @__PURE__ */ import_react16.default.createElement(
     SkillsTab,
     {
       data,
       setActiveTab,
       onOpenSendTransfer: () => setSendTransferModalOpen(true)
     }
-  ), activeTab === "affiliate" && /* @__PURE__ */ import_react15.default.createElement(
+  ), activeTab === "affiliate" && /* @__PURE__ */ import_react16.default.createElement(
     AffiliateTab,
     {
       data,
@@ -9389,7 +9527,7 @@ function App() {
       onReachMilestone: handleReachMilestone,
       setActiveTab
     }
-  ), activeTab === "refer" && /* @__PURE__ */ import_react15.default.createElement(ReferTab, { data }), activeTab === "login" && /* @__PURE__ */ import_react15.default.createElement(
+  ), activeTab === "refer" && /* @__PURE__ */ import_react16.default.createElement(ReferTab, { data }), activeTab === "login" && /* @__PURE__ */ import_react16.default.createElement(
     LoginTab,
     {
       data,
@@ -9399,15 +9537,16 @@ function App() {
       isLoggedIn,
       setIsLoggedIn
     }
-  ))), !isAdmin && /* @__PURE__ */ import_react15.default.createElement(
+  ))), !isAdmin && /* @__PURE__ */ import_react16.default.createElement(
     BottomNav,
     {
       activeTab,
       setActiveTab,
+      onOpenSendTransfer: () => setSendTransferModalOpen(true),
       inPhone: viewMode === "phone"
     }
   ));
-  return /* @__PURE__ */ import_react15.default.createElement("div", { style: { minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", transition: "background 0.25s ease" } }, /* @__PURE__ */ import_react15.default.createElement(
+  return /* @__PURE__ */ import_react16.default.createElement("div", { style: { minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", transition: "background 0.25s ease" } }, /* @__PURE__ */ import_react16.default.createElement(
     Header,
     {
       activeTab,
@@ -9416,6 +9555,8 @@ function App() {
       isLoggedIn,
       setIsLoggedIn,
       onOpenWalkthrough: () => setWalkthroughOpen(true),
+      onOpenNotifications: () => setNotificationsModalOpen(true),
+      onOpenSendTransfer: () => setSendTransferModalOpen(true),
       isAdmin,
       setIsAdmin,
       theme,
@@ -9423,7 +9564,7 @@ function App() {
       viewMode,
       setViewMode
     }
-  ), viewMode === "phone" ? /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-frame-container", style: { flex: 1 } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-mockup" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-speaker-notch" }, /* @__PURE__ */ import_react15.default.createElement("span", null, (/* @__PURE__ */ new Date()).toLocaleTimeString("en-NG", { hour: "2-digit", minute: "2-digit" })), /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-dynamic-island" }), /* @__PURE__ */ import_react15.default.createElement("span", { style: { display: "flex", gap: "6px", alignItems: "center" } }, /* @__PURE__ */ import_react15.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react15.default.createElement("path", { d: "M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" })), /* @__PURE__ */ import_react15.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react15.default.createElement("path", { d: "M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z" })))), /* @__PURE__ */ import_react15.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" } }, appContent), /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-home-indicator" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-home-bar" })))) : /* @__PURE__ */ import_react15.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column" } }, appContent), /* @__PURE__ */ import_react15.default.createElement(
+  ), viewMode === "phone" ? /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-frame-container", style: { flex: 1 } }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-mockup" }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-speaker-notch" }, /* @__PURE__ */ import_react16.default.createElement("span", null, (/* @__PURE__ */ new Date()).toLocaleTimeString("en-NG", { hour: "2-digit", minute: "2-digit" })), /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-dynamic-island" }), /* @__PURE__ */ import_react16.default.createElement("span", { style: { display: "flex", gap: "6px", alignItems: "center" } }, /* @__PURE__ */ import_react16.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react16.default.createElement("path", { d: "M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" })), /* @__PURE__ */ import_react16.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react16.default.createElement("path", { d: "M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z" })))), /* @__PURE__ */ import_react16.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" } }, appContent), /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-home-indicator" }, /* @__PURE__ */ import_react16.default.createElement("div", { className: "phone-home-bar" })))) : /* @__PURE__ */ import_react16.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column" } }, appContent), /* @__PURE__ */ import_react16.default.createElement(
     MondayTransferModal,
     {
       isOpen: mondayModalOpen,
@@ -9434,7 +9575,7 @@ function App() {
         fetchUserData();
       }
     }
-  ), /* @__PURE__ */ import_react15.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     SendTransferModal,
     {
       isOpen: sendTransferModalOpen,
@@ -9445,28 +9586,34 @@ function App() {
         fetchUserData();
       }
     }
-  ), /* @__PURE__ */ import_react15.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
     StatementModal,
     {
       isOpen: statementModalOpen,
       onClose: () => setStatementModalOpen(false),
       data
     }
-  ), /* @__PURE__ */ import_react15.default.createElement(
+  ), /* @__PURE__ */ import_react16.default.createElement(
+    NotificationsModal,
+    {
+      isOpen: notificationsModalOpen,
+      onClose: () => setNotificationsModalOpen(false)
+    }
+  ), /* @__PURE__ */ import_react16.default.createElement(
     ScenarioWalkthrough,
     {
       isOpen: walkthroughOpen,
       onClose: () => setWalkthroughOpen(false),
       onRefreshData: fetchUserData
     }
-  ), toastMsg && /* @__PURE__ */ import_react15.default.createElement("div", { className: "toast" }, /* @__PURE__ */ import_react15.default.createElement("span", null, toastMsg)));
+  ), toastMsg && /* @__PURE__ */ import_react16.default.createElement("div", { className: "toast" }, /* @__PURE__ */ import_react16.default.createElement("span", null, toastMsg)));
 }
 
 // client/src/index.jsx
 var container = document.getElementById("root");
 if (container) {
   const root = (0, import_client.createRoot)(container);
-  root.render(/* @__PURE__ */ import_react16.default.createElement(App, null));
+  root.render(/* @__PURE__ */ import_react17.default.createElement(App, null));
 }
 /*! Bundled license information:
 

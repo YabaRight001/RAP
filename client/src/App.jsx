@@ -11,6 +11,7 @@ import { AdminPanel } from './components/AdminPanel.jsx';
 import { MondayTransferModal } from './components/MondayTransferModal.jsx';
 import { SendTransferModal } from './components/SendTransferModal.jsx';
 import { StatementModal } from './components/StatementModal.jsx';
+import { NotificationsModal } from './components/NotificationsModal.jsx';
 import { ScenarioWalkthrough } from './components/ScenarioWalkthrough.jsx';
 import { getStoredData, saveStoredData } from './mockData.js';
 
@@ -50,6 +51,7 @@ export default function App() {
   const [mondayModalOpen, setMondayModalOpen] = useState(false);
   const [sendTransferModalOpen, setSendTransferModalOpen] = useState(false);
   const [statementModalOpen, setStatementModalOpen] = useState(false);
+  const [notificationsModalOpen, setNotificationsModalOpen] = useState(false);
   const [walkthroughOpen, setWalkthroughOpen] = useState(false);
 
   // Apply theme to <html> element
@@ -260,6 +262,7 @@ export default function App() {
         <BottomNav
           activeTab={activeTab}
           setActiveTab={setActiveTab}
+          onOpenSendTransfer={() => setSendTransferModalOpen(true)}
           inPhone={viewMode === 'phone'}
         />
       )}
@@ -276,6 +279,8 @@ export default function App() {
         isLoggedIn={isLoggedIn}
         setIsLoggedIn={setIsLoggedIn}
         onOpenWalkthrough={() => setWalkthroughOpen(true)}
+        onOpenNotifications={() => setNotificationsModalOpen(true)}
+        onOpenSendTransfer={() => setSendTransferModalOpen(true)}
         isAdmin={isAdmin}
         setIsAdmin={setIsAdmin}
         theme={theme}
@@ -340,6 +345,11 @@ export default function App() {
         isOpen={statementModalOpen}
         onClose={() => setStatementModalOpen(false)}
         data={data}
+      />
+
+      <NotificationsModal
+        isOpen={notificationsModalOpen}
+        onClose={() => setNotificationsModalOpen(false)}
       />
 
       <ScenarioWalkthrough
