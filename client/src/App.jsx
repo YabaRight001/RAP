@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Header } from './components/Header.jsx';
 import { BottomNav } from './components/BottomNav.jsx';
 import { HomeTab } from './components/HomeTab.jsx';
+import { SkillsTab } from './components/SkillsTab.jsx';
 import { AccountTab } from './components/AccountTab.jsx';
 import { AffiliateTab } from './components/AffiliateTab.jsx';
 import { ReferTab } from './components/ReferTab.jsx';
@@ -19,6 +20,21 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('home');
   const [isAdmin, setIsAdmin] = useState(false);
   const [toastMsg, setToastMsg] = useState(null);
+
+  // Authentication State: Welcome should be after they sign in!
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    try {
+      return localStorage.getItem('rap-logged-in') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  useEffect(() => {
+    try {
+      localStorage.setItem('rap-logged-in', isLoggedIn ? 'true' : 'false');
+    } catch {}
+  }, [isLoggedIn]);
 
   // Theme: 'light' | 'dark'
   const [theme, setTheme] = useState(() => {
@@ -195,6 +211,8 @@ export default function App() {
             {activeTab === 'home' && (
               <HomeTab
                 data={data}
+                isLoggedIn={isLoggedIn}
+                setIsLoggedIn={setIsLoggedIn}
                 onOpenMondayTransfer={() => setMondayModalOpen(true)}
                 onOpenSendTransfer={() => setSendTransferModalOpen(true)}
                 onReachMilestone={handleReachMilestone}
@@ -202,12 +220,11 @@ export default function App() {
               />
             )}
 
-            {activeTab === 'account' && (
-              <AccountTab
+            {(activeTab === 'skills' || activeTab === 'account') && (
+              <SkillsTab
                 data={data}
-                onOpenMondayTransfer={() => setMondayModalOpen(true)}
+                setActiveTab={setActiveTab}
                 onOpenSendTransfer={() => setSendTransferModalOpen(true)}
-                onOpenStatement={() => setStatementModalOpen(true)}
               />
             )}
 
@@ -230,6 +247,8 @@ export default function App() {
                 isAdmin={isAdmin}
                 setIsAdmin={setIsAdmin}
                 setActiveTab={setActiveTab}
+                isLoggedIn={isLoggedIn}
+                setIsLoggedIn={setIsLoggedIn}
               />
             )}
           </>
@@ -254,6 +273,8 @@ export default function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         user={data?.user}
+        isLoggedIn={isLoggedIn}
+        setIsLoggedIn={setIsLoggedIn}
         onOpenWalkthrough={() => setWalkthroughOpen(true)}
         isAdmin={isAdmin}
         setIsAdmin={setIsAdmin}

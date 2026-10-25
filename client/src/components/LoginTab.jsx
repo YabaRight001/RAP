@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Icon } from '../icons.jsx';
 
-export function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
-  const [mode, setMode] = useState('profile'); // 'profile', 'signin', 'register'
+export function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab, isLoggedIn, setIsLoggedIn }) {
+  const [mode, setMode] = useState(isLoggedIn ? 'profile' : 'signin'); // 'profile', 'signin', 'register'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
@@ -15,20 +15,26 @@ export function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
 
   const handleSignIn = (e) => {
     e.preventDefault();
+    if (setIsLoggedIn) setIsLoggedIn(true);
     setMessage({ type: 'success', text: `Welcome back, ${user.fullName}!` });
+    if (window.confetti) window.confetti({ particleCount: 80, spread: 70 });
     setTimeout(() => {
       setMessage(null);
       setMode('profile');
-    }, 1500);
+      setActiveTab('home');
+    }, 1200);
   };
 
   const handleRegister = (e) => {
     e.preventDefault();
+    if (setIsLoggedIn) setIsLoggedIn(true);
     setMessage({ type: 'success', text: 'Registration completed! Account is verified.' });
+    if (window.confetti) window.confetti({ particleCount: 100, spread: 70 });
     setTimeout(() => {
       setMessage(null);
       setMode('profile');
-    }, 1500);
+      setActiveTab('home');
+    }, 1200);
   };
 
   return (
@@ -59,10 +65,20 @@ export function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
 
             <div className="row" style={{ marginTop: '16px', gap: '8px' }}>
               <button
+                onClick={() => {
+                  if (setIsLoggedIn) setIsLoggedIn(false);
+                  setMode('signin');
+                }}
+                className="btn line sm"
+                style={{ color: '#d92d20', borderColor: '#fca5a5' }}
+              >
+                Sign Out
+              </button>
+              <button
                 onClick={() => setMode('signin')}
                 className="btn line sm"
               >
-                Sign in to another account
+                Switch Account
               </button>
               <button
                 onClick={() => setIsAdmin(!isAdmin)}

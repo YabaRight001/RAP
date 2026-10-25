@@ -7242,11 +7242,11 @@ var require_client = __commonJS({
 });
 
 // client/src/index.jsx
-var import_react15 = __toESM(require_react(), 1);
+var import_react16 = __toESM(require_react(), 1);
 var import_client = __toESM(require_client(), 1);
 
 // client/src/App.jsx
-var import_react14 = __toESM(require_react(), 1);
+var import_react15 = __toESM(require_react(), 1);
 
 // client/src/components/Header.jsx
 var import_react2 = __toESM(require_react(), 1);
@@ -7257,6 +7257,15 @@ function Icon({ name, className = "w-5 h-5", ...props }) {
   switch (name) {
     case "home":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" }));
+    case "skills":
+    case "graduation-cap":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5" }));
+    case "code":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" }));
+    case "send":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 19l9 2-9-18-9 18 9-2zm0 0v-8" }));
+    case "bank":
+      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11M20 10v11M8 14v4M12 14v4M16 14v4" }));
     case "account":
     case "credit-card":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" }));
@@ -7290,8 +7299,6 @@ function Icon({ name, className = "w-5 h-5", ...props }) {
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" }));
     case "briefcase":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" }));
-    case "graduation-cap":
-      return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5" }));
     case "calendar":
       return /* @__PURE__ */ import_react.default.createElement("svg", { className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: 2, ...props }, /* @__PURE__ */ import_react.default.createElement("path", { strokeLinecap: "round", strokeLinejoin: "round", d: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" }));
     case "download":
@@ -7324,6 +7331,8 @@ function Header({
   activeTab,
   setActiveTab,
   user,
+  isLoggedIn,
+  setIsLoggedIn,
   onOpenWalkthrough,
   isAdmin,
   setIsAdmin,
@@ -7339,10 +7348,10 @@ function Header({
   const toggleViewMode = () => {
     setViewMode(viewMode === "phone" ? "desktop" : "phone");
   };
-  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker", "aria-hidden": "true" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker-inner" }, /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4A1} SKILLS \u2022 OPPORTUNITY \u2022 INCOME"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS NOW"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR GROWTH"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F30D} YOUTH EMPOWERMENT \u2014 RISE AND PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} FULL BANKING \u2022 TRANSFERS \u2022 WITHDRAWALS"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4A1} SKILLS \u2022 OPPORTUNITY \u2022 INCOME"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS NOW"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR GROWTH"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F30D} YOUTH EMPOWERMENT \u2014 RISE AND PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} FULL BANKING \u2022 TRANSFERS \u2022 WITHDRAWALS"))), /* @__PURE__ */ import_react2.default.createElement("header", { className: "top" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "12px" } }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "#home", onClick: (e) => {
+  return /* @__PURE__ */ import_react2.default.createElement(import_react2.default.Fragment, null, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker", "aria-hidden": "true" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "ticker-inner" }, /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F3E6} RAP BANK \u2022 BANK THAT HELPS YOU PROSPER"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4BB} IN-DEMAND TECH SKILLS & PERSONAL DEVELOPMENT"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4C8} AFFILIATE EARNINGS \u2014 70% YOURS TODAY"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F512} 30% LOCKED SAVINGS \u2014 1 YEAR WEALTH BUILDING"), /* @__PURE__ */ import_react2.default.createElement("span", null, "\u{1F4B3} SEAMLESS BANK TRANSFERS & PAYOUTS"))), /* @__PURE__ */ import_react2.default.createElement("header", { className: "top" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react2.default.createElement("div", { className: "row", style: { gap: "12px", alignItems: "center" } }, /* @__PURE__ */ import_react2.default.createElement("a", { href: "#home", onClick: (e) => {
     e.preventDefault();
     setActiveTab("home");
-  }, "aria-label": "RAP Home" }, /* @__PURE__ */ import_react2.default.createElement("img", { src: "/img/logo.png", alt: "RAP \u2013 Rise and Prosper", className: "logo-img" }))), /* @__PURE__ */ import_react2.default.createElement("nav", { className: "dnav" }, /* @__PURE__ */ import_react2.default.createElement(
+  }, "aria-label": "RAP Bank Home", style: { display: "flex", alignItems: "center" } }, /* @__PURE__ */ import_react2.default.createElement("img", { src: "/img/logo.png", alt: "RAP Bank", className: "logo-img" }))), /* @__PURE__ */ import_react2.default.createElement("nav", { className: "dnav" }, /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("home"),
@@ -7352,10 +7361,10 @@ function Header({
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
-      onClick: () => setActiveTab("account"),
-      className: activeTab === "account" ? "on" : ""
+      onClick: () => setActiveTab("skills"),
+      className: activeTab === "skills" ? "on" : ""
     },
-    "Account"
+    "Skills"
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
@@ -7408,6 +7417,24 @@ function Header({
     },
     /* @__PURE__ */ import_react2.default.createElement(Icon, { name: "sparkles", style: { width: "15px", height: "15px" } }),
     /* @__PURE__ */ import_react2.default.createElement("span", null, "19 Steps")
+  ), isLoggedIn ? /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: () => setIsLoggedIn(false),
+      className: "btn line sm",
+      style: { fontSize: "13px" },
+      title: "Sign out of your account"
+    },
+    "Sign Out"
+  ) : /* @__PURE__ */ import_react2.default.createElement(
+    "button",
+    {
+      onClick: () => setActiveTab("login"),
+      className: "btn pri sm",
+      style: { fontSize: "13px" },
+      title: "Sign into your RAP Bank account"
+    },
+    "Sign In"
   ), /* @__PURE__ */ import_react2.default.createElement(
     "button",
     {
@@ -7424,9 +7451,9 @@ var import_react3 = __toESM(require_react(), 1);
 function BottomNav({ activeTab, setActiveTab, inPhone }) {
   const tabs = [
     { id: "home", label: "Home", icon: "home" },
-    { id: "account", label: "Account", icon: "account" },
+    { id: "skills", label: "Skills", icon: "skills" },
     { id: "affiliate", label: "Affiliate", icon: "affiliate" },
-    { id: "login", label: "Login", icon: "login" },
+    { id: "login", label: "Profile", icon: "login" },
     { id: "refer", label: "Refer", icon: "refer" }
   ];
   return /* @__PURE__ */ import_react3.default.createElement(
@@ -7476,6 +7503,8 @@ function BottomNav({ activeTab, setActiveTab, inPhone }) {
 var import_react4 = __toESM(require_react(), 1);
 function HomeTab({
   data,
+  isLoggedIn,
+  setIsLoggedIn,
   onOpenMondayTransfer,
   onOpenSendTransfer,
   onReachMilestone,
@@ -7484,15 +7513,28 @@ function HomeTab({
   const [carouselIndex, setCarouselIndex] = (0, import_react4.useState)(0);
   const trackRef = (0, import_react4.useRef)(null);
   const flyers = [
-    { src: "/img/flyer-2.jpg", alt: "Create a RAP account today" },
-    { src: "/img/flyer-1.jpg", alt: "Bank that helps you prosper" }
+    {
+      src: "/img/flyer-3.jpg",
+      alt: "Earn with RAP Bank \u2014 Learn in-demand skills, Get real opportunities, Earn with RAP Bank",
+      tag: "Skills & Earning"
+    },
+    {
+      src: "/img/flyer-2.jpg",
+      alt: "Create a RAP account today \u2014 Youth empowerment",
+      tag: "Youth Banking"
+    },
+    {
+      src: "/img/flyer-1.jpg",
+      alt: "Bank that helps you prosper \u2014 70/30 Wealth Creation Formula",
+      tag: "Wealth Building"
+    }
   ];
   (0, import_react4.useEffect)(() => {
     const timer = setInterval(() => {
-      setCarouselIndex((prev) => prev === 0 ? 1 : 0);
-    }, 5e3);
+      setCarouselIndex((prev) => (prev + 1) % flyers.length);
+    }, 4500);
     return () => clearInterval(timer);
-  }, []);
+  }, [flyers.length]);
   (0, import_react4.useEffect)(() => {
     if (trackRef.current) {
       trackRef.current.scrollTo({
@@ -7501,71 +7543,277 @@ function HomeTab({
       });
     }
   }, [carouselIndex]);
-  if (!data) return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap sec" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "note" }, "Loading RAP..."));
+  if (!data) return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap sec" }, /* @__PURE__ */ import_react4.default.createElement("p", { className: "note" }, "Loading RAP Bank..."));
   const { user, partnerBank, balances, affiliateStats } = data;
+  const quickActions = [
+    {
+      id: "transfer",
+      label: "Send Transfer",
+      icon: "send",
+      color: "#1d7be8",
+      bg: "rgba(29, 123, 232, 0.12)",
+      onClick: onOpenSendTransfer
+    },
+    {
+      id: "skills",
+      label: "Tech Skills",
+      icon: "skills",
+      color: "#1fa640",
+      bg: "rgba(31, 166, 64, 0.12)",
+      onClick: () => setActiveTab("skills")
+    },
+    {
+      id: "savings",
+      label: "30% Savings",
+      icon: "lock",
+      color: "#a15c07",
+      bg: "rgba(245, 158, 11, 0.14)",
+      onClick: onOpenMondayTransfer
+    },
+    {
+      id: "affiliate",
+      label: "Affiliate (70%)",
+      icon: "trending-up",
+      color: "#8b5cf6",
+      bg: "rgba(139, 92, 246, 0.12)",
+      onClick: () => setActiveTab("affiliate")
+    },
+    {
+      id: "refer",
+      label: "Refer & Earn",
+      icon: "refer",
+      color: "#0ea5e9",
+      bg: "rgba(14, 165, 233, 0.12)",
+      onClick: () => setActiveTab("refer")
+    }
+  ];
   const feats = [
     {
-      title: "Open a Youth Account",
-      desc: "Start your financial journey with an authorized partner account.",
-      icon: "account"
+      title: "Bank Account for Youth",
+      desc: "Instant NIBSS-connected partner account for transfers and daily banking.",
+      icon: "bank"
     },
     {
-      title: "Access Workforce Training",
-      desc: "Gain in-demand digital, finance, and entrepreneurship skills.",
-      icon: "graduation-cap"
+      title: "In-Demand Tech Skills",
+      desc: "Gain coding, AI, UI/UX, and personal development workforce training.",
+      icon: "skills"
     },
     {
-      title: "Explore Earning Opportunities",
-      desc: "Turn your network and skills into daily sustainable income.",
+      title: "70/30 Wealth Engine",
+      desc: "70% affiliate commissions available today; 30% locked in 1-year wealth savings.",
       icon: "trending-up"
     },
     {
-      title: "Build a Brighter Future",
-      desc: "More skills. More opportunities. More prosperity for you.",
+      title: "Incubator Capital",
+      desc: "Reach 25 qualifying affiliates to unlock startup grants and venture incubation.",
       icon: "sparkles"
     }
   ];
-  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "strip" }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("b", null, "Welcome back, ", user.fullName), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note", style: { marginTop: "2px" } }, "Available ", /* @__PURE__ */ import_react4.default.createElement("b", null, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString()), " \xB7 Locked Savings ", /* @__PURE__ */ import_react4.default.createElement("b", null, "\u20A6", balances.lockedSavingsBalance.toLocaleString()))), /* @__PURE__ */ import_react4.default.createElement(
-    "button",
+  return /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap", style: { paddingTop: "16px" } }, /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "20px" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "car", style: { maxWidth: "100%", borderRadius: "20px", position: "relative" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "track", ref: trackRef }, flyers.map((f, idx) => /* @__PURE__ */ import_react4.default.createElement(
+    "a",
     {
-      onClick: () => setActiveTab("account"),
-      className: "btn sm pri"
+      key: idx,
+      href: "#skills",
+      onClick: (e) => {
+        e.preventDefault();
+        if (idx === 0) setActiveTab("skills");
+        else if (idx === 1) setActiveTab(isLoggedIn ? "home" : "login");
+        else setActiveTab("affiliate");
+      },
+      style: { position: "relative" }
     },
-    "Open my account"
-  )), /* @__PURE__ */ import_react4.default.createElement("section", { className: "hero2" }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "Youth banking \xB7 Skills \xB7 Opportunity \xB7 Real growth"), /* @__PURE__ */ import_react4.default.createElement("h1", null, "Bank that helps you ", /* @__PURE__ */ import_react4.default.createElement("em", null, "prosper")), /* @__PURE__ */ import_react4.default.createElement("p", { className: "lead" }, "Build your skills. Grow your income. Secure your future."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "row" }, /* @__PURE__ */ import_react4.default.createElement(
-    "button",
-    {
-      onClick: () => setActiveTab("account"),
-      className: "btn pri"
-    },
-    "Go to my account"
-  ), /* @__PURE__ */ import_react4.default.createElement(
-    "button",
-    {
-      onClick: () => setActiveTab("affiliate"),
-      className: "btn line"
-    },
-    "Affiliate hub"
-  )), /* @__PURE__ */ import_react4.default.createElement("div", { className: "chips", style: { marginTop: "20px" } }, /* @__PURE__ */ import_react4.default.createElement("button", { onClick: () => setActiveTab("account") }, "Account"), /* @__PURE__ */ import_react4.default.createElement("button", { onClick: () => setActiveTab("affiliate") }, "Affiliate"), /* @__PURE__ */ import_react4.default.createElement("button", { onClick: () => setActiveTab("refer") }, "Refer & earn"), /* @__PURE__ */ import_react4.default.createElement("a", { href: "#how-it-works" }, "How it works"))), /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "car" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "track", ref: trackRef }, flyers.map((f, idx) => /* @__PURE__ */ import_react4.default.createElement("a", { key: idx, href: "#affiliate", onClick: (e) => {
-    e.preventDefault();
-    setActiveTab("affiliate");
-  } }, /* @__PURE__ */ import_react4.default.createElement("img", { src: f.src, alt: f.alt })))), /* @__PURE__ */ import_react4.default.createElement(
+    /* @__PURE__ */ import_react4.default.createElement(
+      "img",
+      {
+        src: f.src,
+        alt: f.alt,
+        style: {
+          width: "100%",
+          maxHeight: "380px",
+          objectFit: "cover",
+          objectPosition: "top",
+          display: "block"
+        }
+      }
+    )
+  ))), /* @__PURE__ */ import_react4.default.createElement(
     "button",
     {
       className: "cbtn p",
-      "aria-label": "Previous",
-      onClick: () => setCarouselIndex((prev) => prev === 0 ? 1 : 0)
+      "aria-label": "Previous Banner",
+      onClick: () => setCarouselIndex((prev) => prev === 0 ? flyers.length - 1 : prev - 1)
     },
     "\u2039"
   ), /* @__PURE__ */ import_react4.default.createElement(
     "button",
     {
       className: "cbtn n",
-      "aria-label": "Next",
-      onClick: () => setCarouselIndex((prev) => prev === 0 ? 1 : 0)
+      "aria-label": "Next Banner",
+      onClick: () => setCarouselIndex((prev) => (prev + 1) % flyers.length)
     },
     "\u203A"
-  )))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec", style: { paddingBottom: "10px" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { borderColor: "var(--blue)", background: "linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginBottom: "10px" } }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("span", { className: "badge", style: { borderColor: "var(--blue)", color: "var(--blue)" } }, "Monday Payout Feature"), /* @__PURE__ */ import_react4.default.createElement("h3", { style: { marginTop: "6px" } }, "Weekly 70% Affiliate Payout")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b", style: { fontSize: "28px" } }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString())), /* @__PURE__ */ import_react4.default.createElement(
+  ), /* @__PURE__ */ import_react4.default.createElement(
+    "div",
+    {
+      style: {
+        position: "absolute",
+        bottom: "12px",
+        left: 0,
+        right: 0,
+        display: "flex",
+        justifyContent: "center",
+        gap: "8px",
+        zIndex: 10
+      }
+    },
+    flyers.map((_, i) => /* @__PURE__ */ import_react4.default.createElement(
+      "button",
+      {
+        key: i,
+        onClick: () => setCarouselIndex(i),
+        style: {
+          width: carouselIndex === i ? "24px" : "8px",
+          height: "8px",
+          borderRadius: "99px",
+          border: 0,
+          padding: 0,
+          background: carouselIndex === i ? "#ffffff" : "rgba(255, 255, 255, 0.5)",
+          cursor: "pointer",
+          transition: "all 0.3s ease",
+          boxShadow: "0 2px 4px rgba(0,0,0,0.3)"
+        },
+        "aria-label": `Go to slide ${i + 1}`
+      }
+    ))
+  ))), /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "22px" } }, /* @__PURE__ */ import_react4.default.createElement(
+    "div",
+    {
+      className: "card",
+      style: {
+        padding: "14px 16px",
+        background: "var(--card-bg)",
+        borderRadius: "18px",
+        boxShadow: "var(--sh)"
+      }
+    },
+    /* @__PURE__ */ import_react4.default.createElement(
+      "div",
+      {
+        style: {
+          display: "grid",
+          gridTemplateColumns: "repeat(5, 1fr)",
+          gap: "8px",
+          textAlign: "center"
+        }
+      },
+      quickActions.map((act) => /* @__PURE__ */ import_react4.default.createElement(
+        "button",
+        {
+          key: act.id,
+          onClick: act.onClick,
+          style: {
+            background: "transparent",
+            border: 0,
+            cursor: "pointer",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: "6px",
+            padding: "6px 2px",
+            borderRadius: "12px",
+            transition: "transform 0.15s ease"
+          }
+        },
+        /* @__PURE__ */ import_react4.default.createElement(
+          "div",
+          {
+            style: {
+              width: "46px",
+              height: "46px",
+              borderRadius: "14px",
+              background: act.bg,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: act.color
+            }
+          },
+          /* @__PURE__ */ import_react4.default.createElement(Icon, { name: act.icon, style: { width: "22px", height: "22px" } })
+        ),
+        /* @__PURE__ */ import_react4.default.createElement(
+          "span",
+          {
+            style: {
+              fontSize: "11px",
+              fontWeight: "700",
+              color: "var(--ink)",
+              lineHeight: "1.2"
+            }
+          },
+          act.label
+        )
+      ))
+    )
+  )), isLoggedIn ? /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "24px" } }, /* @__PURE__ */ import_react4.default.createElement(
+    "div",
+    {
+      className: "card",
+      style: {
+        borderColor: "var(--green)",
+        background: "linear-gradient(135deg, rgba(31, 166, 64, 0.08) 0%, rgba(29, 123, 232, 0.08) 100%)",
+        padding: "18px 20px",
+        borderRadius: "20px"
+      }
+    },
+    /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "10px" } }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { gap: "8px", alignItems: "center" } }, /* @__PURE__ */ import_react4.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)", fontWeight: "800" } }, "Active Banking Session"), /* @__PURE__ */ import_react4.default.createElement("span", { className: "badge" }, user.membershipTier)), /* @__PURE__ */ import_react4.default.createElement("h2", { style: { fontSize: "22px", marginTop: "6px" } }, "Welcome back, ", user.fullName), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note", style: { marginTop: "2px", fontSize: "13px" } }, partnerBank.partnerBankName, " \u2022 Acc: ", /* @__PURE__ */ import_react4.default.createElement("b", null, partnerBank.accountNumber))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react4.default.createElement("button", { onClick: onOpenSendTransfer, className: "btn pri sm" }, /* @__PURE__ */ import_react4.default.createElement(Icon, { name: "send", style: { width: "15px", height: "15px" } }), /* @__PURE__ */ import_react4.default.createElement("span", null, "Send Money")), /* @__PURE__ */ import_react4.default.createElement("button", { onClick: () => setActiveTab("skills"), className: "btn line sm" }, /* @__PURE__ */ import_react4.default.createElement("span", null, "My Skills")))),
+    /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid", style: { marginTop: "16px", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))" } }, /* @__PURE__ */ import_react4.default.createElement("div", { style: { background: "var(--card-bg)", padding: "14px", borderRadius: "14px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Available to Transfer (70%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b", style: { fontSize: "24px" } }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement(
+      "button",
+      {
+        onClick: onOpenMondayTransfer,
+        className: "btn pri sm",
+        style: { marginTop: "8px", width: "100%", fontSize: "12px", padding: "6px" },
+        disabled: balances.earningsAvailableForTransfer <= 0
+      },
+      "Transfer to Bank"
+    )), /* @__PURE__ */ import_react4.default.createElement("div", { style: { background: "var(--card-bg)", padding: "14px", borderRadius: "14px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Locked Wealth Savings (30%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g", style: { fontSize: "24px" } }, "\u20A6", balances.lockedSavingsBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note", style: { marginTop: "8px", fontSize: "12px" } }, "\u{1F512} 1-Year Compulsory Vault")), /* @__PURE__ */ import_react4.default.createElement("div", { style: { background: "var(--card-bg)", padding: "14px", borderRadius: "14px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Bank Account Balance"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v", style: { fontSize: "24px" } }, "\u20A6", balances.actualBankBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note", style: { marginTop: "8px", fontSize: "12px" } }, "Ready for debit card & withdrawals")))
+  )) : (
+    /* Guest / Pre-Sign In Card */
+    /* @__PURE__ */ import_react4.default.createElement("section", { style: { marginBottom: "24px" } }, /* @__PURE__ */ import_react4.default.createElement(
+      "div",
+      {
+        className: "card",
+        style: {
+          padding: "22px",
+          borderRadius: "20px",
+          background: "linear-gradient(135deg, rgba(29, 123, 232, 0.05) 0%, rgba(31, 166, 64, 0.05) 100%)",
+          textAlign: "center"
+        }
+      },
+      /* @__PURE__ */ import_react4.default.createElement("span", { className: "badge", style: { color: "var(--blue)", borderColor: "var(--blue)" } }, "Official Bank & Youth Skills Platform"),
+      /* @__PURE__ */ import_react4.default.createElement("h2", { style: { fontSize: "24px", marginTop: "10px" } }, "Bank that helps you ", /* @__PURE__ */ import_react4.default.createElement("span", { style: { color: "var(--green)" } }, "prosper")),
+      /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { maxWidth: "520px", margin: "8px auto 18px", fontSize: "14px", lineHeight: "1.6" } }, "Open your free partner bank account. Gain in-demand digital and tech skills. Earn sustainable affiliate income with our proven 70/30 wealth formula."),
+      /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { justifyContent: "center", gap: "10px" } }, /* @__PURE__ */ import_react4.default.createElement(
+        "button",
+        {
+          onClick: () => {
+            setIsLoggedIn(true);
+            if (window.confetti) window.confetti({ particleCount: 70, spread: 60 });
+          },
+          className: "btn pri",
+          style: { padding: "12px 24px", fontSize: "14.5px" }
+        },
+        "Sign In to Account"
+      ), /* @__PURE__ */ import_react4.default.createElement(
+        "button",
+        {
+          onClick: () => setActiveTab("skills"),
+          className: "btn line",
+          style: { padding: "12px 24px", fontSize: "14.5px" }
+        },
+        "Explore Tech Skills"
+      ))
+    ))
+  ), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec", style: { paddingBottom: "10px" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { borderColor: "var(--blue)", background: "linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginBottom: "10px", flexWrap: "wrap", gap: "8px" } }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("span", { className: "badge", style: { borderColor: "var(--blue)", color: "var(--blue)" } }, "Monday Payout Engine"), /* @__PURE__ */ import_react4.default.createElement("h3", { style: { marginTop: "6px" } }, "Weekly 70% Affiliate Payout")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b", style: { fontSize: "28px" } }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString())), /* @__PURE__ */ import_react4.default.createElement(
     "button",
     {
       onClick: onOpenMondayTransfer,
@@ -7573,7 +7821,22 @@ function HomeTab({
       disabled: balances.earningsAvailableForTransfer <= 0
     },
     "TRANSFER MY AVAILABLE EARNINGS"
-  ), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { textAlign: "center", marginTop: "10px" } }, "70% of your eligible affiliate income is available for transfer. The remaining 30% is reserved as one-year locked savings."))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "Financial Balance Architecture"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "10 Distinct Platform Balances"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Separated directly in the financial engine. Never combined into a misleading total."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "1. Actual Bank Balance"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.actualBankBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, partnerBank.partnerBankName)), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "2. Available Bank Balance"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A6", balances.availableBankBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Ready for cards & transfers")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "3. Total Affiliate Earned"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalAffiliateIncomeEarned.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Gross cumulative earnings")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "4. Pending Earnings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v", style: { color: "var(--warn)" } }, "\u20A6", balances.pendingAffiliateEarnings.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Awaiting verification")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "5. Approved Earnings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.approvedAffiliateEarnings.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Cleared commissions")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { border: "1.5px solid var(--blue)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k", style: { color: "var(--blue)", fontWeight: "700" } }, "6. 70% Transferable"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b" }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Available for Monday payout")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { border: "1.5px solid var(--green)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k", style: { color: "var(--green)", fontWeight: "700" } }, "7. 30% Locked Savings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A6", balances.lockedSavingsBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "1-Year lock period")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "8. Matures < 30 Days"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.savingsApproachingMaturity.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Upcoming release")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "9. Total Withdrawals"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalWithdrawals.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Completed payouts")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "10. Total Transfers"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalTransfers.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Bank transfers sent")))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "One account"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "Bank. Learn. Grow."), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "One account, endless opportunities."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid4" }, feats.map((f, i) => /* @__PURE__ */ import_react4.default.createElement("div", { key: i, className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "ico" }, /* @__PURE__ */ import_react4.default.createElement(Icon, { name: f.icon, style: { width: "24px", height: "24px", stroke: "#fff" } })), /* @__PURE__ */ import_react4.default.createElement("h3", null, f.title), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, f.desc))))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec", id: "how-it-works" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "soft" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "How your earnings work"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "70% to use. 30% saved for you."), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Every approved affiliate earning is split automatically. Example: \u20A6100,000 earned."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid4" }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Available to transfer (70%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b" }, "\u20A670,000")), /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Locked savings for 1 year (30%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A630,000"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "split3" }, /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: "70%", background: "#1d7be8" } }), /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: "30%", background: "#1fa640" } })), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { marginTop: "10px" } }, "Each savings amount has its own maturity date, and it can't be withdrawn early. This is an illustration, not a promise of income."))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "Grow with referrals"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "Reach 25 qualifying affiliates"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Qualifying means verified and approved, not just a link click. At 25 you unlock a higher earning tier (20%), a loan assessment, and the RAP business incubator."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react4.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react4.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react4.default.createElement(
+  ), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { textAlign: "center", marginTop: "10px" } }, "70% of your eligible affiliate income is available for transfer. The remaining 30% is reserved as one-year locked savings."))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "Financial Balance Architecture"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "10 Distinct Platform Balances"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Separated directly in the financial engine. Never combined into a misleading total."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "1. Actual Bank Balance"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.actualBankBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, partnerBank.partnerBankName)), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "2. Available Bank Balance"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A6", balances.availableBankBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Ready for cards & transfers")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "3. Total Affiliate Earned"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalAffiliateIncomeEarned.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Gross cumulative earnings")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "4. Pending Earnings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v", style: { color: "var(--warn)" } }, "\u20A6", balances.pendingAffiliateEarnings.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Awaiting verification")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "5. Approved Earnings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.approvedAffiliateEarnings.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Cleared commissions")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { border: "1.5px solid var(--blue)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k", style: { color: "var(--blue)", fontWeight: "700" } }, "6. 70% Transferable"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b" }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Available for Monday payout")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card", style: { border: "1.5px solid var(--green)" } }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k", style: { color: "var(--green)", fontWeight: "700" } }, "7. 30% Locked Savings"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A6", balances.lockedSavingsBalance.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "1-Year lock period")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "8. Matures < 30 Days"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.savingsApproachingMaturity.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Upcoming release")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "9. Total Withdrawals"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalWithdrawals.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Completed payouts")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "10. Total Transfers"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v" }, "\u20A6", balances.totalTransfers.toLocaleString()), /* @__PURE__ */ import_react4.default.createElement("div", { className: "note" }, "Bank transfers sent")))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "All-in-one Youth Platform"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "Bank. Learn. Grow."), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Personal development, tech skills, and financial empowerment."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid4" }, feats.map((f, i) => /* @__PURE__ */ import_react4.default.createElement(
+    "div",
+    {
+      key: i,
+      className: "card",
+      style: { cursor: "pointer" },
+      onClick: () => {
+        if (f.icon === "skills") setActiveTab("skills");
+        else if (f.icon === "trending-up") setActiveTab("affiliate");
+        else if (f.icon === "sparkles") setActiveTab("refer");
+      }
+    },
+    /* @__PURE__ */ import_react4.default.createElement("div", { className: "ico" }, /* @__PURE__ */ import_react4.default.createElement(Icon, { name: f.icon, style: { width: "24px", height: "24px", stroke: "#fff" } })),
+    /* @__PURE__ */ import_react4.default.createElement("h3", null, f.title),
+    /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, f.desc)
+  )))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec", id: "how-it-works" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "soft" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "How your earnings work"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "70% to use today. 30% saved for your future."), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Every approved affiliate earning is split automatically. Example: \u20A6100,000 earned."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "grid4" }, /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Available to transfer (70%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v b" }, "\u20A670,000")), /* @__PURE__ */ import_react4.default.createElement("div", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "k" }, "Locked savings for 1 year (30%)"), /* @__PURE__ */ import_react4.default.createElement("div", { className: "v g" }, "\u20A630,000"))), /* @__PURE__ */ import_react4.default.createElement("div", { className: "split3" }, /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: "70%", background: "#1d7be8" } }), /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: "30%", background: "#1fa640" } })), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { marginTop: "10px" } }, "Each savings amount has its own maturity date, and it cannot be withdrawn early. This guarantees disciplined wealth creation for every Nigerian youth."))), /* @__PURE__ */ import_react4.default.createElement("section", { className: "sec" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "eyebrow" }, "Grow with referrals"), /* @__PURE__ */ import_react4.default.createElement("h2", null, "Reach 25 qualifying affiliates"), /* @__PURE__ */ import_react4.default.createElement("p", { className: "sub" }, "Qualifying means verified and approved bank accounts. At 25 you unlock a higher earning tier (20%), a business loan assessment, and the RAP incubator."), /* @__PURE__ */ import_react4.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react4.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react4.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react4.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react4.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react4.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react4.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked")), /* @__PURE__ */ import_react4.default.createElement("div", { className: "row", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react4.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("refer"),
@@ -7587,86 +7850,352 @@ function HomeTab({
       className: "btn pri sm"
     },
     "Simulate 25 Affiliates Milestone"
-  )))), /* @__PURE__ */ import_react4.default.createElement("footer", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap" }, /* @__PURE__ */ import_react4.default.createElement("img", { src: "/img/logo.png", alt: "RAP", style: { height: "34px" } }), /* @__PURE__ */ import_react4.default.createElement("span", null, "\xA9 2026 RAP \u2013 Rise and Prosper. Bank accounts are provided through our approved banking partner."))));
+  )))), /* @__PURE__ */ import_react4.default.createElement("footer", null, /* @__PURE__ */ import_react4.default.createElement("div", { className: "wrap", style: { display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" } }, /* @__PURE__ */ import_react4.default.createElement("img", { src: "/img/logo.png", alt: "RAP Bank", style: { height: "36px" } }), /* @__PURE__ */ import_react4.default.createElement("span", { style: { fontSize: "13px", color: "var(--mute)" } }, "\xA9 2026 RAP Bank \u2013 Rise and Prosper. Bank accounts provided through our approved CBN partner."))));
+}
+
+// client/src/components/SkillsTab.jsx
+var import_react5 = __toESM(require_react(), 1);
+function SkillsTab({ data, setActiveTab, onOpenSendTransfer }) {
+  const [selectedCategory, setSelectedCategory] = (0, import_react5.useState)("all");
+  const [activeCourseModal, setActiveCourseModal] = (0, import_react5.useState)(null);
+  const [enrolledCourses, setEnrolledCourses] = (0, import_react5.useState)({
+    "c-web": { progress: 75, completed: false },
+    "c-fin": { progress: 100, completed: true },
+    "c-mobile": { progress: 35, completed: false },
+    "c-sales": { progress: 80, completed: false }
+  });
+  const [toastMsg, setToastMsg] = (0, import_react5.useState)(null);
+  const categories = [
+    { id: "all", label: "All Categories" },
+    { id: "tech", label: "\u{1F4BB} Tech Skills" },
+    { id: "personal", label: "\u{1F9E0} Personal Dev" },
+    { id: "affiliate", label: "\u{1F4C8} Affiliate & Sales" },
+    { id: "certified", label: "\u{1F3C6} My Certifications" }
+  ];
+  const courses = [
+    {
+      id: "c-web",
+      category: "tech",
+      title: "Full-Stack Web & AI App Development",
+      badge: "High In Demand",
+      description: "Master React, Node.js, and modern AI API integration. Build bank-grade web applications from Nigeria for global clients.",
+      duration: "8 Weeks \u2022 24 Lessons",
+      level: "Beginner to Intermediate",
+      instructor: "Tunde Adeleke (Senior Lead Engineer)",
+      tools: ["React", "JavaScript", "Node.js", "PostgreSQL", "AI APIs"],
+      modules: [
+        "Module 1: Modern JavaScript & ES6 Fundamentals",
+        "Module 2: React State, Components & Hooks Architecture",
+        "Module 3: Full-Stack APIs & Bank-Grade Security",
+        "Module 4: Deploying on Cloud & Building with AI"
+      ]
+    },
+    {
+      id: "c-mobile",
+      category: "tech",
+      title: "Mobile App Engineering (React Native & Flutter)",
+      badge: "Trending Tech",
+      description: "Create lightning-fast Android & iOS fintech applications. Learn biometric auth, local storage, push notifications, and payment gateways.",
+      duration: "6 Weeks \u2022 18 Lessons",
+      level: "Intermediate",
+      instructor: "Chisom Obi (Mobile Architecture Specialist)",
+      tools: ["React Native", "Flutter", "Expo", "Fintech APIs"],
+      modules: [
+        "Module 1: Mobile UI/UX & Responsive Layouts",
+        "Module 2: Biometrics, FaceID & State Management",
+        "Module 3: Payment Gateway & Push Notifications",
+        "Module 4: Publishing to Google Play Store & iOS TestFlight"
+      ]
+    },
+    {
+      id: "c-uiux",
+      category: "tech",
+      title: "Fintech UI/UX & Product Design System",
+      badge: "Creative Tech",
+      description: "Design mobile banking and digital wallet interfaces using Figma. Master micro-animations, user flows, and Nigerian design patterns.",
+      duration: "5 Weeks \u2022 15 Lessons",
+      level: "All Levels",
+      instructor: "Amaka Eze (Product Designer)",
+      tools: ["Figma", "Prototyping", "Design Systems", "Design Tokens"],
+      modules: [
+        "Module 1: Fundamentals of Fintech User Psychology",
+        "Module 2: Building Scalable Design Systems in Figma",
+        "Module 3: High-Fidelity Interactive Wireframing",
+        "Module 4: Design Handoff & Developer Collaboration"
+      ]
+    },
+    {
+      id: "c-data",
+      category: "tech",
+      title: "Data Analytics & AI Automation for Business",
+      badge: "Future of Work",
+      description: "Learn SQL, Python data manipulation, automated reporting, and prompt engineering to multiply your daily work efficiency.",
+      duration: "6 Weeks \u2022 20 Lessons",
+      level: "Beginner Friendly",
+      instructor: "Ibrahim Danjuma (Data Science Lead)",
+      tools: ["Python", "SQL", "Excel Advanced", "OpenAI"],
+      modules: [
+        "Module 1: Data Wrangling & Excel Advanced Analytics",
+        "Module 2: SQL Databases & Financial Querying",
+        "Module 3: Python for Automated Data Scripts",
+        "Module 4: AI Prompt Engineering for Business Growth"
+      ]
+    },
+    {
+      id: "c-fin",
+      category: "personal",
+      title: "Financial Literacy & Wealth Preservation (70/30 Rule)",
+      badge: "Certified Essential",
+      description: "Understand money, inflation protection in Nigeria, compulsory savings discipline, compound interest, and personal budgeting.",
+      duration: "3 Weeks \u2022 12 Lessons",
+      level: "Foundation",
+      instructor: "Dr. Ngozi Balogun (Economist & Wealth Advisor)",
+      tools: ["70/30 Wealth Formula", "Budgeting Tool", "Compound Growth"],
+      modules: [
+        "Module 1: The Psychology of Money & Saving in Naira",
+        "Module 2: The RAP 70/30 Compulsory Savings Engine",
+        "Module 3: Hedging Against Inflation & Currency Devaluation",
+        "Module 4: Creating Long-Term Generational Prosperity"
+      ]
+    },
+    {
+      id: "c-sales",
+      category: "affiliate",
+      title: "High-Converting Affiliate Marketing & WhatsApp Funnels",
+      badge: "Direct Monetization",
+      description: "Turn your WhatsApp status and network into a daily income engine. Step-by-step scripts and tactics to hit your 25 qualifying affiliates.",
+      duration: "4 Weeks \u2022 14 Lessons",
+      level: "All Levels",
+      instructor: "Emeka Chukwu (Top Growth Affiliate)",
+      tools: ["WhatsApp Business", "Copywriting Scripts", "Audience Growth"],
+      modules: [
+        "Module 1: Crafting High-Converting WhatsApp Broadcasts",
+        "Module 2: The Art of Honest Recommendation & Referral",
+        "Module 3: Converting Inquiries into Active Bank Accounts",
+        "Module 4: Scaling to RAP Growth Partner (20% Commission)"
+      ]
+    },
+    {
+      id: "c-speak",
+      category: "personal",
+      title: "Executive Public Speaking & Persuasive Pitching",
+      badge: "Leadership",
+      description: "Overcome stage anxiety, master business storytelling, and deliver persuasive presentations that win clients and investors.",
+      duration: "4 Weeks \u2022 10 Lessons",
+      level: "Intermediate",
+      instructor: "Folake Alabi (Keynote Speaker)",
+      tools: ["Storytelling Framework", "Pitch Decks", "Vocal Presence"],
+      modules: [
+        "Module 1: Voice Projection & Confidence On Camera",
+        "Module 2: The 3-Minute Elevator Pitch Structure",
+        "Module 3: Handling Objections with Grace & Clarity",
+        "Module 4: Pitching for Startup & Incubator Grants"
+      ]
+    },
+    {
+      id: "c-ent",
+      category: "personal",
+      title: "Nigerian Business Incubation & CAC Enterprise Setup",
+      badge: "Incubator Pathway",
+      description: "Register your enterprise, establish corporate governance, model your cash flows, and qualify for RAP startup incubation funding.",
+      duration: "6 Weeks \u2022 18 Lessons",
+      level: "Advanced",
+      instructor: "Engr. Babajide Williams (Incubator Director)",
+      tools: ["CAC Registration", "Unit Economics", "Venture Modeling"],
+      modules: [
+        "Module 1: Legal Registration & Nigerian Corporate Affairs",
+        "Module 2: Testing Market Demand with Low Budget",
+        "Module 3: Financial Cashflow & Unit Economics",
+        "Module 4: Pitching to the RAP Venture Selection Committee"
+      ]
+    }
+  ];
+  const handleCompleteModule = (courseId) => {
+    setEnrolledCourses((prev) => {
+      const current = prev[courseId] || { progress: 0, completed: false };
+      const nextProgress = Math.min(100, current.progress + 25);
+      const isNowCompleted = nextProgress >= 100;
+      if (window.confetti) {
+        window.confetti({ particleCount: 120, spread: 80, origin: { y: 0.6 } });
+      }
+      setToastMsg(
+        isNowCompleted ? "\u{1F393} Congratulations! You completed this course and earned your certificate!" : `\u2713 Progress updated: ${nextProgress}% complete! Keep going!`
+      );
+      setTimeout(() => setToastMsg(null), 4e3);
+      return {
+        ...prev,
+        [courseId]: { progress: nextProgress, completed: isNowCompleted }
+      };
+    });
+  };
+  const filteredCourses = courses.filter((c) => {
+    if (selectedCategory === "all") return true;
+    if (selectedCategory === "certified") {
+      return enrolledCourses[c.id]?.completed;
+    }
+    return c.category === selectedCategory;
+  });
+  return /* @__PURE__ */ import_react5.default.createElement("div", { className: "wrap", style: { paddingTop: "20px", paddingBottom: "60px" } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "card", style: {
+    background: "linear-gradient(135deg, rgba(31, 166, 64, 0.08) 0%, rgba(29, 123, 232, 0.12) 100%)",
+    borderColor: "var(--green)",
+    marginBottom: "24px"
+  } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "16px" } }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "eyebrow", style: { color: "var(--green)" } }, "RAP Academy \u2022 Youth Empowerment"), /* @__PURE__ */ import_react5.default.createElement("h1", { style: { fontSize: "26px", marginTop: "4px" } }, "Tech Skills & Personal Development"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "sub", style: { margin: "4px 0 0", maxWidth: "640px" } }, "Learn high-income technical skills, personal finance, and entrepreneurship. Practice with hands-on projects, earn verified certifications, and monetize directly via RAP Bank.")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      onClick: () => setActiveTab("affiliate"),
+      className: "btn line sm",
+      style: { fontWeight: "700" }
+    },
+    "Affiliate Earnings"
+  ), /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      onClick: () => setSelectedCategory("certified"),
+      className: "btn pri sm"
+    },
+    /* @__PURE__ */ import_react5.default.createElement(Icon, { name: "sparkles", style: { width: "16px", height: "16px" } }),
+    /* @__PURE__ */ import_react5.default.createElement("span", null, "My Certifications (", Object.values(enrolledCourses).filter((x) => x.completed).length, ")")
+  ))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "grid4", style: { marginTop: "20px" } }, /* @__PURE__ */ import_react5.default.createElement("div", { style: { background: "var(--card-bg)", padding: "12px 14px", borderRadius: "12px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "11px", fontWeight: "700", color: "var(--mute)" } }, "\u{1F4BB} TECH COURSES"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { fontSize: "18px", fontWeight: "800", color: "var(--blue)", marginTop: "2px" } }, "Coding & AI"), /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "12px", color: "var(--mute)" } }, "Web, Mobile, Data, UI/UX")), /* @__PURE__ */ import_react5.default.createElement("div", { style: { background: "var(--card-bg)", padding: "12px 14px", borderRadius: "12px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "11px", fontWeight: "700", color: "var(--mute)" } }, "\u{1F9E0} PERSONAL DEV"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { fontSize: "18px", fontWeight: "800", color: "var(--green)", marginTop: "2px" } }, "Wealth & Mindset"), /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "12px", color: "var(--mute)" } }, "70/30 Rule, Public Speaking")), /* @__PURE__ */ import_react5.default.createElement("div", { style: { background: "var(--card-bg)", padding: "12px 14px", borderRadius: "12px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "11px", fontWeight: "700", color: "var(--mute)" } }, "\u{1F4C8} MONETIZATION"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { fontSize: "18px", fontWeight: "800", color: "var(--warn)", marginTop: "2px" } }, "70% Payouts"), /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "12px", color: "var(--mute)" } }, "Affiliate commissions to bank")), /* @__PURE__ */ import_react5.default.createElement("div", { style: { background: "var(--card-bg)", padding: "12px 14px", borderRadius: "12px", border: "1px solid var(--line)" } }, /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "11px", fontWeight: "700", color: "var(--mute)" } }, "\u{1F680} INCUBATOR"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { fontSize: "18px", fontWeight: "800", color: "var(--ink)", marginTop: "2px" } }, "Startup Funding"), /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "12px", color: "var(--mute)" } }, "Unlock at 25 affiliates")))), /* @__PURE__ */ import_react5.default.createElement("div", { style: { display: "flex", gap: "8px", overflowX: "auto", paddingBottom: "12px", marginBottom: "16px" } }, categories.map((cat) => /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      key: cat.id,
+      onClick: () => setSelectedCategory(cat.id),
+      className: `btn sm ${selectedCategory === cat.id ? "pri" : "line"}`,
+      style: { borderRadius: "99px", whiteSpace: "nowrap", fontSize: "13px", padding: "8px 16px" }
+    },
+    cat.label
+  ))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "grid2", style: { display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(320px, 1fr))", gap: "18px" } }, filteredCourses.map((course) => {
+    const enroll = enrolledCourses[course.id];
+    const isCompleted = enroll?.completed;
+    const progress = enroll?.progress || 0;
+    return /* @__PURE__ */ import_react5.default.createElement(
+      "div",
+      {
+        key: course.id,
+        className: "card",
+        style: {
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          transition: "transform 0.2s ease, box-shadow 0.2s ease",
+          borderColor: isCompleted ? "var(--green)" : void 0,
+          position: "relative"
+        }
+      },
+      /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "flex-start", marginBottom: "8px" } }, /* @__PURE__ */ import_react5.default.createElement(
+        "span",
+        {
+          className: "badge",
+          style: {
+            background: course.category === "tech" ? "var(--blue-soft)" : course.category === "personal" ? "var(--green-soft)" : "var(--wbg)",
+            color: course.category === "tech" ? "var(--blue)" : course.category === "personal" ? "var(--green)" : "var(--warn)",
+            borderColor: "transparent",
+            fontWeight: "800"
+          }
+        },
+        course.badge
+      ), /* @__PURE__ */ import_react5.default.createElement("span", { className: "note", style: { fontSize: "12px", fontWeight: "600" } }, course.duration)), /* @__PURE__ */ import_react5.default.createElement("h3", { style: { fontSize: "18px", lineHeight: "1.3", marginBottom: "8px" } }, course.title), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { fontSize: "13px", lineHeight: "1.5", marginBottom: "14px" } }, course.description), /* @__PURE__ */ import_react5.default.createElement("div", { style: { display: "flex", flexWrap: "wrap", gap: "6px", marginBottom: "16px" } }, course.tools.map((t, idx) => /* @__PURE__ */ import_react5.default.createElement(
+        "span",
+        {
+          key: idx,
+          style: {
+            fontSize: "11px",
+            padding: "3px 8px",
+            borderRadius: "6px",
+            background: "var(--soft)",
+            color: "var(--ink)",
+            fontWeight: "600"
+          }
+        },
+        t
+      )))),
+      /* @__PURE__ */ import_react5.default.createElement("div", null, enroll && /* @__PURE__ */ import_react5.default.createElement("div", { style: { marginBottom: "14px", paddingTop: "10px", borderTop: "1px solid var(--line)" } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", fontSize: "12px", marginBottom: "4px" } }, /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontWeight: "600", color: isCompleted ? "var(--green)" : "var(--mute)" } }, isCompleted ? "\u2713 Completed & Certified" : "Learning Progress"), /* @__PURE__ */ import_react5.default.createElement("b", { style: { color: isCompleted ? "var(--green)" : "var(--blue)" } }, progress, "%")), /* @__PURE__ */ import_react5.default.createElement("div", { style: { height: "6px", width: "100%", background: "var(--line)", borderRadius: "99px", overflow: "hidden" } }, /* @__PURE__ */ import_react5.default.createElement(
+        "div",
+        {
+          style: {
+            height: "100%",
+            width: `${progress}%`,
+            background: isCompleted ? "var(--green)" : "var(--blue)",
+            borderRadius: "99px",
+            transition: "width 0.4s ease"
+          }
+        }
+      ))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react5.default.createElement(
+        "button",
+        {
+          onClick: () => setActiveCourseModal(course),
+          className: "btn line sm",
+          style: { flex: 1, fontSize: "13px" }
+        },
+        "View Syllabus"
+      ), /* @__PURE__ */ import_react5.default.createElement(
+        "button",
+        {
+          onClick: () => handleCompleteModule(course.id),
+          className: `btn sm ${isCompleted ? "line" : "pri"}`,
+          style: { flex: 1, fontSize: "13px" }
+        },
+        isCompleted ? "Review & Certificate" : enroll ? "Advance Module" : "Enroll Free"
+      )))
+    );
+  })), activeCourseModal && /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-box", style: { maxWidth: "580px", width: "92%" } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "flex-start" } }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)" } }, activeCourseModal.badge), /* @__PURE__ */ import_react5.default.createElement("h3", { style: { fontSize: "20px", marginTop: "6px" } }, activeCourseModal.title), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { fontSize: "13px" } }, "Instructor: ", /* @__PURE__ */ import_react5.default.createElement("b", null, activeCourseModal.instructor))), /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      onClick: () => setActiveCourseModal(null),
+      style: { background: "transparent", border: 0, fontSize: "24px", cursor: "pointer", color: "var(--mute)" }
+    },
+    "\xD7"
+  )), /* @__PURE__ */ import_react5.default.createElement("p", { style: { fontSize: "13.5px", color: "var(--ink)", margin: "14px 0", lineHeight: "1.6" } }, activeCourseModal.description), /* @__PURE__ */ import_react5.default.createElement("h4", { style: { fontSize: "14px", marginBottom: "8px" } }, "Course Modules & Curriculum"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "8px" } }, activeCourseModal.modules.map((mod, i) => /* @__PURE__ */ import_react5.default.createElement(
+    "div",
+    {
+      key: i,
+      style: {
+        padding: "10px 14px",
+        borderRadius: "10px",
+        background: "var(--soft)",
+        border: "1px solid var(--line)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "space-between"
+      }
+    },
+    /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "13px", fontWeight: "600" } }, mod),
+    /* @__PURE__ */ import_react5.default.createElement("span", { style: { fontSize: "12px", color: "var(--green)", fontWeight: "700" } }, "\u2713 Open")
+  ))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { marginTop: "20px", justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      onClick: () => setActiveCourseModal(null),
+      className: "btn line sm"
+    },
+    "Close"
+  ), /* @__PURE__ */ import_react5.default.createElement(
+    "button",
+    {
+      onClick: () => {
+        handleCompleteModule(activeCourseModal.id);
+        setActiveCourseModal(null);
+      },
+      className: "btn pri sm"
+    },
+    "Mark Module Complete (+25%)"
+  )))), toastMsg && /* @__PURE__ */ import_react5.default.createElement("div", { className: "toast" }, /* @__PURE__ */ import_react5.default.createElement("span", null, toastMsg)));
 }
 
 // client/src/components/AccountTab.jsx
-var import_react5 = __toESM(require_react(), 1);
-function AccountTab({ data, onOpenMondayTransfer, onOpenSendTransfer, onOpenStatement }) {
-  const [savingsList, setSavingsList] = (0, import_react5.useState)(() => data?.savingsDetails?.allocations || []);
-  const [transfersList, setTransfersList] = (0, import_react5.useState)(() => data?.recentTransactions || []);
-  const [tryWithdrawModal, setTryWithdrawModal] = (0, import_react5.useState)(false);
-  const [kycModal, setKycModal] = (0, import_react5.useState)(false);
-  const [copiedAcc, setCopiedAcc] = (0, import_react5.useState)(false);
-  (0, import_react5.useEffect)(() => {
-    fetch("/api/savings/allocations").then((res) => res.ok ? res.json() : null).then((d) => {
-      if (d?.allocations) setSavingsList(d.allocations);
-    }).catch(() => {
-    });
-    fetch("/api/banking/transactions").then((res) => res.ok ? res.json() : null).then((d) => {
-      if (Array.isArray(d)) setTransfersList(d);
-    }).catch(() => {
-    });
-  }, [data]);
-  if (!data) return null;
-  const { user, partnerBank, balances } = data;
-  const copyAccount = () => {
-    navigator.clipboard.writeText(partnerBank.accountNumber);
-    setCopiedAcc(true);
-    setTimeout(() => setCopiedAcc(false), 2e3);
-  };
-  return /* @__PURE__ */ import_react5.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "earn" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Hello ", user.fullName), /* @__PURE__ */ import_react5.default.createElement("div", { style: { marginTop: "4px" } }, /* @__PURE__ */ import_react5.default.createElement("span", { className: "badge" }, user.membershipTier), /* @__PURE__ */ import_react5.default.createElement("span", { className: "badge" }, user.status.toUpperCase()), /* @__PURE__ */ import_react5.default.createElement("span", { className: "badge" }, "KYC Level ", user.kycLevel, " Verified")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v", style: { marginTop: "12px" } }, "\u20A6", balances.totalAffiliateIncomeEarned.toLocaleString("en-NG", { minimumFractionDigits: 2 })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Total eligible earnings"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "split3" }, /* @__PURE__ */ import_react5.default.createElement("i", { style: { width: "70%", background: "#1d7be8" } }), /* @__PURE__ */ import_react5.default.createElement("i", { style: { width: "30%", background: "#1fa640" } })), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "70% available to transfer (\u20A6", balances.earningsAvailableForTransfer.toLocaleString(), ") \xB7 30% locked savings (\u20A6", balances.lockedSavingsBalance.toLocaleString(), ")")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card", style: { borderColor: "var(--green)" } }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "flex-start" } }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("div", { className: "eyebrow", style: { color: "var(--green)" } }, "Authorized Partner Bank Account"), /* @__PURE__ */ import_react5.default.createElement("h3", { style: { fontSize: "20px" } }, partnerBank.partnerBankName), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { marginTop: "2px" } }, "Account Name: ", /* @__PURE__ */ import_react5.default.createElement("b", null, partnerBank.accountName))), /* @__PURE__ */ import_react5.default.createElement("span", { className: "badge", style: { borderColor: "var(--green)", color: "var(--green)", fontWeight: "800" } }, "NIBSS Active")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { marginTop: "14px", alignItems: "center" } }, /* @__PURE__ */ import_react5.default.createElement("div", { style: { fontSize: "24px", fontWeight: "800", fontFamily: "monospace", letterSpacing: "0.05em" } }, partnerBank.accountNumber), /* @__PURE__ */ import_react5.default.createElement(
-    "button",
-    {
-      onClick: copyAccount,
-      className: "btn line sm",
-      style: { padding: "6px 12px" }
-    },
-    copiedAcc ? "\u2713 Copied" : "Copy Number"
-  )), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { marginTop: "16px", gap: "8px" } }, /* @__PURE__ */ import_react5.default.createElement("button", { onClick: onOpenSendTransfer, className: "btn pri sm" }, "Send Money"), /* @__PURE__ */ import_react5.default.createElement("button", { onClick: onOpenStatement, className: "btn line sm" }, "Download Statement"), /* @__PURE__ */ import_react5.default.createElement("button", { onClick: () => setKycModal(true), className: "btn line sm" }, "KYC Documents"))), /* @__PURE__ */ import_react5.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Bank balance"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v" }, "\u20A6", balances.actualBankBalance.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "Shown once a banking partner account exists.")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Available to transfer"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v b" }, "\u20A6", balances.earningsAvailableForTransfer.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "70% of eligible earnings")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Locked savings"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v g" }, "\u20A6", balances.lockedSavingsBalance.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "One-year savings rule")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Saved this month"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v" }, "\u20A6", 12e3.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "Credited within current month")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "k" }, "Total withdrawn"), /* @__PURE__ */ import_react5.default.createElement("div", { className: "v" }, "\u20A6", balances.totalWithdrawals.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("div", { className: "note" }, "Completed transfers only"))), /* @__PURE__ */ import_react5.default.createElement("br", null), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement(
-    "button",
-    {
-      onClick: onOpenMondayTransfer,
-      className: "btn pri block",
-      disabled: balances.earningsAvailableForTransfer <= 0
-    },
-    "TRANSFER MY AVAILABLE EARNINGS"
-  ), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { textAlign: "center", marginTop: "10px" } }, "70% of your eligible affiliate income is available for transfer. The remaining 30% is reserved as one-year locked savings.")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginBottom: "10px" } }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("h3", null, "My savings"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { marginTop: "2px" } }, "Each allocation has its own maturity date. Matured funds are released through your savings partner.")), /* @__PURE__ */ import_react5.default.createElement(
-    "button",
-    {
-      onClick: () => setTryWithdrawModal(true),
-      className: "btn line sm"
-    },
-    "Try to withdraw savings"
-  )), savingsList.length ? /* @__PURE__ */ import_react5.default.createElement("div", { className: "scroll" }, /* @__PURE__ */ import_react5.default.createElement("table", null, /* @__PURE__ */ import_react5.default.createElement("thead", null, /* @__PURE__ */ import_react5.default.createElement("tr", null, /* @__PURE__ */ import_react5.default.createElement("th", null, "Credited Date"), /* @__PURE__ */ import_react5.default.createElement("th", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react5.default.createElement("th", null, "1-Year Maturity"), /* @__PURE__ */ import_react5.default.createElement("th", null, "Status"))), /* @__PURE__ */ import_react5.default.createElement("tbody", null, savingsList.map((x) => /* @__PURE__ */ import_react5.default.createElement("tr", { key: x.id }, /* @__PURE__ */ import_react5.default.createElement("td", null, new Date(x.credit_date).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react5.default.createElement("td", { style: { fontWeight: "700" } }, "\u20A6", x.amount.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("td", null, new Date(x.maturity_date).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react5.default.createElement("td", { className: `st ${x.status}` }, x.status)))))) : /* @__PURE__ */ import_react5.default.createElement("p", { className: "note" }, "No savings yet. They appear when a commission is approved.")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react5.default.createElement("h3", null, "Transfers"), transfersList.length ? /* @__PURE__ */ import_react5.default.createElement("div", { className: "scroll" }, /* @__PURE__ */ import_react5.default.createElement("table", null, /* @__PURE__ */ import_react5.default.createElement("thead", null, /* @__PURE__ */ import_react5.default.createElement("tr", null, /* @__PURE__ */ import_react5.default.createElement("th", null, "Date"), /* @__PURE__ */ import_react5.default.createElement("th", null, "Narration / Bank"), /* @__PURE__ */ import_react5.default.createElement("th", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react5.default.createElement("th", null, "Status"))), /* @__PURE__ */ import_react5.default.createElement("tbody", null, transfersList.map((t) => /* @__PURE__ */ import_react5.default.createElement("tr", { key: t.id }, /* @__PURE__ */ import_react5.default.createElement("td", null, new Date(t.created_at).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react5.default.createElement("td", null, t.narration || t.beneficiary_bank), /* @__PURE__ */ import_react5.default.createElement("td", { style: { fontWeight: "700" } }, "\u20A6", t.amount.toLocaleString()), /* @__PURE__ */ import_react5.default.createElement("td", { className: `st ${t.status}` }, t.status === "pending" ? "Processing" : t.status)))))) : /* @__PURE__ */ import_react5.default.createElement("p", { className: "note" }, "No transfers yet.")), tryWithdrawModal && /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react5.default.createElement("h3", { style: { color: "var(--warn)" } }, "Savings are locked for 1 year"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { fontSize: "14px", marginTop: "10px", lineHeight: "1.6" } }, "Under the RAP 70/30 wealth creation rule, your 30% savings portion cannot be prematurely withdrawn before its individual 365-day maturity date."), /* @__PURE__ */ import_react5.default.createElement("div", { className: "warn", style: { marginTop: "14px" } }, "\u{1F512} ", /* @__PURE__ */ import_react5.default.createElement("b", null, "Backend Security Enforcement"), ": The API prevents early liquidation to ensure long-term prosperity. Your oldest allocation matures on ", /* @__PURE__ */ import_react5.default.createElement("b", null, "Jan 05, 2027"), "."), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { marginTop: "18px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react5.default.createElement(
-    "button",
-    {
-      onClick: () => setTryWithdrawModal(false),
-      className: "btn pri sm"
-    },
-    "I Understand"
-  )))), kycModal && /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react5.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react5.default.createElement("h3", null, "Identity Verification (KYC)"), /* @__PURE__ */ import_react5.default.createElement("p", { className: "note", style: { fontSize: "13.5px", marginTop: "6px" } }, "Central Bank of Nigeria compliance. Your Level 2 verification is already approved via NIBSS."), /* @__PURE__ */ import_react5.default.createElement("div", { className: "card", style: { marginTop: "12px", background: "var(--soft)" } }, /* @__PURE__ */ import_react5.default.createElement("div", null, /* @__PURE__ */ import_react5.default.createElement("b", null, "BVN:"), " 222\u2022\u2022\u2022\u2022\u2022588 (Matched)"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { marginTop: "4px" } }, /* @__PURE__ */ import_react5.default.createElement("b", null, "NIN:"), " 198\u2022\u2022\u2022\u2022\u2022521 (Verified)"), /* @__PURE__ */ import_react5.default.createElement("div", { style: { marginTop: "4px" } }, /* @__PURE__ */ import_react5.default.createElement("b", null, "Compliance Tier:"), " Tier 2 (\u20A65,000,000 limit)")), /* @__PURE__ */ import_react5.default.createElement("div", { className: "row", style: { marginTop: "18px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react5.default.createElement(
-    "button",
-    {
-      onClick: () => setKycModal(false),
-      className: "btn pri sm"
-    },
-    "Done"
-  )))));
-}
+var import_react6 = __toESM(require_react(), 1);
 
 // client/src/components/AffiliateTab.jsx
-var import_react6 = __toESM(require_react(), 1);
+var import_react7 = __toESM(require_react(), 1);
 function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab }) {
-  const [loanAmount, setLoanAmount] = (0, import_react6.useState)("250000");
-  const [loanPurpose, setLoanPurpose] = (0, import_react6.useState)("Working capital for inventory");
-  const [businessName, setBusinessName] = (0, import_react6.useState)("Adebayo Digital Fashion Store");
-  const [businessIdea, setBusinessIdea] = (0, import_react6.useState)("Direct clothing pre-orders and bulk distribution in Lagos");
-  const [businessSector, setBusinessSector] = (0, import_react6.useState)("Fashion");
-  const [appliedLoans, setAppliedLoans] = (0, import_react6.useState)([]);
-  const [incubatorData, setIncubatorData] = (0, import_react6.useState)(null);
-  const [feedback, setFeedback] = (0, import_react6.useState)(null);
-  const [simulating, setSimulating] = (0, import_react6.useState)(false);
+  const [loanAmount, setLoanAmount] = (0, import_react7.useState)("250000");
+  const [loanPurpose, setLoanPurpose] = (0, import_react7.useState)("Working capital for inventory");
+  const [businessName, setBusinessName] = (0, import_react7.useState)("Adebayo Digital Fashion Store");
+  const [businessIdea, setBusinessIdea] = (0, import_react7.useState)("Direct clothing pre-orders and bulk distribution in Lagos");
+  const [businessSector, setBusinessSector] = (0, import_react7.useState)("Fashion");
+  const [appliedLoans, setAppliedLoans] = (0, import_react7.useState)([]);
+  const [incubatorData, setIncubatorData] = (0, import_react7.useState)(null);
+  const [feedback, setFeedback] = (0, import_react7.useState)(null);
+  const [simulating, setSimulating] = (0, import_react7.useState)(false);
   if (!data) return null;
   const { user, affiliateStats } = data;
   const isUnlocked = affiliateStats.qualifyingAffiliates >= 25;
@@ -7680,7 +8209,7 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
     }).catch(() => {
     });
   };
-  (0, import_react6.useEffect)(() => {
+  (0, import_react7.useEffect)(() => {
     loadData();
   }, [isUnlocked]);
   const handleApplyLoan = async (e) => {
@@ -7737,7 +8266,7 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
     await onCreditCommission(1e5);
     setSimulating(false);
   };
-  return /* @__PURE__ */ import_react6.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", marginBottom: "8px" } }, /* @__PURE__ */ import_react6.default.createElement("div", null, /* @__PURE__ */ import_react6.default.createElement("div", { className: "eyebrow" }, "Your RAP growth journey"), /* @__PURE__ */ import_react6.default.createElement("h2", null, user.membershipTier)), /* @__PURE__ */ import_react6.default.createElement(
+  return /* @__PURE__ */ import_react7.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", marginBottom: "8px" } }, /* @__PURE__ */ import_react7.default.createElement("div", null, /* @__PURE__ */ import_react7.default.createElement("div", { className: "eyebrow" }, "Your RAP growth journey"), /* @__PURE__ */ import_react7.default.createElement("h2", null, user.membershipTier)), /* @__PURE__ */ import_react7.default.createElement(
     "button",
     {
       onClick: handleSimulate100k,
@@ -7745,21 +8274,21 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
       className: "btn pri sm"
     },
     simulating ? "Processing..." : "\u26A1 Simulate \u20A6100k Commission"
-  )), feedback && /* @__PURE__ */ import_react6.default.createElement("div", { className: feedback.type === "success" ? "badge" : "warn", style: { display: "block", marginBottom: "14px", padding: "12px 16px", background: feedback.type === "success" ? "#e9f9ee" : void 0, color: feedback.type === "success" ? "#1fa640" : void 0 } }, feedback.text), /* @__PURE__ */ import_react6.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react6.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react6.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react6.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react6.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react6.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react6.default.createElement("b", null, isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react6.default.createElement("b", null, isUnlocked ? "Unlocked" : "Locked")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "row", style: { marginTop: "14px" } }, /* @__PURE__ */ import_react6.default.createElement(
+  )), feedback && /* @__PURE__ */ import_react7.default.createElement("div", { className: feedback.type === "success" ? "badge" : "warn", style: { display: "block", marginBottom: "14px", padding: "12px 16px", background: feedback.type === "success" ? "#e9f9ee" : void 0, color: feedback.type === "success" ? "#1fa640" : void 0 } }, feedback.text), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react7.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react7.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react7.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react7.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react7.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react7.default.createElement("b", null, isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react7.default.createElement("b", null, isUnlocked ? "Unlocked" : "Locked")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "row", style: { marginTop: "14px" } }, /* @__PURE__ */ import_react7.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("refer"),
       className: "btn line sm"
     },
     "Get my referral link"
-  ), !isUnlocked && /* @__PURE__ */ import_react6.default.createElement(
+  ), !isUnlocked && /* @__PURE__ */ import_react7.default.createElement(
     "button",
     {
       onClick: onReachMilestone,
       className: "btn pri sm"
     },
     "Simulate 25 Affiliates Milestone"
-  ))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "grid4", style: { alignItems: "start", marginTop: "16px" } }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react6.default.createElement("h3", null, "Loan opportunity"), isUnlocked ? /* @__PURE__ */ import_react6.default.createElement("form", { onSubmit: handleApplyLoan, style: { marginTop: "10px" } }, /* @__PURE__ */ import_react6.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Milestone complete. This unlocks an ", /* @__PURE__ */ import_react6.default.createElement("b", null, "assessment"), ", not a guaranteed loan. Subsidized youth rate is 5% p.a."), appliedLoans.map((l) => /* @__PURE__ */ import_react6.default.createElement("div", { key: l.id, className: "card", style: { background: "var(--soft)", padding: "10px 14px", margin: "8px 0" } }, /* @__PURE__ */ import_react6.default.createElement("b", null, "\u20A6", l.requested_amount.toLocaleString()), " \xB7 ", /* @__PURE__ */ import_react6.default.createElement("span", { className: `st ${l.status}` }, l.status.replace("_", " ")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note" }, l.business_name, " (", l.tenure_months, " Mo)"))), /* @__PURE__ */ import_react6.default.createElement("label", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react6.default.createElement(
+  ))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "grid4", style: { alignItems: "start", marginTop: "16px" } }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("h3", null, "Loan opportunity"), isUnlocked ? /* @__PURE__ */ import_react7.default.createElement("form", { onSubmit: handleApplyLoan, style: { marginTop: "10px" } }, /* @__PURE__ */ import_react7.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Milestone complete. This unlocks an ", /* @__PURE__ */ import_react7.default.createElement("b", null, "assessment"), ", not a guaranteed loan. Subsidized youth rate is 5% p.a."), appliedLoans.map((l) => /* @__PURE__ */ import_react7.default.createElement("div", { key: l.id, className: "card", style: { background: "var(--soft)", padding: "10px 14px", margin: "8px 0" } }, /* @__PURE__ */ import_react7.default.createElement("b", null, "\u20A6", l.requested_amount.toLocaleString()), " \xB7 ", /* @__PURE__ */ import_react7.default.createElement("span", { className: `st ${l.status}` }, l.status.replace("_", " ")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note" }, l.business_name, " (", l.tenure_months, " Mo)"))), /* @__PURE__ */ import_react7.default.createElement("label", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react7.default.createElement(
     "input",
     {
       type: "number",
@@ -7769,7 +8298,7 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
       onChange: (e) => setLoanAmount(e.target.value),
       required: true
     }
-  ), /* @__PURE__ */ import_react6.default.createElement("label", null, "Purpose"), /* @__PURE__ */ import_react6.default.createElement(
+  ), /* @__PURE__ */ import_react7.default.createElement("label", null, "Purpose"), /* @__PURE__ */ import_react7.default.createElement(
     "input",
     {
       type: "text",
@@ -7777,7 +8306,7 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
       onChange: (e) => setLoanPurpose(e.target.value),
       required: true
     }
-  ), /* @__PURE__ */ import_react6.default.createElement("div", { style: { marginTop: "16px" } }, /* @__PURE__ */ import_react6.default.createElement("button", { type: "submit", className: "btn pri block" }, "Apply for a loan"))) : /* @__PURE__ */ import_react6.default.createElement("div", { className: "warn", style: { marginTop: "10px" } }, "Locked. ", affiliateStats.remainingAffiliates, " more qualifying affiliates to go."), /* @__PURE__ */ import_react6.default.createElement("p", { className: "note", style: { marginTop: "12px" } }, "Decisions are made by an authorised lender or administrator. Funding is never promised.")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react6.default.createElement("h3", null, "Business incubator"), isUnlocked ? incubatorData ? /* @__PURE__ */ import_react6.default.createElement("div", { style: { marginTop: "10px" } }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react6.default.createElement("b", null, incubatorData.business_name), " \xB7 ", /* @__PURE__ */ import_react6.default.createElement("span", { className: `st ${incubatorData.status}` }, incubatorData.status), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note", style: { marginTop: "4px" } }, "Stage 1: Discovery \xB7 Sector: ", incubatorData.sector), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note", style: { marginTop: "2px" } }, "Assigned Mentor: ", /* @__PURE__ */ import_react6.default.createElement("b", null, "Engr. Babajide Williams")))) : /* @__PURE__ */ import_react6.default.createElement("form", { onSubmit: handleApplyIncubator, style: { marginTop: "10px" } }, /* @__PURE__ */ import_react6.default.createElement("label", null, "Business name"), /* @__PURE__ */ import_react6.default.createElement(
+  ), /* @__PURE__ */ import_react7.default.createElement("div", { style: { marginTop: "16px" } }, /* @__PURE__ */ import_react7.default.createElement("button", { type: "submit", className: "btn pri block" }, "Apply for a loan"))) : /* @__PURE__ */ import_react7.default.createElement("div", { className: "warn", style: { marginTop: "10px" } }, "Locked. ", affiliateStats.remainingAffiliates, " more qualifying affiliates to go."), /* @__PURE__ */ import_react7.default.createElement("p", { className: "note", style: { marginTop: "12px" } }, "Decisions are made by an authorised lender or administrator. Funding is never promised.")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("h3", null, "Business incubator"), isUnlocked ? incubatorData ? /* @__PURE__ */ import_react7.default.createElement("div", { style: { marginTop: "10px" } }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react7.default.createElement("b", null, incubatorData.business_name), " \xB7 ", /* @__PURE__ */ import_react7.default.createElement("span", { className: `st ${incubatorData.status}` }, incubatorData.status), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note", style: { marginTop: "4px" } }, "Stage 1: Discovery \xB7 Sector: ", incubatorData.sector), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note", style: { marginTop: "2px" } }, "Assigned Mentor: ", /* @__PURE__ */ import_react7.default.createElement("b", null, "Engr. Babajide Williams")))) : /* @__PURE__ */ import_react7.default.createElement("form", { onSubmit: handleApplyIncubator, style: { marginTop: "10px" } }, /* @__PURE__ */ import_react7.default.createElement("label", null, "Business name"), /* @__PURE__ */ import_react7.default.createElement(
     "input",
     {
       type: "text",
@@ -7785,7 +8314,7 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
       onChange: (e) => setBusinessName(e.target.value),
       required: true
     }
-  ), /* @__PURE__ */ import_react6.default.createElement("label", null, "Business idea"), /* @__PURE__ */ import_react6.default.createElement(
+  ), /* @__PURE__ */ import_react7.default.createElement("label", null, "Business idea"), /* @__PURE__ */ import_react7.default.createElement(
     "textarea",
     {
       rows: "3",
@@ -7793,23 +8322,23 @@ function AffiliateTab({ data, onCreditCommission, onReachMilestone, setActiveTab
       onChange: (e) => setBusinessIdea(e.target.value),
       required: true
     }
-  ), /* @__PURE__ */ import_react6.default.createElement("label", null, "Sector"), /* @__PURE__ */ import_react6.default.createElement(
+  ), /* @__PURE__ */ import_react7.default.createElement("label", null, "Sector"), /* @__PURE__ */ import_react7.default.createElement(
     "select",
     {
       value: businessSector,
       onChange: (e) => setBusinessSector(e.target.value)
     },
-    /* @__PURE__ */ import_react6.default.createElement("option", { value: "Agriculture" }, "Agriculture"),
-    /* @__PURE__ */ import_react6.default.createElement("option", { value: "Fashion" }, "Fashion"),
-    /* @__PURE__ */ import_react6.default.createElement("option", { value: "Tech" }, "Tech"),
-    /* @__PURE__ */ import_react6.default.createElement("option", { value: "Services" }, "Services")
-  ), /* @__PURE__ */ import_react6.default.createElement("div", { style: { marginTop: "16px" } }, /* @__PURE__ */ import_react6.default.createElement("button", { type: "submit", className: "btn pri block" }, "Apply to the incubator"))) : /* @__PURE__ */ import_react6.default.createElement("div", { className: "warn", style: { marginTop: "10px" } }, "Locked until you reach ", affiliateStats.threshold, " qualifying affiliates."))), /* @__PURE__ */ import_react6.default.createElement("div", { className: "card", style: { marginTop: "16px" } }, /* @__PURE__ */ import_react6.default.createElement("h3", null, "Workforce Training & Learn"), /* @__PURE__ */ import_react6.default.createElement("p", { className: "note", style: { fontSize: "13.5px", marginTop: "4px" } }, "Interactive modules provided under the youth empowerment curriculum:"), /* @__PURE__ */ import_react6.default.createElement("div", { className: "grid4", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react6.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react6.default.createElement("b", null, "Financial Modeling & Taxes"), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note" }, "4 Modules \u2022 Completed (100%)"), /* @__PURE__ */ import_react6.default.createElement("span", { className: "badge", style: { marginTop: "8px", color: "var(--green)" } }, "\u2713 Certified")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react6.default.createElement("b", null, "WhatsApp & Digital Commerce"), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note" }, "6 Modules \u2022 In progress (65%)")), /* @__PURE__ */ import_react6.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react6.default.createElement("b", null, "B2B Supply Chain in Lagos"), /* @__PURE__ */ import_react6.default.createElement("div", { className: "note" }, "5 Modules \u2022 In progress (20%)")))));
+    /* @__PURE__ */ import_react7.default.createElement("option", { value: "Agriculture" }, "Agriculture"),
+    /* @__PURE__ */ import_react7.default.createElement("option", { value: "Fashion" }, "Fashion"),
+    /* @__PURE__ */ import_react7.default.createElement("option", { value: "Tech" }, "Tech"),
+    /* @__PURE__ */ import_react7.default.createElement("option", { value: "Services" }, "Services")
+  ), /* @__PURE__ */ import_react7.default.createElement("div", { style: { marginTop: "16px" } }, /* @__PURE__ */ import_react7.default.createElement("button", { type: "submit", className: "btn pri block" }, "Apply to the incubator"))) : /* @__PURE__ */ import_react7.default.createElement("div", { className: "warn", style: { marginTop: "10px" } }, "Locked until you reach ", affiliateStats.threshold, " qualifying affiliates."))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card", style: { marginTop: "16px" } }, /* @__PURE__ */ import_react7.default.createElement("h3", null, "Workforce Training & Learn"), /* @__PURE__ */ import_react7.default.createElement("p", { className: "note", style: { fontSize: "13.5px", marginTop: "4px" } }, "Interactive modules provided under the youth empowerment curriculum:"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "grid4", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react7.default.createElement("b", null, "Financial Modeling & Taxes"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note" }, "4 Modules \u2022 Completed (100%)"), /* @__PURE__ */ import_react7.default.createElement("span", { className: "badge", style: { marginTop: "8px", color: "var(--green)" } }, "\u2713 Certified")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react7.default.createElement("b", null, "WhatsApp & Digital Commerce"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note" }, "6 Modules \u2022 In progress (65%)")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card", style: { background: "var(--soft)" } }, /* @__PURE__ */ import_react7.default.createElement("b", null, "B2B Supply Chain in Lagos"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "note" }, "5 Modules \u2022 In progress (20%)")))));
 }
 
 // client/src/components/ReferTab.jsx
-var import_react7 = __toESM(require_react(), 1);
+var import_react8 = __toESM(require_react(), 1);
 function ReferTab({ data }) {
-  const [copied, setCopied] = (0, import_react7.useState)(false);
+  const [copied, setCopied] = (0, import_react8.useState)(false);
   if (!data) return null;
   const { user, affiliateStats } = data;
   const referralLink = `https://riseandprosper.ng/join?ref=${user.referralCode}`;
@@ -7819,14 +8348,14 @@ function ReferTab({ data }) {
     setTimeout(() => setCopied(false), 2e3);
   };
   const msg = encodeURIComponent(`Join me on RAP: bank that helps you prosper. ${referralLink}`);
-  return /* @__PURE__ */ import_react7.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "eyebrow" }, "Refer & earn"), /* @__PURE__ */ import_react7.default.createElement("h2", null, "Invite friends to RAP"), /* @__PURE__ */ import_react7.default.createElement("p", { className: "sub" }, "Share your link. People who register, verify and get approved count as qualifying affiliates."), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "k" }, "Your referral link"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "row", style: { marginTop: "8px" } }, /* @__PURE__ */ import_react7.default.createElement(
+  return /* @__PURE__ */ import_react8.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "eyebrow" }, "Refer & earn"), /* @__PURE__ */ import_react8.default.createElement("h2", null, "Invite friends to RAP"), /* @__PURE__ */ import_react8.default.createElement("p", { className: "sub" }, "Share your link. People who register, verify and get approved count as qualifying affiliates."), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Your referral link"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "row", style: { marginTop: "8px" } }, /* @__PURE__ */ import_react8.default.createElement(
     "input",
     {
       readOnly: true,
       value: referralLink,
       style: { flex: 1, minWidth: "220px", fontFamily: "monospace", fontWeight: "600" }
     }
-  ), /* @__PURE__ */ import_react7.default.createElement("button", { onClick: copyLink, className: "btn" }, copied ? "\u2713 Copied" : "Copy")), /* @__PURE__ */ import_react7.default.createElement("div", { className: "row", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react7.default.createElement(
+  ), /* @__PURE__ */ import_react8.default.createElement("button", { onClick: copyLink, className: "btn" }, copied ? "\u2713 Copied" : "Copy")), /* @__PURE__ */ import_react8.default.createElement("div", { className: "row", style: { marginTop: "12px" } }, /* @__PURE__ */ import_react8.default.createElement(
     "a",
     {
       className: "btn pri",
@@ -7835,45 +8364,62 @@ function ReferTab({ data }) {
       rel: "noopener noreferrer"
     },
     "Share on WhatsApp"
-  ))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "k" }, "Total referrals"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "v" }, affiliateStats.totalReferrals)), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "k" }, "Qualifying"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "v g" }, affiliateStats.qualifyingAffiliates, " / ", affiliateStats.threshold)), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("div", { className: "k" }, "Remaining"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "v" }, affiliateStats.remainingAffiliates))), /* @__PURE__ */ import_react7.default.createElement("br", null), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("h3", null, "Your progress"), /* @__PURE__ */ import_react7.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react7.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react7.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react7.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react7.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react7.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react7.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react7.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"))), /* @__PURE__ */ import_react7.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react7.default.createElement("h3", null, "What counts as qualifying?"), /* @__PURE__ */ import_react7.default.createElement("ul", { className: "steps" }, /* @__PURE__ */ import_react7.default.createElement("li", null, "Registered with your link or code (", user.referralCode, ")"), /* @__PURE__ */ import_react7.default.createElement("li", null, "Email address and phone number verified with OTP"), /* @__PURE__ */ import_react7.default.createElement("li", null, "Level 2 identity check completed (BVN/NIN match)"), /* @__PURE__ */ import_react7.default.createElement("li", null, "Approved as an active affiliate"))));
+  ))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Total referrals"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v" }, affiliateStats.totalReferrals)), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Qualifying"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v g" }, affiliateStats.qualifyingAffiliates, " / ", affiliateStats.threshold)), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Remaining"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v" }, affiliateStats.remainingAffiliates))), /* @__PURE__ */ import_react8.default.createElement("br", null), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("h3", null, "Your progress"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "bar-p" }, /* @__PURE__ */ import_react8.default.createElement("i", { style: { width: `${affiliateStats.percentProgress}%` } })), /* @__PURE__ */ import_react8.default.createElement("p", { className: "note", style: { fontSize: "13.5px" } }, "Qualifying affiliates: ", /* @__PURE__ */ import_react8.default.createElement("b", null, affiliateStats.qualifyingAffiliates, "/", affiliateStats.threshold), " \xB7 Remaining: ", affiliateStats.remainingAffiliates, " \xB7 ", affiliateStats.percentProgress, "%", /* @__PURE__ */ import_react8.default.createElement("br", null), "Next milestone: ", /* @__PURE__ */ import_react8.default.createElement("b", null, "RAP Growth Partner"), " \xB7 Loan: ", /* @__PURE__ */ import_react8.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"), " \xB7 Incubation: ", /* @__PURE__ */ import_react8.default.createElement("b", null, affiliateStats.isUnlocked ? "Unlocked" : "Locked"))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("h3", null, "What counts as qualifying?"), /* @__PURE__ */ import_react8.default.createElement("ul", { className: "steps" }, /* @__PURE__ */ import_react8.default.createElement("li", null, "Registered with your link or code (", user.referralCode, ")"), /* @__PURE__ */ import_react8.default.createElement("li", null, "Email address and phone number verified with OTP"), /* @__PURE__ */ import_react8.default.createElement("li", null, "Level 2 identity check completed (BVN/NIN match)"), /* @__PURE__ */ import_react8.default.createElement("li", null, "Approved as an active affiliate"))));
 }
 
 // client/src/components/LoginTab.jsx
-var import_react8 = __toESM(require_react(), 1);
-function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
-  const [mode, setMode] = (0, import_react8.useState)("profile");
-  const [email, setEmail] = (0, import_react8.useState)("");
-  const [password, setPassword] = (0, import_react8.useState)("");
-  const [fullName, setFullName] = (0, import_react8.useState)("");
-  const [phone, setPhone] = (0, import_react8.useState)("");
-  const [referralInput, setReferralInput] = (0, import_react8.useState)("");
-  const [message, setMessage] = (0, import_react8.useState)(null);
+var import_react9 = __toESM(require_react(), 1);
+function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab, isLoggedIn, setIsLoggedIn }) {
+  const [mode, setMode] = (0, import_react9.useState)(isLoggedIn ? "profile" : "signin");
+  const [email, setEmail] = (0, import_react9.useState)("");
+  const [password, setPassword] = (0, import_react9.useState)("");
+  const [fullName, setFullName] = (0, import_react9.useState)("");
+  const [phone, setPhone] = (0, import_react9.useState)("");
+  const [referralInput, setReferralInput] = (0, import_react9.useState)("");
+  const [message, setMessage] = (0, import_react9.useState)(null);
   if (!data) return null;
   const { user } = data;
   const handleSignIn = (e) => {
     e.preventDefault();
+    if (setIsLoggedIn) setIsLoggedIn(true);
     setMessage({ type: "success", text: `Welcome back, ${user.fullName}!` });
+    if (window.confetti) window.confetti({ particleCount: 80, spread: 70 });
     setTimeout(() => {
       setMessage(null);
       setMode("profile");
-    }, 1500);
+      setActiveTab("home");
+    }, 1200);
   };
   const handleRegister = (e) => {
     e.preventDefault();
+    if (setIsLoggedIn) setIsLoggedIn(true);
     setMessage({ type: "success", text: "Registration completed! Account is verified." });
+    if (window.confetti) window.confetti({ particleCount: 100, spread: 70 });
     setTimeout(() => {
       setMessage(null);
       setMode("profile");
-    }, 1500);
+      setActiveTab("home");
+    }, 1200);
   };
-  return /* @__PURE__ */ import_react8.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, mode === "profile" ? /* @__PURE__ */ import_react8.default.createElement("div", { style: { maxWidth: "800px", margin: "0 auto" } }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "eyebrow" }, "User profile & security"), /* @__PURE__ */ import_react8.default.createElement("h2", null, "My Account Profile"), /* @__PURE__ */ import_react8.default.createElement("p", { className: "sub" }, "Manage credentials, review identity status, or switch into system administration."), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react8.default.createElement("div", null, /* @__PURE__ */ import_react8.default.createElement("h3", { style: { fontSize: "20px" } }, user.fullName), /* @__PURE__ */ import_react8.default.createElement("div", { className: "note", style: { marginTop: "2px", fontFamily: "monospace" } }, user.email, " \xB7 ", user.phone)), /* @__PURE__ */ import_react8.default.createElement("div", null, /* @__PURE__ */ import_react8.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)" } }, user.membershipTier), /* @__PURE__ */ import_react8.default.createElement("span", { className: "badge" }, "KYC Level ", user.kycLevel))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "row", style: { marginTop: "16px", gap: "8px" } }, /* @__PURE__ */ import_react8.default.createElement(
+  return /* @__PURE__ */ import_react9.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, mode === "profile" ? /* @__PURE__ */ import_react9.default.createElement("div", { style: { maxWidth: "800px", margin: "0 auto" } }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "eyebrow" }, "User profile & security"), /* @__PURE__ */ import_react9.default.createElement("h2", null, "My Account Profile"), /* @__PURE__ */ import_react9.default.createElement("p", { className: "sub" }, "Manage credentials, review identity status, or switch into system administration."), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("h3", { style: { fontSize: "20px" } }, user.fullName), /* @__PURE__ */ import_react9.default.createElement("div", { className: "note", style: { marginTop: "2px", fontFamily: "monospace" } }, user.email, " \xB7 ", user.phone)), /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)" } }, user.membershipTier), /* @__PURE__ */ import_react9.default.createElement("span", { className: "badge" }, "KYC Level ", user.kycLevel))), /* @__PURE__ */ import_react9.default.createElement("div", { className: "row", style: { marginTop: "16px", gap: "8px" } }, /* @__PURE__ */ import_react9.default.createElement(
+    "button",
+    {
+      onClick: () => {
+        if (setIsLoggedIn) setIsLoggedIn(false);
+        setMode("signin");
+      },
+      className: "btn line sm",
+      style: { color: "#d92d20", borderColor: "#fca5a5" }
+    },
+    "Sign Out"
+  ), /* @__PURE__ */ import_react9.default.createElement(
     "button",
     {
       onClick: () => setMode("signin"),
       className: "btn line sm"
     },
-    "Sign in to another account"
-  ), /* @__PURE__ */ import_react8.default.createElement(
+    "Switch Account"
+  ), /* @__PURE__ */ import_react9.default.createElement(
     "button",
     {
       onClick: () => setIsAdmin(!isAdmin),
@@ -7881,23 +8427,23 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
       style: { background: isAdmin ? "#d92d20" : void 0 }
     },
     isAdmin ? "Exit Administrator Mode" : "Open Admin Governance"
-  ))), /* @__PURE__ */ import_react8.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Email status"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Verified"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "note" }, "Confirmed via 6-digit OTP")), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "Phone status"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Verified"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "note" }, "Nigerian SMS OTP confirmed")), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "k" }, "NIBSS BVN/NIN"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Matched"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "note" }, "National identity verified"))), /* @__PURE__ */ import_react8.default.createElement("br", null), /* @__PURE__ */ import_react8.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react8.default.createElement("h3", null, "Recent login history"), /* @__PURE__ */ import_react8.default.createElement("div", { className: "scroll", style: { marginTop: "10px" } }, /* @__PURE__ */ import_react8.default.createElement("table", null, /* @__PURE__ */ import_react8.default.createElement("thead", null, /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("th", null, "Device"), /* @__PURE__ */ import_react8.default.createElement("th", null, "IP Location"), /* @__PURE__ */ import_react8.default.createElement("th", null, "Timestamp"), /* @__PURE__ */ import_react8.default.createElement("th", null, "Status"))), /* @__PURE__ */ import_react8.default.createElement("tbody", null, /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("b", null, "Chrome on Linux")), /* @__PURE__ */ import_react8.default.createElement("td", null, "127.0.0.1 (Lagos Gateway)"), /* @__PURE__ */ import_react8.default.createElement("td", null, "Active now"), /* @__PURE__ */ import_react8.default.createElement("td", { className: "st active" }, "Current session")), /* @__PURE__ */ import_react8.default.createElement("tr", null, /* @__PURE__ */ import_react8.default.createElement("td", null, /* @__PURE__ */ import_react8.default.createElement("b", null, "Safari on iPhone 15")), /* @__PURE__ */ import_react8.default.createElement("td", null, "102.89.44.12 (MTN Nigeria)"), /* @__PURE__ */ import_react8.default.createElement("td", null, "Yesterday 18:42"), /* @__PURE__ */ import_react8.default.createElement("td", { className: "st completed" }, "Completed"))))))) : (
+  ))), /* @__PURE__ */ import_react9.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Email status"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Verified"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "note" }, "Confirmed via 6-digit OTP")), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Phone status"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Verified"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "note" }, "Nigerian SMS OTP confirmed")), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "NIBSS BVN/NIN"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v g", style: { fontSize: "18px" } }, "\u2713 Matched"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "note" }, "National identity verified"))), /* @__PURE__ */ import_react9.default.createElement("br", null), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("h3", null, "Recent login history"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "scroll", style: { marginTop: "10px" } }, /* @__PURE__ */ import_react9.default.createElement("table", null, /* @__PURE__ */ import_react9.default.createElement("thead", null, /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("th", null, "Device"), /* @__PURE__ */ import_react9.default.createElement("th", null, "IP Location"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Timestamp"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Status"))), /* @__PURE__ */ import_react9.default.createElement("tbody", null, /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("td", null, /* @__PURE__ */ import_react9.default.createElement("b", null, "Chrome on Linux")), /* @__PURE__ */ import_react9.default.createElement("td", null, "127.0.0.1 (Lagos Gateway)"), /* @__PURE__ */ import_react9.default.createElement("td", null, "Active now"), /* @__PURE__ */ import_react9.default.createElement("td", { className: "st active" }, "Current session")), /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("td", null, /* @__PURE__ */ import_react9.default.createElement("b", null, "Safari on iPhone 15")), /* @__PURE__ */ import_react9.default.createElement("td", null, "102.89.44.12 (MTN Nigeria)"), /* @__PURE__ */ import_react9.default.createElement("td", null, "Yesterday 18:42"), /* @__PURE__ */ import_react9.default.createElement("td", { className: "st completed" }, "Completed"))))))) : (
     /* Sign In / Register Marketplace View */
-    /* @__PURE__ */ import_react8.default.createElement("div", { className: "authgrid" }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "card", style: { margin: 0 } }, /* @__PURE__ */ import_react8.default.createElement("div", { className: "seg" }, /* @__PURE__ */ import_react8.default.createElement(
+    /* @__PURE__ */ import_react9.default.createElement("div", { className: "authgrid" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "card", style: { margin: 0 } }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "seg" }, /* @__PURE__ */ import_react9.default.createElement(
       "button",
       {
         className: mode === "signin" ? "on" : "",
         onClick: () => setMode("signin")
       },
       "Sign in"
-    ), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement(
       "button",
       {
         className: mode === "register" ? "on" : "",
         onClick: () => setMode("register")
       },
       "Create account"
-    )), message && /* @__PURE__ */ import_react8.default.createElement("div", { className: "badge", style: { display: "block", margin: "10px 0", padding: "10px", background: "#e9f9ee", color: "#1fa640", width: "100%" } }, message.text), mode === "signin" ? /* @__PURE__ */ import_react8.default.createElement("form", { onSubmit: handleSignIn }, /* @__PURE__ */ import_react8.default.createElement("label", null, "Email"), /* @__PURE__ */ import_react8.default.createElement(
+    )), message && /* @__PURE__ */ import_react9.default.createElement("div", { className: "badge", style: { display: "block", margin: "10px 0", padding: "10px", background: "#e9f9ee", color: "#1fa640", width: "100%" } }, message.text), mode === "signin" ? /* @__PURE__ */ import_react9.default.createElement("form", { onSubmit: handleSignIn }, /* @__PURE__ */ import_react9.default.createElement("label", null, "Email"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "email",
@@ -7906,7 +8452,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "adebayo@riseandprosper.ng",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("label", null, "Password"), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Password"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "password",
@@ -7915,7 +8461,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react8.default.createElement("button", { type: "submit", className: "btn pri block" }, "Sign in")), /* @__PURE__ */ import_react8.default.createElement("div", { style: { marginTop: "12px", textAlign: "center" } }, /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react9.default.createElement("button", { type: "submit", className: "btn pri block" }, "Sign in")), /* @__PURE__ */ import_react9.default.createElement("div", { style: { marginTop: "12px", textAlign: "center" } }, /* @__PURE__ */ import_react9.default.createElement(
       "button",
       {
         type: "button",
@@ -7924,7 +8470,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         style: { background: "transparent", border: 0, cursor: "pointer", textDecoration: "underline" }
       },
       "Return to active profile"
-    ))) : /* @__PURE__ */ import_react8.default.createElement("form", { onSubmit: handleRegister }, /* @__PURE__ */ import_react8.default.createElement("p", { className: "note" }, "This creates a RAP membership account. A bank account is a separate step through our banking partner."), /* @__PURE__ */ import_react8.default.createElement("label", null, "Full name (exactly as on your NIN)"), /* @__PURE__ */ import_react8.default.createElement(
+    ))) : /* @__PURE__ */ import_react9.default.createElement("form", { onSubmit: handleRegister }, /* @__PURE__ */ import_react9.default.createElement("p", { className: "note" }, "This creates a RAP membership account. A bank account is a separate step through our banking partner."), /* @__PURE__ */ import_react9.default.createElement("label", null, "Full name (exactly as on your NIN)"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "text",
@@ -7933,7 +8479,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "Chukwuemeka Adebayo",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("label", null, "Email"), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Email"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "email",
@@ -7942,7 +8488,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "name@riseandprosper.ng",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("label", null, "Phone"), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Phone"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "tel",
@@ -7951,7 +8497,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "08012345678",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("label", null, "Password (8+ characters)"), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Password (8+ characters)"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "password",
@@ -7960,7 +8506,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         placeholder: "\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022",
         required: true
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("label", null, "Referral code (optional)"), /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Referral code (optional)"), /* @__PURE__ */ import_react9.default.createElement(
       "input",
       {
         type: "text",
@@ -7968,7 +8514,7 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
         onChange: (e) => setReferralInput(e.target.value),
         placeholder: "RAP-EMEK98"
       }
-    ), /* @__PURE__ */ import_react8.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react8.default.createElement("button", { type: "submit", className: "btn pri block" }, "Register now")))), /* @__PURE__ */ import_react8.default.createElement("div", null, /* @__PURE__ */ import_react8.default.createElement(
+    ), /* @__PURE__ */ import_react9.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react9.default.createElement("button", { type: "submit", className: "btn pri block" }, "Register now")))), /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement(
       "img",
       {
         src: "/img/flyer-2.jpg",
@@ -7987,19 +8533,19 @@ function LoginTab({ data, isAdmin, setIsAdmin, setActiveTab }) {
 }
 
 // client/src/components/AdminPanel.jsx
-var import_react9 = __toESM(require_react(), 1);
+var import_react10 = __toESM(require_react(), 1);
 function AdminPanel({ onClose }) {
-  const [adminData, setAdminData] = (0, import_react9.useState)(null);
-  const [activeTab, setActiveTab] = (0, import_react9.useState)("settings");
-  const [transferablePct, setTransferablePct] = (0, import_react9.useState)(70);
-  const [lockedPct, setLockedPct] = (0, import_react9.useState)(30);
-  const [lockDays, setLockDays] = (0, import_react9.useState)(365);
-  const [payoutDay, setPayoutDay] = (0, import_react9.useState)("Monday");
-  const [savedSuccess, setSavedSuccess] = (0, import_react9.useState)(false);
+  const [adminData, setAdminData] = (0, import_react10.useState)(null);
+  const [activeTab, setActiveTab] = (0, import_react10.useState)("settings");
+  const [transferablePct, setTransferablePct] = (0, import_react10.useState)(70);
+  const [lockedPct, setLockedPct] = (0, import_react10.useState)(30);
+  const [lockDays, setLockDays] = (0, import_react10.useState)(365);
+  const [payoutDay, setPayoutDay] = (0, import_react10.useState)("Monday");
+  const [savedSuccess, setSavedSuccess] = (0, import_react10.useState)(false);
   const fetchAdminData = () => {
     fetch("/api/admin/overview").then((res) => res.json()).then((d) => setAdminData(d));
   };
-  (0, import_react9.useEffect)(() => {
+  (0, import_react10.useEffect)(() => {
     fetchAdminData();
   }, []);
   const handleSaveSettings = (e) => {
@@ -8007,21 +8553,21 @@ function AdminPanel({ onClose }) {
     setSavedSuccess(true);
     setTimeout(() => setSavedSuccess(false), 2500);
   };
-  return /* @__PURE__ */ import_react9.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "card", style: { borderColor: "#d92d20" } }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react9.default.createElement("div", null, /* @__PURE__ */ import_react9.default.createElement("span", { className: "badge", style: { borderColor: "#d92d20", color: "#d92d20" } }, "Admin Governance"), /* @__PURE__ */ import_react9.default.createElement("h2", { style: { fontSize: "22px", marginTop: "4px" } }, "RAP Platform Administration"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "note" }, "Logged in as: ", /* @__PURE__ */ import_react9.default.createElement("b", null, "Dr. Ngozi Balogun"), " (Super Administrator)")), /* @__PURE__ */ import_react9.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Exit Admin Panel"))), adminData && /* @__PURE__ */ import_react9.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Total members"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v" }, adminData.metrics.totalUsers)), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Platform volume"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v" }, "\u20A6", adminData.metrics.totalVolume.toLocaleString())), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Locked savings vault"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v g" }, "\u20A6", adminData.metrics.totalLockedSavings.toLocaleString())), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Pending loans"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v b" }, adminData.metrics.pendingLoans)), /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("div", { className: "k" }, "Incubator cohort"), /* @__PURE__ */ import_react9.default.createElement("div", { className: "v" }, adminData.metrics.incubatorStudents))), /* @__PURE__ */ import_react9.default.createElement("div", { className: "chips", style: { margin: "18px 0" } }, /* @__PURE__ */ import_react9.default.createElement(
+  return /* @__PURE__ */ import_react10.default.createElement("div", { className: "wrap", style: { paddingTop: "20px" } }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "card", style: { borderColor: "#d92d20" } }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react10.default.createElement("div", null, /* @__PURE__ */ import_react10.default.createElement("span", { className: "badge", style: { borderColor: "#d92d20", color: "#d92d20" } }, "Admin Governance"), /* @__PURE__ */ import_react10.default.createElement("h2", { style: { fontSize: "22px", marginTop: "4px" } }, "RAP Platform Administration"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "note" }, "Logged in as: ", /* @__PURE__ */ import_react10.default.createElement("b", null, "Dr. Ngozi Balogun"), " (Super Administrator)")), /* @__PURE__ */ import_react10.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Exit Admin Panel"))), adminData && /* @__PURE__ */ import_react10.default.createElement("div", { className: "grid" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "k" }, "Total members"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "v" }, adminData.metrics.totalUsers)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "k" }, "Platform volume"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "v" }, "\u20A6", adminData.metrics.totalVolume.toLocaleString())), /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "k" }, "Locked savings vault"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "v g" }, "\u20A6", adminData.metrics.totalLockedSavings.toLocaleString())), /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "k" }, "Pending loans"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "v b" }, adminData.metrics.pendingLoans)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "k" }, "Incubator cohort"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "v" }, adminData.metrics.incubatorStudents))), /* @__PURE__ */ import_react10.default.createElement("div", { className: "chips", style: { margin: "18px 0" } }, /* @__PURE__ */ import_react10.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("settings"),
       style: { background: activeTab === "settings" ? "var(--ink)" : void 0, color: activeTab === "settings" ? "#fff" : void 0 }
     },
     "Configure 70/30 Policy"
-  ), /* @__PURE__ */ import_react9.default.createElement(
+  ), /* @__PURE__ */ import_react10.default.createElement(
     "button",
     {
       onClick: () => setActiveTab("audit"),
       style: { background: activeTab === "audit" ? "var(--ink)" : void 0, color: activeTab === "audit" ? "#fff" : void 0 }
     },
     "Immutable Financial Audit Trail"
-  )), activeTab === "settings" && /* @__PURE__ */ import_react9.default.createElement("div", { className: "card", style: { maxWidth: "640px" } }, /* @__PURE__ */ import_react9.default.createElement("h3", null, "Configure 70/30 System Rules"), /* @__PURE__ */ import_react9.default.createElement("p", { className: "note", style: { marginTop: "2px" } }, "Adjust the earnings split percentages, lock duration, and weekly payout schedules."), /* @__PURE__ */ import_react9.default.createElement("form", { onSubmit: handleSaveSettings, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react9.default.createElement("label", null, "Transferable portion (%)"), /* @__PURE__ */ import_react9.default.createElement(
+  )), activeTab === "settings" && /* @__PURE__ */ import_react10.default.createElement("div", { className: "card", style: { maxWidth: "640px" } }, /* @__PURE__ */ import_react10.default.createElement("h3", null, "Configure 70/30 System Rules"), /* @__PURE__ */ import_react10.default.createElement("p", { className: "note", style: { marginTop: "2px" } }, "Adjust the earnings split percentages, lock duration, and weekly payout schedules."), /* @__PURE__ */ import_react10.default.createElement("form", { onSubmit: handleSaveSettings, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react10.default.createElement("label", null, "Transferable portion (%)"), /* @__PURE__ */ import_react10.default.createElement(
     "input",
     {
       type: "number",
@@ -8035,7 +8581,7 @@ function AdminPanel({ onClose }) {
       max: "100",
       required: true
     }
-  ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Locked savings portion (%)"), /* @__PURE__ */ import_react9.default.createElement(
+  ), /* @__PURE__ */ import_react10.default.createElement("label", null, "Locked savings portion (%)"), /* @__PURE__ */ import_react10.default.createElement(
     "input",
     {
       type: "number",
@@ -8049,7 +8595,7 @@ function AdminPanel({ onClose }) {
       max: "100",
       required: true
     }
-  ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Savings lock duration (days)"), /* @__PURE__ */ import_react9.default.createElement(
+  ), /* @__PURE__ */ import_react10.default.createElement("label", null, "Savings lock duration (days)"), /* @__PURE__ */ import_react10.default.createElement(
     "input",
     {
       type: "number",
@@ -8057,30 +8603,30 @@ function AdminPanel({ onClose }) {
       onChange: (e) => setLockDays(Number(e.target.value)),
       required: true
     }
-  ), /* @__PURE__ */ import_react9.default.createElement("label", null, "Scheduled weekly payout day"), /* @__PURE__ */ import_react9.default.createElement(
+  ), /* @__PURE__ */ import_react10.default.createElement("label", null, "Scheduled weekly payout day"), /* @__PURE__ */ import_react10.default.createElement(
     "select",
     {
       value: payoutDay,
       onChange: (e) => setPayoutDay(e.target.value)
     },
-    /* @__PURE__ */ import_react9.default.createElement("option", { value: "Monday" }, "Monday (Approved Schedule)"),
-    /* @__PURE__ */ import_react9.default.createElement("option", { value: "Tuesday" }, "Tuesday"),
-    /* @__PURE__ */ import_react9.default.createElement("option", { value: "Friday" }, "Friday")
-  ), savedSuccess && /* @__PURE__ */ import_react9.default.createElement("div", { className: "badge", style: { display: "block", margin: "14px 0", padding: "10px", background: "#e9f9ee", color: "#1fa640" } }, "\u2713 System allocation rules updated and logged to audit trail!"), /* @__PURE__ */ import_react9.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react9.default.createElement("button", { type: "submit", className: "btn pri block" }, "Save System Rules")))), activeTab === "audit" && adminData && /* @__PURE__ */ import_react9.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react9.default.createElement("h3", null, "Financial Audit Ledger"), /* @__PURE__ */ import_react9.default.createElement("p", { className: "note" }, "Immutable audit records for compliance and regulatory reporting."), /* @__PURE__ */ import_react9.default.createElement("div", { className: "scroll", style: { marginTop: "14px" } }, /* @__PURE__ */ import_react9.default.createElement("table", null, /* @__PURE__ */ import_react9.default.createElement("thead", null, /* @__PURE__ */ import_react9.default.createElement("tr", null, /* @__PURE__ */ import_react9.default.createElement("th", null, "Timestamp"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Action"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Actor"), /* @__PURE__ */ import_react9.default.createElement("th", null, "Details"))), /* @__PURE__ */ import_react9.default.createElement("tbody", null, adminData.auditLogs.map((log) => /* @__PURE__ */ import_react9.default.createElement("tr", { key: log.id }, /* @__PURE__ */ import_react9.default.createElement("td", null, new Date(log.created_at).toLocaleString("en-NG")), /* @__PURE__ */ import_react9.default.createElement("td", null, /* @__PURE__ */ import_react9.default.createElement("b", { style: { color: "var(--blue)" } }, log.action)), /* @__PURE__ */ import_react9.default.createElement("td", null, log.actor_id), /* @__PURE__ */ import_react9.default.createElement("td", { style: { maxWidth: "350px", whiteSpace: "normal", fontSize: "13px" } }, log.details))))))));
+    /* @__PURE__ */ import_react10.default.createElement("option", { value: "Monday" }, "Monday (Approved Schedule)"),
+    /* @__PURE__ */ import_react10.default.createElement("option", { value: "Tuesday" }, "Tuesday"),
+    /* @__PURE__ */ import_react10.default.createElement("option", { value: "Friday" }, "Friday")
+  ), savedSuccess && /* @__PURE__ */ import_react10.default.createElement("div", { className: "badge", style: { display: "block", margin: "14px 0", padding: "10px", background: "#e9f9ee", color: "#1fa640" } }, "\u2713 System allocation rules updated and logged to audit trail!"), /* @__PURE__ */ import_react10.default.createElement("div", { style: { marginTop: "20px" } }, /* @__PURE__ */ import_react10.default.createElement("button", { type: "submit", className: "btn pri block" }, "Save System Rules")))), activeTab === "audit" && adminData && /* @__PURE__ */ import_react10.default.createElement("div", { className: "card" }, /* @__PURE__ */ import_react10.default.createElement("h3", null, "Financial Audit Ledger"), /* @__PURE__ */ import_react10.default.createElement("p", { className: "note" }, "Immutable audit records for compliance and regulatory reporting."), /* @__PURE__ */ import_react10.default.createElement("div", { className: "scroll", style: { marginTop: "14px" } }, /* @__PURE__ */ import_react10.default.createElement("table", null, /* @__PURE__ */ import_react10.default.createElement("thead", null, /* @__PURE__ */ import_react10.default.createElement("tr", null, /* @__PURE__ */ import_react10.default.createElement("th", null, "Timestamp"), /* @__PURE__ */ import_react10.default.createElement("th", null, "Action"), /* @__PURE__ */ import_react10.default.createElement("th", null, "Actor"), /* @__PURE__ */ import_react10.default.createElement("th", null, "Details"))), /* @__PURE__ */ import_react10.default.createElement("tbody", null, adminData.auditLogs.map((log) => /* @__PURE__ */ import_react10.default.createElement("tr", { key: log.id }, /* @__PURE__ */ import_react10.default.createElement("td", null, new Date(log.created_at).toLocaleString("en-NG")), /* @__PURE__ */ import_react10.default.createElement("td", null, /* @__PURE__ */ import_react10.default.createElement("b", { style: { color: "var(--blue)" } }, log.action)), /* @__PURE__ */ import_react10.default.createElement("td", null, log.actor_id), /* @__PURE__ */ import_react10.default.createElement("td", { style: { maxWidth: "350px", whiteSpace: "normal", fontSize: "13px" } }, log.details))))))));
 }
 
 // client/src/components/MondayTransferModal.jsx
-var import_react10 = __toESM(require_react(), 1);
+var import_react11 = __toESM(require_react(), 1);
 function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
   if (!isOpen || !data) return null;
   const { balances, partnerBank } = data;
   const maxAvailable = balances.earningsAvailableForTransfer;
-  const [transferAmount, setTransferAmount] = (0, import_react10.useState)(maxAvailable);
-  const [destinationType, setDestinationType] = (0, import_react10.useState)("internal_bank");
-  const [scheduledAuto, setScheduledAuto] = (0, import_react10.useState)(false);
-  const [processing, setProcessing] = (0, import_react10.useState)(false);
-  const [receipt, setReceipt] = (0, import_react10.useState)(null);
-  const [errorMsg, setErrorMsg] = (0, import_react10.useState)("");
+  const [transferAmount, setTransferAmount] = (0, import_react11.useState)(maxAvailable);
+  const [destinationType, setDestinationType] = (0, import_react11.useState)("internal_bank");
+  const [scheduledAuto, setScheduledAuto] = (0, import_react11.useState)(false);
+  const [processing, setProcessing] = (0, import_react11.useState)(false);
+  const [receipt, setReceipt] = (0, import_react11.useState)(null);
+  const [errorMsg, setErrorMsg] = (0, import_react11.useState)("");
   const handleExecuteTransfer = async (e) => {
     e.preventDefault();
     setProcessing(true);
@@ -8130,22 +8676,22 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
     if (onTransferSuccess) onTransferSuccess();
     setProcessing(false);
   };
-  return /* @__PURE__ */ import_react10.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react10.default.createElement("h3", null, "Transfer earnings"), /* @__PURE__ */ import_react10.default.createElement(
+  return /* @__PURE__ */ import_react11.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react11.default.createElement("h3", null, "Transfer earnings"), /* @__PURE__ */ import_react11.default.createElement(
     "button",
     {
       onClick: onClose,
       style: { background: "transparent", border: 0, fontSize: "20px", cursor: "pointer", color: "var(--mute)" }
     },
     "\u2715"
-  )), !receipt ? /* @__PURE__ */ import_react10.default.createElement("div", null, /* @__PURE__ */ import_react10.default.createElement("p", { className: "note", style: { fontSize: "14px", marginTop: "4px" } }, "Transferable now (70%): ", /* @__PURE__ */ import_react10.default.createElement("b", { style: { color: "var(--blue)" } }, "\u20A6", maxAvailable.toLocaleString())), /* @__PURE__ */ import_react10.default.createElement("div", { className: "warn", style: { marginTop: "12px" } }, "70% of your eligible affiliate income is available for transfer. The remaining 30% is reserved as one-year locked savings."), /* @__PURE__ */ import_react10.default.createElement("form", { onSubmit: handleExecuteTransfer, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react10.default.createElement("label", null, "Destination bank"), /* @__PURE__ */ import_react10.default.createElement(
+  )), !receipt ? /* @__PURE__ */ import_react11.default.createElement("div", null, /* @__PURE__ */ import_react11.default.createElement("p", { className: "note", style: { fontSize: "14px", marginTop: "4px" } }, "Transferable now (70%): ", /* @__PURE__ */ import_react11.default.createElement("b", { style: { color: "var(--blue)" } }, "\u20A6", maxAvailable.toLocaleString())), /* @__PURE__ */ import_react11.default.createElement("div", { className: "warn", style: { marginTop: "12px" } }, "70% of your eligible affiliate income is available for transfer. The remaining 30% is reserved as one-year locked savings."), /* @__PURE__ */ import_react11.default.createElement("form", { onSubmit: handleExecuteTransfer, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Destination bank"), /* @__PURE__ */ import_react11.default.createElement(
     "select",
     {
       value: destinationType,
       onChange: (e) => setDestinationType(e.target.value)
     },
-    /* @__PURE__ */ import_react10.default.createElement("option", { value: "internal_bank" }, "Wema Bank (RAP Partner \u2022 ", partnerBank.accountNumber, ")"),
-    /* @__PURE__ */ import_react10.default.createElement("option", { value: "external_gtb" }, "Guaranty Trust Bank (Linked \u2022 0129485739)")
-  ), /* @__PURE__ */ import_react10.default.createElement("label", null, "Amount to transfer (\u20A6)"), /* @__PURE__ */ import_react10.default.createElement(
+    /* @__PURE__ */ import_react11.default.createElement("option", { value: "internal_bank" }, "Wema Bank (RAP Partner \u2022 ", partnerBank.accountNumber, ")"),
+    /* @__PURE__ */ import_react11.default.createElement("option", { value: "external_gtb" }, "Guaranty Trust Bank (Linked \u2022 0129485739)")
+  ), /* @__PURE__ */ import_react11.default.createElement("label", null, "Amount to transfer (\u20A6)"), /* @__PURE__ */ import_react11.default.createElement(
     "input",
     {
       type: "number",
@@ -8155,7 +8701,7 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       onChange: (e) => setTransferAmount(Number(e.target.value)),
       required: true
     }
-  ), /* @__PURE__ */ import_react10.default.createElement("div", { style: { marginTop: "12px" } }, /* @__PURE__ */ import_react10.default.createElement("label", { style: { display: "flex", gap: "8px", alignItems: "center", fontWeight: "600", cursor: "pointer" } }, /* @__PURE__ */ import_react10.default.createElement(
+  ), /* @__PURE__ */ import_react11.default.createElement("div", { style: { marginTop: "12px" } }, /* @__PURE__ */ import_react11.default.createElement("label", { style: { display: "flex", gap: "8px", alignItems: "center", fontWeight: "600", cursor: "pointer" } }, /* @__PURE__ */ import_react11.default.createElement(
     "input",
     {
       type: "checkbox",
@@ -8163,7 +8709,7 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       onChange: (e) => setScheduledAuto(e.target.checked),
       style: { width: "auto" }
     }
-  ), /* @__PURE__ */ import_react10.default.createElement("span", null, "Authorise automatic weekly payouts every Monday"))), errorMsg && /* @__PURE__ */ import_react10.default.createElement("div", { className: "warn", style: { color: "#d92d20", marginTop: "12px" } }, errorMsg), /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { marginTop: "20px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react10.default.createElement(
+  ), /* @__PURE__ */ import_react11.default.createElement("span", null, "Authorise automatic weekly payouts every Monday"))), errorMsg && /* @__PURE__ */ import_react11.default.createElement("div", { className: "warn", style: { color: "#d92d20", marginTop: "12px" } }, errorMsg), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { marginTop: "20px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react11.default.createElement(
     "button",
     {
       type: "button",
@@ -8171,7 +8717,7 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       className: "btn line sm"
     },
     "Cancel"
-  ), /* @__PURE__ */ import_react10.default.createElement(
+  ), /* @__PURE__ */ import_react11.default.createElement(
     "button",
     {
       type: "submit",
@@ -8179,7 +8725,7 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       className: "btn pri sm"
     },
     processing ? "Processing..." : "Confirm transfer"
-  )))) : /* @__PURE__ */ import_react10.default.createElement("div", { style: { textAlign: "center", padding: "16px 0" } }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "v g", style: { fontSize: "32px" } }, "\u20A6", receipt.amount.toLocaleString("en-NG", { minimumFractionDigits: 2 })), /* @__PURE__ */ import_react10.default.createElement("div", { style: { fontWeight: "700", color: "var(--green)", marginTop: "4px" } }, "\u2713 Transfer Verified & Settled"), /* @__PURE__ */ import_react10.default.createElement("p", { className: "note", style: { marginTop: "6px" } }, "Transferred to ", receipt.destinationBank, " (", receipt.destinationAccountNumber, ")"), /* @__PURE__ */ import_react10.default.createElement("div", { className: "card", style: { background: "var(--soft)", marginTop: "16px", textAlign: "left", fontSize: "13px" } }, /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react10.default.createElement("span", { className: "k" }, "Reference:"), /* @__PURE__ */ import_react10.default.createElement("b", null, receipt.reference)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react10.default.createElement("span", { className: "k" }, "Beneficiary:"), /* @__PURE__ */ import_react10.default.createElement("span", null, receipt.destinationAccountName)), /* @__PURE__ */ import_react10.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react10.default.createElement("span", { className: "k" }, "Remaining transferable:"), /* @__PURE__ */ import_react10.default.createElement("b", { style: { color: "var(--blue)" } }, "\u20A6", receipt.remainingTransferable.toLocaleString()))), /* @__PURE__ */ import_react10.default.createElement(
+  )))) : /* @__PURE__ */ import_react11.default.createElement("div", { style: { textAlign: "center", padding: "16px 0" } }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "v g", style: { fontSize: "32px" } }, "\u20A6", receipt.amount.toLocaleString("en-NG", { minimumFractionDigits: 2 })), /* @__PURE__ */ import_react11.default.createElement("div", { style: { fontWeight: "700", color: "var(--green)", marginTop: "4px" } }, "\u2713 Transfer Verified & Settled"), /* @__PURE__ */ import_react11.default.createElement("p", { className: "note", style: { marginTop: "6px" } }, "Transferred to ", receipt.destinationBank, " (", receipt.destinationAccountNumber, ")"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "card", style: { background: "var(--soft)", marginTop: "16px", textAlign: "left", fontSize: "13px" } }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "k" }, "Reference:"), /* @__PURE__ */ import_react11.default.createElement("b", null, receipt.reference)), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "k" }, "Beneficiary:"), /* @__PURE__ */ import_react11.default.createElement("span", null, receipt.destinationAccountName)), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "k" }, "Remaining transferable:"), /* @__PURE__ */ import_react11.default.createElement("b", { style: { color: "var(--blue)" } }, "\u20A6", receipt.remainingTransferable.toLocaleString()))), /* @__PURE__ */ import_react11.default.createElement(
     "button",
     {
       onClick: () => {
@@ -8194,7 +8740,7 @@ function MondayTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
 }
 
 // client/src/components/SendTransferModal.jsx
-var import_react11 = __toESM(require_react(), 1);
+var import_react12 = __toESM(require_react(), 1);
 var NIGERIAN_BANKS = [
   "Guaranty Trust Bank (GTBank)",
   "Access Bank",
@@ -8215,15 +8761,15 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
   if (!isOpen || !data) return null;
   const { balances } = data;
   const availableBankBalance = balances.availableBankBalance;
-  const [bank, setBank] = (0, import_react11.useState)(NIGERIAN_BANKS[0]);
-  const [accountNumber, setAccountNumber] = (0, import_react11.useState)("");
-  const [beneficiaryName, setBeneficiaryName] = (0, import_react11.useState)("");
-  const [amount, setAmount] = (0, import_react11.useState)("");
-  const [narration, setNarration] = (0, import_react11.useState)("");
-  const [resolving, setResolving] = (0, import_react11.useState)(false);
-  const [submitting, setSubmitting] = (0, import_react11.useState)(false);
-  const [receipt, setReceipt] = (0, import_react11.useState)(null);
-  const [errorMsg, setErrorMsg] = (0, import_react11.useState)("");
+  const [bank, setBank] = (0, import_react12.useState)(NIGERIAN_BANKS[0]);
+  const [accountNumber, setAccountNumber] = (0, import_react12.useState)("");
+  const [beneficiaryName, setBeneficiaryName] = (0, import_react12.useState)("");
+  const [amount, setAmount] = (0, import_react12.useState)("");
+  const [narration, setNarration] = (0, import_react12.useState)("");
+  const [resolving, setResolving] = (0, import_react12.useState)(false);
+  const [submitting, setSubmitting] = (0, import_react12.useState)(false);
+  const [receipt, setReceipt] = (0, import_react12.useState)(null);
+  const [errorMsg, setErrorMsg] = (0, import_react12.useState)("");
   const handleAccountChange = (val) => {
     setAccountNumber(val);
     if (val.length === 10) {
@@ -8289,14 +8835,14 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
     if (onTransferSuccess) onTransferSuccess();
     setSubmitting(false);
   };
-  return /* @__PURE__ */ import_react11.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react11.default.createElement("h3", null, "Send money"), /* @__PURE__ */ import_react11.default.createElement(
+  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "modal-box" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center" } }, /* @__PURE__ */ import_react12.default.createElement("h3", null, "Send money"), /* @__PURE__ */ import_react12.default.createElement(
     "button",
     {
       onClick: onClose,
       style: { background: "transparent", border: 0, fontSize: "20px", cursor: "pointer", color: "var(--mute)" }
     },
     "\u2715"
-  )), !receipt ? /* @__PURE__ */ import_react11.default.createElement("div", null, /* @__PURE__ */ import_react11.default.createElement("p", { className: "note", style: { fontSize: "14px", marginTop: "4px" } }, "Available in bank balance: ", /* @__PURE__ */ import_react11.default.createElement("b", null, "\u20A6", availableBankBalance.toLocaleString())), /* @__PURE__ */ import_react11.default.createElement("form", { onSubmit: handleSend, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react11.default.createElement("label", null, "Destination bank"), /* @__PURE__ */ import_react11.default.createElement("select", { value: bank, onChange: (e) => setBank(e.target.value) }, NIGERIAN_BANKS.map((b, i) => /* @__PURE__ */ import_react11.default.createElement("option", { key: i, value: b }, b))), /* @__PURE__ */ import_react11.default.createElement("label", null, "Account number"), /* @__PURE__ */ import_react11.default.createElement(
+  )), !receipt ? /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("p", { className: "note", style: { fontSize: "14px", marginTop: "4px" } }, "Available in bank balance: ", /* @__PURE__ */ import_react12.default.createElement("b", null, "\u20A6", availableBankBalance.toLocaleString())), /* @__PURE__ */ import_react12.default.createElement("form", { onSubmit: handleSend, style: { marginTop: "16px" } }, /* @__PURE__ */ import_react12.default.createElement("label", null, "Destination bank"), /* @__PURE__ */ import_react12.default.createElement("select", { value: bank, onChange: (e) => setBank(e.target.value) }, NIGERIAN_BANKS.map((b, i) => /* @__PURE__ */ import_react12.default.createElement("option", { key: i, value: b }, b))), /* @__PURE__ */ import_react12.default.createElement("label", null, "Account number"), /* @__PURE__ */ import_react12.default.createElement(
     "input",
     {
       type: "text",
@@ -8306,7 +8852,7 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       placeholder: "10 digits",
       required: true
     }
-  ), resolving && /* @__PURE__ */ import_react11.default.createElement("div", { className: "note", style: { color: "var(--blue)", fontWeight: "600" } }, "Resolving NIBSS beneficiary..."), beneficiaryName && /* @__PURE__ */ import_react11.default.createElement("div", { className: "badge", style: { display: "block", margin: "8px 0", background: "#e9f9ee", color: "#1fa640", fontWeight: "700" } }, "\u2713 ", beneficiaryName), /* @__PURE__ */ import_react11.default.createElement("label", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react11.default.createElement(
+  ), resolving && /* @__PURE__ */ import_react12.default.createElement("div", { className: "note", style: { color: "var(--blue)", fontWeight: "600" } }, "Resolving NIBSS beneficiary..."), beneficiaryName && /* @__PURE__ */ import_react12.default.createElement("div", { className: "badge", style: { display: "block", margin: "8px 0", background: "#e9f9ee", color: "#1fa640", fontWeight: "700" } }, "\u2713 ", beneficiaryName), /* @__PURE__ */ import_react12.default.createElement("label", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react12.default.createElement(
     "input",
     {
       type: "number",
@@ -8317,7 +8863,7 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       placeholder: "5000",
       required: true
     }
-  ), /* @__PURE__ */ import_react11.default.createElement("label", null, "Narration (optional)"), /* @__PURE__ */ import_react11.default.createElement(
+  ), /* @__PURE__ */ import_react12.default.createElement("label", null, "Narration (optional)"), /* @__PURE__ */ import_react12.default.createElement(
     "input",
     {
       type: "text",
@@ -8325,7 +8871,7 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       onChange: (e) => setNarration(e.target.value),
       placeholder: "Living expenses / payment"
     }
-  ), errorMsg && /* @__PURE__ */ import_react11.default.createElement("div", { className: "warn", style: { color: "#d92d20", marginTop: "12px" } }, errorMsg), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { marginTop: "20px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react11.default.createElement(
+  ), errorMsg && /* @__PURE__ */ import_react12.default.createElement("div", { className: "warn", style: { color: "#d92d20", marginTop: "12px" } }, errorMsg), /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { marginTop: "20px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react12.default.createElement(
     "button",
     {
       type: "button",
@@ -8333,7 +8879,7 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       className: "btn line sm"
     },
     "Cancel"
-  ), /* @__PURE__ */ import_react11.default.createElement(
+  ), /* @__PURE__ */ import_react12.default.createElement(
     "button",
     {
       type: "submit",
@@ -8341,7 +8887,7 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
       className: "btn pri sm"
     },
     submitting ? "Authenticating..." : "Confirm transfer"
-  )))) : /* @__PURE__ */ import_react11.default.createElement("div", { style: { textAlign: "center", padding: "16px 0" } }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "v g", style: { fontSize: "32px" } }, "\u20A6", receipt.amount.toLocaleString("en-NG", { minimumFractionDigits: 2 })), /* @__PURE__ */ import_react11.default.createElement("div", { style: { fontWeight: "700", color: "var(--green)", marginTop: "4px" } }, "\u2713 Transfer Verified & Completed"), /* @__PURE__ */ import_react11.default.createElement("p", { className: "note", style: { marginTop: "6px" } }, "Sent to ", receipt.destinationName, " (", receipt.destinationBank, ")"), /* @__PURE__ */ import_react11.default.createElement("div", { className: "card", style: { background: "var(--soft)", marginTop: "16px", textAlign: "left", fontSize: "13px" } }, /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "k" }, "Reference:"), /* @__PURE__ */ import_react11.default.createElement("b", null, receipt.reference)), /* @__PURE__ */ import_react11.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react11.default.createElement("span", { className: "k" }, "New bank balance:"), /* @__PURE__ */ import_react11.default.createElement("b", { style: { color: "var(--green)" } }, "\u20A6", receipt.newBalance.toLocaleString()))), /* @__PURE__ */ import_react11.default.createElement(
+  )))) : /* @__PURE__ */ import_react12.default.createElement("div", { style: { textAlign: "center", padding: "16px 0" } }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "v g", style: { fontSize: "32px" } }, "\u20A6", receipt.amount.toLocaleString("en-NG", { minimumFractionDigits: 2 })), /* @__PURE__ */ import_react12.default.createElement("div", { style: { fontWeight: "700", color: "var(--green)", marginTop: "4px" } }, "\u2713 Transfer Verified & Completed"), /* @__PURE__ */ import_react12.default.createElement("p", { className: "note", style: { marginTop: "6px" } }, "Sent to ", receipt.destinationName, " (", receipt.destinationBank, ")"), /* @__PURE__ */ import_react12.default.createElement("div", { className: "card", style: { background: "var(--soft)", marginTop: "16px", textAlign: "left", fontSize: "13px" } }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "Reference:"), /* @__PURE__ */ import_react12.default.createElement("b", null, receipt.reference)), /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { justifyContent: "space-between", marginTop: "6px" } }, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "New bank balance:"), /* @__PURE__ */ import_react12.default.createElement("b", { style: { color: "var(--green)" } }, "\u20A6", receipt.newBalance.toLocaleString()))), /* @__PURE__ */ import_react12.default.createElement(
     "button",
     {
       onClick: onClose,
@@ -8353,35 +8899,35 @@ function SendTransferModal({ isOpen, onClose, data, onTransferSuccess }) {
 }
 
 // client/src/components/StatementModal.jsx
-var import_react12 = __toESM(require_react(), 1);
+var import_react13 = __toESM(require_react(), 1);
 function StatementModal({ isOpen, onClose, data }) {
-  const [transactions, setTransactions] = (0, import_react12.useState)([]);
-  (0, import_react12.useEffect)(() => {
+  const [transactions, setTransactions] = (0, import_react13.useState)([]);
+  (0, import_react13.useEffect)(() => {
     if (isOpen) {
       fetch("/api/banking/transactions").then((res) => res.json()).then((d) => setTransactions(d));
     }
   }, [isOpen]);
   if (!isOpen || !data) return null;
   const { partnerBank, balances } = data;
-  return /* @__PURE__ */ import_react12.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "modal-box", style: { maxWidth: "640px" } }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "14px" } }, /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { gap: "10px" } }, /* @__PURE__ */ import_react12.default.createElement("img", { src: "/img/logo.png", alt: "RAP", style: { height: "32px" } }), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("h3", { style: { fontSize: "17px" } }, "Account Statement"), /* @__PURE__ */ import_react12.default.createElement("div", { className: "note" }, partnerBank.partnerBankName))), /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react12.default.createElement(
+  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "modal-box", style: { maxWidth: "640px" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "14px" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { gap: "10px" } }, /* @__PURE__ */ import_react13.default.createElement("img", { src: "/img/logo.png", alt: "RAP", style: { height: "32px" } }), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("h3", { style: { fontSize: "17px" } }, "Account Statement"), /* @__PURE__ */ import_react13.default.createElement("div", { className: "note" }, partnerBank.partnerBankName))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react13.default.createElement(
     "button",
     {
       onClick: () => window.print(),
       className: "btn pri sm"
     },
     "Print / PDF"
-  ), /* @__PURE__ */ import_react12.default.createElement(
+  ), /* @__PURE__ */ import_react13.default.createElement(
     "button",
     {
       onClick: onClose,
       style: { background: "transparent", border: 0, fontSize: "20px", cursor: "pointer", color: "var(--mute)" }
     },
     "\u2715"
-  ))), /* @__PURE__ */ import_react12.default.createElement("div", { className: "grid4", style: { marginTop: "16px", fontSize: "13px" } }, /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "Account name:"), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("b", null, partnerBank.accountName))), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "Account number:"), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("b", null, partnerBank.accountNumber))), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "Period:"), /* @__PURE__ */ import_react12.default.createElement("div", null, "Last 30 Days")), /* @__PURE__ */ import_react12.default.createElement("div", null, /* @__PURE__ */ import_react12.default.createElement("span", { className: "k" }, "Closing balance:"), /* @__PURE__ */ import_react12.default.createElement("div", { style: { color: "var(--green)", fontWeight: "800" } }, "\u20A6", balances.actualBankBalance.toLocaleString()))), /* @__PURE__ */ import_react12.default.createElement("div", { className: "scroll", style: { marginTop: "18px" } }, /* @__PURE__ */ import_react12.default.createElement("table", null, /* @__PURE__ */ import_react12.default.createElement("thead", null, /* @__PURE__ */ import_react12.default.createElement("tr", null, /* @__PURE__ */ import_react12.default.createElement("th", null, "Date"), /* @__PURE__ */ import_react12.default.createElement("th", null, "Narration"), /* @__PURE__ */ import_react12.default.createElement("th", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react12.default.createElement("th", null, "Balance After"))), /* @__PURE__ */ import_react12.default.createElement("tbody", null, transactions.map((tx) => /* @__PURE__ */ import_react12.default.createElement("tr", { key: tx.id }, /* @__PURE__ */ import_react12.default.createElement("td", null, new Date(tx.created_at).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react12.default.createElement("td", null, /* @__PURE__ */ import_react12.default.createElement("b", null, tx.narration || tx.type)), /* @__PURE__ */ import_react12.default.createElement("td", { style: { fontWeight: "700", color: tx.type === "deposit" || tx.type === "transfer_in" ? "var(--green)" : "var(--ink)" } }, tx.type === "deposit" || tx.type === "transfer_in" ? "+" : "-", "\u20A6", tx.amount.toLocaleString()), /* @__PURE__ */ import_react12.default.createElement("td", null, "\u20A6", tx.balance_after?.toLocaleString())))))), /* @__PURE__ */ import_react12.default.createElement("div", { className: "row", style: { marginTop: "18px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react12.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
+  ))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "grid4", style: { marginTop: "16px", fontSize: "13px" } }, /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Account name:"), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("b", null, partnerBank.accountName))), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Account number:"), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("b", null, partnerBank.accountNumber))), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Period:"), /* @__PURE__ */ import_react13.default.createElement("div", null, "Last 30 Days")), /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("span", { className: "k" }, "Closing balance:"), /* @__PURE__ */ import_react13.default.createElement("div", { style: { color: "var(--green)", fontWeight: "800" } }, "\u20A6", balances.actualBankBalance.toLocaleString()))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "scroll", style: { marginTop: "18px" } }, /* @__PURE__ */ import_react13.default.createElement("table", null, /* @__PURE__ */ import_react13.default.createElement("thead", null, /* @__PURE__ */ import_react13.default.createElement("tr", null, /* @__PURE__ */ import_react13.default.createElement("th", null, "Date"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Narration"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Amount (\u20A6)"), /* @__PURE__ */ import_react13.default.createElement("th", null, "Balance After"))), /* @__PURE__ */ import_react13.default.createElement("tbody", null, transactions.map((tx) => /* @__PURE__ */ import_react13.default.createElement("tr", { key: tx.id }, /* @__PURE__ */ import_react13.default.createElement("td", null, new Date(tx.created_at).toLocaleDateString("en-NG")), /* @__PURE__ */ import_react13.default.createElement("td", null, /* @__PURE__ */ import_react13.default.createElement("b", null, tx.narration || tx.type)), /* @__PURE__ */ import_react13.default.createElement("td", { style: { fontWeight: "700", color: tx.type === "deposit" || tx.type === "transfer_in" ? "var(--green)" : "var(--ink)" } }, tx.type === "deposit" || tx.type === "transfer_in" ? "+" : "-", "\u20A6", tx.amount.toLocaleString()), /* @__PURE__ */ import_react13.default.createElement("td", null, "\u20A6", tx.balance_after?.toLocaleString())))))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { marginTop: "18px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react13.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
 }
 
 // client/src/components/ScenarioWalkthrough.jsx
-var import_react13 = __toESM(require_react(), 1);
+var import_react14 = __toESM(require_react(), 1);
 var SCENARIO_STEPS = [
   { step: 1, title: "Step 1: Registration", desc: "Young Nigerian registers on RAP with basic personal details." },
   { step: 2, title: "Step 2: Email & Phone OTP", desc: "User verifies email address and phone number with 6-digit OTP." },
@@ -8404,9 +8950,9 @@ var SCENARIO_STEPS = [
   { step: 19, title: "Step 19: Full Audit Trail Inspection", desc: "Administrator reviews immutable audit logs of entire financial journey." }
 ];
 function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
-  const [currentStep, setCurrentStep] = (0, import_react13.useState)(1);
-  const [logs, setLogs] = (0, import_react13.useState)([]);
-  const [running, setRunning] = (0, import_react13.useState)(false);
+  const [currentStep, setCurrentStep] = (0, import_react14.useState)(1);
+  const [logs, setLogs] = (0, import_react14.useState)([]);
+  const [running, setRunning] = (0, import_react14.useState)(false);
   if (!isOpen) return null;
   const runStep = async (stepNum) => {
     setRunning(true);
@@ -8450,14 +8996,14 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
     }
     setRunning(false);
   };
-  return /* @__PURE__ */ import_react13.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "modal-box", style: { maxWidth: "780px" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "12px" } }, /* @__PURE__ */ import_react13.default.createElement("div", null, /* @__PURE__ */ import_react13.default.createElement("div", { className: "eyebrow" }, "End-to-End Test Engine"), /* @__PURE__ */ import_react13.default.createElement("h3", { style: { fontSize: "18px" } }, "19-Step Specification Walkthrough")), /* @__PURE__ */ import_react13.default.createElement(
+  return /* @__PURE__ */ import_react14.default.createElement("div", { className: "modal-overlay" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "modal-box", style: { maxWidth: "780px" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid var(--line)", paddingBottom: "12px" } }, /* @__PURE__ */ import_react14.default.createElement("div", null, /* @__PURE__ */ import_react14.default.createElement("div", { className: "eyebrow" }, "End-to-End Test Engine"), /* @__PURE__ */ import_react14.default.createElement("h3", { style: { fontSize: "18px" } }, "19-Step Specification Walkthrough")), /* @__PURE__ */ import_react14.default.createElement(
     "button",
     {
       onClick: onClose,
       style: { background: "transparent", border: 0, fontSize: "20px", cursor: "pointer", color: "var(--mute)" }
     },
     "\u2715"
-  )), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { justifyContent: "space-between", padding: "12px 0", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "note", style: { fontSize: "13.5px" } }, "Current: ", /* @__PURE__ */ import_react13.default.createElement("b", null, SCENARIO_STEPS[currentStep - 1]?.title)), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react13.default.createElement(
+  )), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", padding: "12px 0", borderBottom: "1px solid var(--line)" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "note", style: { fontSize: "13.5px" } }, "Current: ", /* @__PURE__ */ import_react14.default.createElement("b", null, SCENARIO_STEPS[currentStep - 1]?.title)), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { gap: "8px" } }, /* @__PURE__ */ import_react14.default.createElement(
     "button",
     {
       onClick: handleNextStep,
@@ -8466,7 +9012,7 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
     },
     "Run Step ",
     currentStep
-  ), /* @__PURE__ */ import_react13.default.createElement(
+  ), /* @__PURE__ */ import_react14.default.createElement(
     "button",
     {
       onClick: handleRunAll,
@@ -8475,10 +9021,10 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
       style: { fontWeight: "800", borderColor: "var(--blue)", color: "var(--blue)" }
     },
     "Run All 19 Steps"
-  ))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "grid4", style: { gridTemplateColumns: "1.2fr 1fr", gap: "14px", marginTop: "14px", maxHeight: "450px", overflowY: "auto" } }, /* @__PURE__ */ import_react13.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "8px" } }, SCENARIO_STEPS.map((s) => {
+  ))), /* @__PURE__ */ import_react14.default.createElement("div", { className: "grid4", style: { gridTemplateColumns: "1.2fr 1fr", gap: "14px", marginTop: "14px", maxHeight: "450px", overflowY: "auto" } }, /* @__PURE__ */ import_react14.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "8px" } }, SCENARIO_STEPS.map((s) => {
     const isPast = s.step < currentStep;
     const isCurrent = s.step === currentStep;
-    return /* @__PURE__ */ import_react13.default.createElement(
+    return /* @__PURE__ */ import_react14.default.createElement(
       "div",
       {
         key: s.step,
@@ -8495,10 +9041,10 @@ function ScenarioWalkthrough({ isOpen, onClose, onRefreshData }) {
           background: isCurrent ? "#f0f7ff" : isPast ? "#f3fbf5" : "#fff"
         }
       },
-      /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react13.default.createElement("b", { style: { fontSize: "13px", color: isCurrent ? "var(--blue)" : isPast ? "var(--green)" : "var(--ink)" } }, s.title), isPast && /* @__PURE__ */ import_react13.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)", padding: "1px 6px", fontSize: "10px" } }, "\u2713 Done")),
-      /* @__PURE__ */ import_react13.default.createElement("div", { className: "note", style: { fontSize: "12px", marginTop: "2px" } }, s.desc)
+      /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between" } }, /* @__PURE__ */ import_react14.default.createElement("b", { style: { fontSize: "13px", color: isCurrent ? "var(--blue)" : isPast ? "var(--green)" : "var(--ink)" } }, s.title), isPast && /* @__PURE__ */ import_react14.default.createElement("span", { className: "badge", style: { color: "var(--green)", borderColor: "var(--green)", padding: "1px 6px", fontSize: "10px" } }, "\u2713 Done")),
+      /* @__PURE__ */ import_react14.default.createElement("div", { className: "note", style: { fontSize: "12px", marginTop: "2px" } }, s.desc)
     );
-  })), /* @__PURE__ */ import_react13.default.createElement("div", { className: "card", style: { background: "#fafcff", margin: 0, overflowY: "auto" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "k", style: { fontWeight: "700", marginBottom: "8px" } }, "Live Execution Logs"), logs.length === 0 ? /* @__PURE__ */ import_react13.default.createElement("p", { className: "note" }, 'Click "Run Step" or "Run All 19 Steps" to trigger live ledger actions...') : /* @__PURE__ */ import_react13.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "6px" } }, logs.map((l, idx) => /* @__PURE__ */ import_react13.default.createElement("div", { key: idx, style: { padding: "8px 10px", background: "#fff", borderRadius: "10px", border: "1px solid var(--line)", fontSize: "12px" } }, /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { justifyContent: "space-between", color: "var(--mute)", fontSize: "11px" } }, /* @__PURE__ */ import_react13.default.createElement("b", { style: { color: "var(--green)" } }, "Step ", l.step), /* @__PURE__ */ import_react13.default.createElement("span", null, l.time)), /* @__PURE__ */ import_react13.default.createElement("div", { style: { marginTop: "2px", color: "var(--ink)" } }, l.desc)))))), /* @__PURE__ */ import_react13.default.createElement("div", { className: "row", style: { marginTop: "16px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react13.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
+  })), /* @__PURE__ */ import_react14.default.createElement("div", { className: "card", style: { background: "#fafcff", margin: 0, overflowY: "auto" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "k", style: { fontWeight: "700", marginBottom: "8px" } }, "Live Execution Logs"), logs.length === 0 ? /* @__PURE__ */ import_react14.default.createElement("p", { className: "note" }, 'Click "Run Step" or "Run All 19 Steps" to trigger live ledger actions...') : /* @__PURE__ */ import_react14.default.createElement("div", { style: { display: "flex", flexDirection: "column", gap: "6px" } }, logs.map((l, idx) => /* @__PURE__ */ import_react14.default.createElement("div", { key: idx, style: { padding: "8px 10px", background: "#fff", borderRadius: "10px", border: "1px solid var(--line)", fontSize: "12px" } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { justifyContent: "space-between", color: "var(--mute)", fontSize: "11px" } }, /* @__PURE__ */ import_react14.default.createElement("b", { style: { color: "var(--green)" } }, "Step ", l.step), /* @__PURE__ */ import_react14.default.createElement("span", null, l.time)), /* @__PURE__ */ import_react14.default.createElement("div", { style: { marginTop: "2px", color: "var(--ink)" } }, l.desc)))))), /* @__PURE__ */ import_react14.default.createElement("div", { className: "row", style: { marginTop: "16px", justifyContent: "flex-end" } }, /* @__PURE__ */ import_react14.default.createElement("button", { onClick: onClose, className: "btn line sm" }, "Close"))));
 }
 
 // client/src/mockData.js
@@ -8647,36 +9193,49 @@ function saveStoredData(data) {
 
 // client/src/App.jsx
 function App() {
-  const [data, setData] = (0, import_react14.useState)(() => getStoredData());
-  const [activeTab, setActiveTab] = (0, import_react14.useState)("home");
-  const [isAdmin, setIsAdmin] = (0, import_react14.useState)(false);
-  const [toastMsg, setToastMsg] = (0, import_react14.useState)(null);
-  const [theme, setTheme] = (0, import_react14.useState)(() => {
+  const [data, setData] = (0, import_react15.useState)(() => getStoredData());
+  const [activeTab, setActiveTab] = (0, import_react15.useState)("home");
+  const [isAdmin, setIsAdmin] = (0, import_react15.useState)(false);
+  const [toastMsg, setToastMsg] = (0, import_react15.useState)(null);
+  const [isLoggedIn, setIsLoggedIn] = (0, import_react15.useState)(() => {
+    try {
+      return localStorage.getItem("rap-logged-in") === "true";
+    } catch {
+      return false;
+    }
+  });
+  (0, import_react15.useEffect)(() => {
+    try {
+      localStorage.setItem("rap-logged-in", isLoggedIn ? "true" : "false");
+    } catch {
+    }
+  }, [isLoggedIn]);
+  const [theme, setTheme] = (0, import_react15.useState)(() => {
     try {
       return localStorage.getItem("rap-theme") || "light";
     } catch {
       return "light";
     }
   });
-  const [viewMode, setViewMode] = (0, import_react14.useState)(() => {
+  const [viewMode, setViewMode] = (0, import_react15.useState)(() => {
     try {
       return localStorage.getItem("rap-viewmode") || "desktop";
     } catch {
       return "desktop";
     }
   });
-  const [mondayModalOpen, setMondayModalOpen] = (0, import_react14.useState)(false);
-  const [sendTransferModalOpen, setSendTransferModalOpen] = (0, import_react14.useState)(false);
-  const [statementModalOpen, setStatementModalOpen] = (0, import_react14.useState)(false);
-  const [walkthroughOpen, setWalkthroughOpen] = (0, import_react14.useState)(false);
-  (0, import_react14.useEffect)(() => {
+  const [mondayModalOpen, setMondayModalOpen] = (0, import_react15.useState)(false);
+  const [sendTransferModalOpen, setSendTransferModalOpen] = (0, import_react15.useState)(false);
+  const [statementModalOpen, setStatementModalOpen] = (0, import_react15.useState)(false);
+  const [walkthroughOpen, setWalkthroughOpen] = (0, import_react15.useState)(false);
+  (0, import_react15.useEffect)(() => {
     document.documentElement.setAttribute("data-theme", theme);
     try {
       localStorage.setItem("rap-theme", theme);
     } catch {
     }
   }, [theme]);
-  (0, import_react14.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     try {
       localStorage.setItem("rap-viewmode", viewMode);
     } catch {
@@ -8700,7 +9259,7 @@ function App() {
     } catch {
     }
   };
-  (0, import_react14.useEffect)(() => {
+  (0, import_react15.useEffect)(() => {
     fetchUserData();
   }, []);
   const showToast = (text) => {
@@ -8804,24 +9363,25 @@ function App() {
     if (window.confetti) window.confetti({ particleCount: 150, spread: 80, origin: { y: 0.5 } });
     showToast("\u{1F389} 25 Affiliates Milestone Reached! Upgraded to RAP Growth Partner (20%)");
   };
-  const appContent = /* @__PURE__ */ import_react14.default.createElement(import_react14.default.Fragment, null, /* @__PURE__ */ import_react14.default.createElement("main", { style: { flex: 1, overflowY: "auto", overflowX: "hidden" } }, isAdmin ? /* @__PURE__ */ import_react14.default.createElement(AdminPanel, { onClose: () => setIsAdmin(false) }) : /* @__PURE__ */ import_react14.default.createElement(import_react14.default.Fragment, null, activeTab === "home" && /* @__PURE__ */ import_react14.default.createElement(
+  const appContent = /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, /* @__PURE__ */ import_react15.default.createElement("main", { style: { flex: 1, overflowY: "auto", overflowX: "hidden" } }, isAdmin ? /* @__PURE__ */ import_react15.default.createElement(AdminPanel, { onClose: () => setIsAdmin(false) }) : /* @__PURE__ */ import_react15.default.createElement(import_react15.default.Fragment, null, activeTab === "home" && /* @__PURE__ */ import_react15.default.createElement(
     HomeTab,
     {
       data,
+      isLoggedIn,
+      setIsLoggedIn,
       onOpenMondayTransfer: () => setMondayModalOpen(true),
       onOpenSendTransfer: () => setSendTransferModalOpen(true),
       onReachMilestone: handleReachMilestone,
       setActiveTab
     }
-  ), activeTab === "account" && /* @__PURE__ */ import_react14.default.createElement(
-    AccountTab,
+  ), (activeTab === "skills" || activeTab === "account") && /* @__PURE__ */ import_react15.default.createElement(
+    SkillsTab,
     {
       data,
-      onOpenMondayTransfer: () => setMondayModalOpen(true),
-      onOpenSendTransfer: () => setSendTransferModalOpen(true),
-      onOpenStatement: () => setStatementModalOpen(true)
+      setActiveTab,
+      onOpenSendTransfer: () => setSendTransferModalOpen(true)
     }
-  ), activeTab === "affiliate" && /* @__PURE__ */ import_react14.default.createElement(
+  ), activeTab === "affiliate" && /* @__PURE__ */ import_react15.default.createElement(
     AffiliateTab,
     {
       data,
@@ -8829,15 +9389,17 @@ function App() {
       onReachMilestone: handleReachMilestone,
       setActiveTab
     }
-  ), activeTab === "refer" && /* @__PURE__ */ import_react14.default.createElement(ReferTab, { data }), activeTab === "login" && /* @__PURE__ */ import_react14.default.createElement(
+  ), activeTab === "refer" && /* @__PURE__ */ import_react15.default.createElement(ReferTab, { data }), activeTab === "login" && /* @__PURE__ */ import_react15.default.createElement(
     LoginTab,
     {
       data,
       isAdmin,
       setIsAdmin,
-      setActiveTab
+      setActiveTab,
+      isLoggedIn,
+      setIsLoggedIn
     }
-  ))), !isAdmin && /* @__PURE__ */ import_react14.default.createElement(
+  ))), !isAdmin && /* @__PURE__ */ import_react15.default.createElement(
     BottomNav,
     {
       activeTab,
@@ -8845,12 +9407,14 @@ function App() {
       inPhone: viewMode === "phone"
     }
   ));
-  return /* @__PURE__ */ import_react14.default.createElement("div", { style: { minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", transition: "background 0.25s ease" } }, /* @__PURE__ */ import_react14.default.createElement(
+  return /* @__PURE__ */ import_react15.default.createElement("div", { style: { minHeight: "100vh", display: "flex", flexDirection: "column", background: "var(--bg)", transition: "background 0.25s ease" } }, /* @__PURE__ */ import_react15.default.createElement(
     Header,
     {
       activeTab,
       setActiveTab,
       user: data?.user,
+      isLoggedIn,
+      setIsLoggedIn,
       onOpenWalkthrough: () => setWalkthroughOpen(true),
       isAdmin,
       setIsAdmin,
@@ -8859,7 +9423,7 @@ function App() {
       viewMode,
       setViewMode
     }
-  ), viewMode === "phone" ? /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-frame-container", style: { flex: 1 } }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-mockup" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-speaker-notch" }, /* @__PURE__ */ import_react14.default.createElement("span", null, (/* @__PURE__ */ new Date()).toLocaleTimeString("en-NG", { hour: "2-digit", minute: "2-digit" })), /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-dynamic-island" }), /* @__PURE__ */ import_react14.default.createElement("span", { style: { display: "flex", gap: "6px", alignItems: "center" } }, /* @__PURE__ */ import_react14.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react14.default.createElement("path", { d: "M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" })), /* @__PURE__ */ import_react14.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react14.default.createElement("path", { d: "M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z" })))), /* @__PURE__ */ import_react14.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" } }, appContent), /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-home-indicator" }, /* @__PURE__ */ import_react14.default.createElement("div", { className: "phone-home-bar" })))) : /* @__PURE__ */ import_react14.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column" } }, appContent), /* @__PURE__ */ import_react14.default.createElement(
+  ), viewMode === "phone" ? /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-frame-container", style: { flex: 1 } }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-mockup" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-speaker-notch" }, /* @__PURE__ */ import_react15.default.createElement("span", null, (/* @__PURE__ */ new Date()).toLocaleTimeString("en-NG", { hour: "2-digit", minute: "2-digit" })), /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-dynamic-island" }), /* @__PURE__ */ import_react15.default.createElement("span", { style: { display: "flex", gap: "6px", alignItems: "center" } }, /* @__PURE__ */ import_react15.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react15.default.createElement("path", { d: "M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" })), /* @__PURE__ */ import_react15.default.createElement("svg", { width: "14", height: "14", fill: "currentColor", viewBox: "0 0 24 24" }, /* @__PURE__ */ import_react15.default.createElement("path", { d: "M15.67 4H14V2h-4v2H8.33C7.6 4 7 4.6 7 5.33v15.33C7 21.4 7.6 22 8.33 22h7.33c.74 0 1.34-.6 1.34-1.33V5.33C17 4.6 16.4 4 15.67 4z" })))), /* @__PURE__ */ import_react15.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column", overflow: "hidden", position: "relative" } }, appContent), /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-home-indicator" }, /* @__PURE__ */ import_react15.default.createElement("div", { className: "phone-home-bar" })))) : /* @__PURE__ */ import_react15.default.createElement("div", { style: { flex: 1, display: "flex", flexDirection: "column" } }, appContent), /* @__PURE__ */ import_react15.default.createElement(
     MondayTransferModal,
     {
       isOpen: mondayModalOpen,
@@ -8870,7 +9434,7 @@ function App() {
         fetchUserData();
       }
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react15.default.createElement(
     SendTransferModal,
     {
       isOpen: sendTransferModalOpen,
@@ -8881,28 +9445,28 @@ function App() {
         fetchUserData();
       }
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react15.default.createElement(
     StatementModal,
     {
       isOpen: statementModalOpen,
       onClose: () => setStatementModalOpen(false),
       data
     }
-  ), /* @__PURE__ */ import_react14.default.createElement(
+  ), /* @__PURE__ */ import_react15.default.createElement(
     ScenarioWalkthrough,
     {
       isOpen: walkthroughOpen,
       onClose: () => setWalkthroughOpen(false),
       onRefreshData: fetchUserData
     }
-  ), toastMsg && /* @__PURE__ */ import_react14.default.createElement("div", { className: "toast" }, /* @__PURE__ */ import_react14.default.createElement("span", null, toastMsg)));
+  ), toastMsg && /* @__PURE__ */ import_react15.default.createElement("div", { className: "toast" }, /* @__PURE__ */ import_react15.default.createElement("span", null, toastMsg)));
 }
 
 // client/src/index.jsx
 var container = document.getElementById("root");
 if (container) {
   const root = (0, import_client.createRoot)(container);
-  root.render(/* @__PURE__ */ import_react15.default.createElement(App, null));
+  root.render(/* @__PURE__ */ import_react16.default.createElement(App, null));
 }
 /*! Bundled license information:
 

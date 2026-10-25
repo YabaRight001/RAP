@@ -5,6 +5,8 @@ export function Header({
   activeTab,
   setActiveTab,
   user,
+  isLoggedIn,
+  setIsLoggedIn,
   onOpenWalkthrough,
   isAdmin,
   setIsAdmin,
@@ -27,27 +29,25 @@ export function Header({
       {/* Top Ticker — animated marquee */}
       <div className="ticker" aria-hidden="true">
         <div className="ticker-inner">
-          <span>🏦 BANK THAT HELPS YOU PROSPER</span>
-          <span>💡 SKILLS • OPPORTUNITY • INCOME</span>
-          <span>📈 AFFILIATE EARNINGS — 70% YOURS NOW</span>
-          <span>🔒 30% LOCKED SAVINGS — 1 YEAR GROWTH</span>
-          <span>🌍 YOUTH EMPOWERMENT — RISE AND PROSPER</span>
-          <span>💳 FULL BANKING • TRANSFERS • WITHDRAWALS</span>
-          <span>🏦 BANK THAT HELPS YOU PROSPER</span>
-          <span>💡 SKILLS • OPPORTUNITY • INCOME</span>
-          <span>📈 AFFILIATE EARNINGS — 70% YOURS NOW</span>
-          <span>🔒 30% LOCKED SAVINGS — 1 YEAR GROWTH</span>
-          <span>🌍 YOUTH EMPOWERMENT — RISE AND PROSPER</span>
-          <span>💳 FULL BANKING • TRANSFERS • WITHDRAWALS</span>
+          <span>🏦 RAP BANK • BANK THAT HELPS YOU PROSPER</span>
+          <span>💻 IN-DEMAND TECH SKILLS &amp; PERSONAL DEVELOPMENT</span>
+          <span>📈 AFFILIATE EARNINGS — 70% YOURS TODAY</span>
+          <span>🔒 30% LOCKED SAVINGS — 1 YEAR WEALTH BUILDING</span>
+          <span>💳 SEAMLESS BANK TRANSFERS &amp; PAYOUTS</span>
+          <span>🏦 RAP BANK • BANK THAT HELPS YOU PROSPER</span>
+          <span>💻 IN-DEMAND TECH SKILLS &amp; PERSONAL DEVELOPMENT</span>
+          <span>📈 AFFILIATE EARNINGS — 70% YOURS TODAY</span>
+          <span>🔒 30% LOCKED SAVINGS — 1 YEAR WEALTH BUILDING</span>
+          <span>💳 SEAMLESS BANK TRANSFERS &amp; PAYOUTS</span>
         </div>
       </div>
 
       {/* Main Top Header */}
       <header className="top">
         <div className="wrap">
-          <div className="row" style={{ gap: '12px' }}>
-            <a href="#home" onClick={(e) => { e.preventDefault(); setActiveTab('home'); }} aria-label="RAP Home">
-              <img src="/img/logo.png" alt="RAP – Rise and Prosper" className="logo-img" />
+          <div className="row" style={{ gap: '12px', alignItems: 'center' }}>
+            <a href="#home" onClick={(e) => { e.preventDefault(); setActiveTab('home'); }} aria-label="RAP Bank Home" style={{ display: 'flex', alignItems: 'center' }}>
+              <img src="/img/logo.png" alt="RAP Bank" className="logo-img" />
             </a>
           </div>
 
@@ -60,10 +60,10 @@ export function Header({
               Home
             </button>
             <button
-              onClick={() => setActiveTab('account')}
-              className={activeTab === 'account' ? 'on' : ''}
+              onClick={() => setActiveTab('skills')}
+              className={activeTab === 'skills' ? 'on' : ''}
             >
-              Account
+              Skills
             </button>
             <button
               onClick={() => setActiveTab('affiliate')}
@@ -120,6 +120,27 @@ export function Header({
               <Icon name="sparkles" style={{ width: '15px', height: '15px' }} />
               <span>19 Steps</span>
             </button>
+
+            {/* Auth State Button */}
+            {isLoggedIn ? (
+              <button
+                onClick={() => setIsLoggedIn(false)}
+                className="btn line sm"
+                style={{ fontSize: '13px' }}
+                title="Sign out of your account"
+              >
+                Sign Out
+              </button>
+            ) : (
+              <button
+                onClick={() => setActiveTab('login')}
+                className="btn pri sm"
+                style={{ fontSize: '13px' }}
+                title="Sign into your RAP Bank account"
+              >
+                Sign In
+              </button>
+            )}
 
             {/* Admin Switcher */}
             <button

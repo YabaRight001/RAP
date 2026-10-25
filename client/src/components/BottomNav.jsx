@@ -4,9 +4,9 @@ import { Icon } from '../icons.jsx';
 export function BottomNav({ activeTab, setActiveTab, inPhone }) {
   const tabs = [
     { id: 'home', label: 'Home', icon: 'home' },
-    { id: 'account', label: 'Account', icon: 'account' },
+    { id: 'skills', label: 'Skills', icon: 'skills' },
     { id: 'affiliate', label: 'Affiliate', icon: 'affiliate' },
-    { id: 'login', label: 'Login', icon: 'login' },
+    { id: 'login', label: 'Profile', icon: 'login' },
     { id: 'refer', label: 'Refer', icon: 'refer' }
   ];
 
